@@ -278,3 +278,8 @@ body.wordpress #footer {
 body.wordpress .wp-caption-text {
 	font-size:9px;
 }
+
+/* Just for static snapshot */
+body.wordpress #respond {
+  display: none;
+}
