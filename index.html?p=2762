@@ -861,7 +861,7 @@ body.wordpress #sidebar > .module-body li li {
 <div id='nav'>
         <h1>
             <a href='/'>
-                <img src='//openhatch.org/static/images/the-logo-bluegreen-87px.png'
+                <img src='/downloaded-for-static-snapshot/the-logo-bluegreen-87px.png'
                         width='87' height='60' alt='openhatch' />
             </a>
         </h1>
