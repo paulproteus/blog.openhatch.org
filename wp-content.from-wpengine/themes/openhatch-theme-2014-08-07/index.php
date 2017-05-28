@@ -87,7 +87,7 @@
                 url(/downloaded-for-static-snapshot/delete.png); }
             body#profile .citations li .actions a.delete_citation { 
                 background-image:
-                url(//openhatch.org/static/images/icons/delete-citation.png); }
+                url(/downloaded-for-static-snapshot/delete-citation.png); }
             body#profile #portfolio.viewer .portfolio_entry .submodule { 
                 background-image:
                 url(//openhatch.org/static/images/profile/portfolio/portfolio-entry-bg.png) }
