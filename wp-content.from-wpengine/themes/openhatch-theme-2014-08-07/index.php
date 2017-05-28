@@ -59,7 +59,7 @@
         <style type='text/css'> /*<![CDATA[*/
             
             
-            @import url(//openhatch.org/static/packed/openhatch.css?1407021888);
+            @import url(/downloaded-for-static-snapshot/openhatch.css);
             
 
             
