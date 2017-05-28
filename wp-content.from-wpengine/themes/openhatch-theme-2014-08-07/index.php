@@ -106,7 +106,7 @@
                 url(/downloaded-for-static-snapshot/wannahelp-button-bg-hover-active.png); }
             body#project .next_steps_for_helpers { 
                 background-image:
-                url(//openhatch.org/static/images/bg-translucent-green.png); }
+                url(/downloaded-for-static-snapshot/bg-translucent-green.png); }
             #footer { background: #333 url('//openhatch.org/static/images/dark-hatch.png') repeat; }
 
             
