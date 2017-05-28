@@ -93,7 +93,7 @@
                 url(/downloaded-for-static-snapshot/portfolio-entry-bg.png) }
             body#project #wannahelp-button { 
                 background-image:
-                url(//openhatch.org/static/images/wannahelp-button-bg.png); }
+                url(/downloaded-for-static-snapshot/wannahelp-button-bg.png); }
             body#project #wannahelp-button:active { 
                 background-image:
                 url(//openhatch.org/static/images/wannahelp-button-bg-active.png); }
