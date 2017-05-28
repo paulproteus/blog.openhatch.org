@@ -16,7 +16,6 @@ if echo "$FILENAME" | grep -q -F '?' ; then
   FILENAME="$NEW_FILENAME"
 fi
 echo $FILENAME
-exit 0
 git add .
 popd
 
