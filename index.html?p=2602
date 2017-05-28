@@ -786,7 +786,7 @@ body.wordpress #sidebar > .module-body li li {
             body { 
             #landing a.blog-feed { 
                 background-image:
-                url(//openhatch.org/static/images/base/landing/feed-icon-16x16-sprited.png) }
+                url(/downloaded-for-static-snapshot/feed-icon-16x16-sprited.png) }
             .person {
                 font-size: 80%; }
             .geocode {
