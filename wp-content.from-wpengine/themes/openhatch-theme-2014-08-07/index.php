@@ -287,7 +287,7 @@
 </div>
 
 <div class="module-foot">
-  <p class="postmetadata"><?php /* the_tags('Tags: ', ', ', '<br />'); */ ?> <!-- Posted in <?php the_category(', ') ?> | --> <?php edit_post_link('Edit', '', ' | '); ?>  <?php comments_popup_link('No comments yet &#187;', '1 Comment &#187;', '% Comments &#187;'); ?></p>
+  <p class="postmetadata"><?php /* the_tags('Tags: ', ', ', '<br />'); */ ?> <!-- Posted in <?php the_category(', ') ?> | --> <?php edit_post_link('Edit', '', ' | '); ?>  <?php comments_popup_link('', '1 Comment &#187;', '% Comments &#187;'); ?></p>
 </div>
 </div>
 
