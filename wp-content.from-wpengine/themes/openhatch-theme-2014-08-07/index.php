@@ -90,7 +90,7 @@
                 url(/downloaded-for-static-snapshot/delete-citation.png); }
             body#profile #portfolio.viewer .portfolio_entry .submodule { 
                 background-image:
-                url(//openhatch.org/static/images/profile/portfolio/portfolio-entry-bg.png) }
+                url(/downloaded-for-static-snapshot/portfolio-entry-bg.png) }
             body#project #wannahelp-button { 
                 background-image:
                 url(//openhatch.org/static/images/wannahelp-button-bg.png); }
