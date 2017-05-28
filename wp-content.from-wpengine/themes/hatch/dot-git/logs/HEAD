@@ -1,0 +1,18 @@
+0000000000000000000000000000000000000000 352a6bee79cb9a25c38cb9a4a99a84a47132e652 Raphael Krut-Landau <raphael.kl@gmail.com> 1256592022 -0400	commit (initial): New git repository; added the blog.
+352a6bee79cb9a25c38cb9a4a99a84a47132e652 af2f131302619b9e7bacf03dd1be12fc170560f3 Raphael Krut-Landau <raphael.kl@gmail.com> 1256592071 -0400	commit: Title of blog entries is now 'The OpenHatch blog'
+af2f131302619b9e7bacf03dd1be12fc170560f3 9098f69cb24652705ab5ac5a132d75b9eef8eb5f Raphael Krut-Landau <raphael.kl@gmail.com> 1256594526 -0400	commit: More style changes to blog. Removed lots of little things--the links at the top left, the references to tags and categories.
+9098f69cb24652705ab5ac5a132d75b9eef8eb5f 533d2b272afa2d51cb366921de19d36453301a0f Raphael Krut-Landau <raphael.kl@gmail.com> 1258585019 -0500	commit: Plus piwik
+533d2b272afa2d51cb366921de19d36453301a0f 925ec0a4a074ab2dd98e000f16e8e2812aa9d2e5 Raphael Krut-Landau <raphael.kl@gmail.com> 1258648604 -0500	commit: Move footer down, make blog entries a bit more readable.
+925ec0a4a074ab2dd98e000f16e8e2812aa9d2e5 6d4eca5bc3a566de4536497d9692beeeb6e05852 Raphael Krut-Landau <raphael.kl@gmail.com> 1259817162 -0500	commit: ...
+6d4eca5bc3a566de4536497d9692beeeb6e05852 d19cbce738e653960efc04c69244eac511b5204a Raphael Krut-Landau <raphael.kl@gmail.com> 1259817265 -0500	commit: Change all references to http://openhatch.org/ to /
+d19cbce738e653960efc04c69244eac511b5204a 3bef90d0f6ed59625d9fac96e397d057407ae921 Raphael Krut-Landau <raphael.kl@gmail.com> 1260813273 -0500	commit: As I found it
+3bef90d0f6ed59625d9fac96e397d057407ae921 60190becbdf7a9c77f4c1ab37bbef2cc04fe9b1b Raphael Krut-Landau <raphael.kl@gmail.com> 1260813529 -0500	commit: Link to "Source code, etc." from ze blog
+60190becbdf7a9c77f4c1ab37bbef2cc04fe9b1b 107ed90f1e44943ea52f040ab0c584babda66b96 Raphael Krut-Landau <raphael.kl@gmail.com> 1264201912 -0500	commit: Add two_columns class so this works with stylesheet.
+107ed90f1e44943ea52f040ab0c584babda66b96 47eec4440010dcfa868605439dd0af73d33fbcc6 Asheesh Laroia <paulproteus@linode.openhatch.org> 1267565797 +0000	commit: Adding JavaScript slickness to "How does OpenHatch help me find bite-sized bugs?"
+47eec4440010dcfa868605439dd0af73d33fbcc6 b34220827eabf3725016c1c19170c6e9098521a3 Asheesh Laroia <paulproteus@linode.openhatch.org> 1268077999 +0000	commit: Plus Google Analytics
+b34220827eabf3725016c1c19170c6e9098521a3 b6ee1e667d75da7b1f5eec9974912e1312911b54 Asheesh Laroia <paulproteus@linode.openhatch.org> 1268185380 +0000	commit: Add Google tag
+b6ee1e667d75da7b1f5eec9974912e1312911b54 a889a10686ab8e401be92ab15a62822ea1839dcc Raphael Krut-Landau <raphael.kl@gmail.com> 1271801270 -0400	commit: Changes to site-wide base.css nuked the images so I've rewritten the declarations here.
+a889a10686ab8e401be92ab15a62822ea1839dcc d812fd91f8bab9800e2dbc3e80340f29245e327a Asheesh Laroia <paulproteus@linode.openhatch.org> 1292281392 +0000	commit: add link to privacy policy
+d812fd91f8bab9800e2dbc3e80340f29245e327a b1b1fc3470cfa21b3d78b0c3320e337354e418c3 Asheesh Laroia <paulproteus@linode.openhatch.org> 1294036057 +0000	commit: Remove float:left that was causing H3s to look weird on /about/ page
+b1b1fc3470cfa21b3d78b0c3320e337354e418c3 d4e9187b56086c3ed3d72391afc30a4156d252e6 www-data <www-data@linode.openhatch.org> 1343165606 +0000	commit: Snapshotting the current state of things
+d4e9187b56086c3ed3d72391afc30a4156d252e6 5852cb1bd60297bbed29270281aedc6aea5b4950 www-data <www-data@linode.openhatch.org> 1343166662 +0000	commit: Adding clear:both to WordPress footer, so it stops weirdly overlapping
