@@ -107,7 +107,7 @@
             body#project .next_steps_for_helpers { 
                 background-image:
                 url(/downloaded-for-static-snapshot/bg-translucent-green.png); }
-            #footer { background: #333 url('//openhatch.org/static/images/dark-hatch.png') repeat; }
+            #footer { background: #333 url('/downloaded-for-static-snapshot/dark-hatch.png') repeat; }
 
             
             /*]]>*/

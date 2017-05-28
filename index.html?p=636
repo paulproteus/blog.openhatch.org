@@ -77,7 +77,7 @@ Click the help icon above to learn more.
 }
 /* coloration */
 .nav-bg {
-  background: #333 url('https://openhatch.org/static/images/dark-hatch.png') repeat;
+  background: #333 url('https:/downloaded-for-static-snapshot/dark-hatch.png') repeat;
   box-shadow: 0 0 7px #333;
   -moz-box-shadow: 0 0 7px #333;
   -webkit-box-shadow: 0 0 7px #333;
@@ -275,7 +275,7 @@ h1 {
 #nav-container {
   width: 100%;
   height: 67px;
-  background: #333 url('https://openhatch.org/static/images/dark-hatch.png') repeat;
+  background: #333 url('https:/downloaded-for-static-snapshot/dark-hatch.png') repeat;
   box-shadow: 0 0 7px #333;
   -moz-box-shadow: 0 0 7px #333;
   -webkit-box-shadow: 0 0 7px #333;
@@ -364,7 +364,7 @@ ul#links {
   padding: 10px 0px;
   text-align: right;
   margin: 0 auto;
-  background: #333 url('https://openhatch.org/static/images/dark-hatch.png') repeat;
+  background: #333 url('https:/downloaded-for-static-snapshot/dark-hatch.png') repeat;
   box-shadow: 0 0 7px #333;
   -moz-box-shadow: 0 0 7px #333;
   -webkit-box-shadow: 0 0 7px #333;
@@ -825,7 +825,7 @@ body.wordpress #sidebar > .module-body li li {
             body#project .next_steps_for_helpers { 
                 background-image:
                 url(/downloaded-for-static-snapshot/bg-translucent-green.png); }
-            #footer { background: #333 url('//openhatch.org/static/images/dark-hatch.png') repeat; }
+            #footer { background: #333 url('/downloaded-for-static-snapshot/dark-hatch.png') repeat; }
 
             
             /*]]>*/
