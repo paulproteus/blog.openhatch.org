@@ -19,5 +19,5 @@ echo $FILENAME
 git add .
 popd
 
-replace "$URL" '/downloaded-for-static-snapshot/'"$FILENAME" -- $(git grep -l "$1")
+replace "$1" '/downloaded-for-static-snapshot/'"$FILENAME" -- $(git grep -l "$1")
 git commit -a -m 'Replaced file automatically via script: '"$URL"
