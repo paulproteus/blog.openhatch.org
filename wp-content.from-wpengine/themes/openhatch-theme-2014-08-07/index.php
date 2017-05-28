@@ -118,7 +118,7 @@
         type="text/javascript"></script>
         <![endif]-->
 	
-		<script type="text/javascript" src="//openhatch.org/static/packed/header.js?1404446267"></script>
+		<script type="text/javascript" src="/downloaded-for-static-snapshot/header.js"></script>
 	
         
         <link rel="stylesheet/less" type="text/css" href="//openhatch.org/static/less/base/base.less">
