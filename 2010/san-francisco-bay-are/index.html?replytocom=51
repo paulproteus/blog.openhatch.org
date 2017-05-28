@@ -5,9 +5,9 @@
 
 <!-- blog metadata etc. -->
 
-<link rel="alternate" type="application/rss+xml" title="The OpenHatch blog RSS Feed" href="http://blog.openhatch.org/feed/" />
-<link rel="alternate" type="application/atom+xml" title="The OpenHatch blog Atom Feed" href="http://blog.openhatch.org/feed/atom/" />
-<link rel="pingback" href="http://blog.openhatch.org/xmlrpc.php" />
+<link rel="alternate" type="application/rss+xml" title="The OpenHatch blog RSS Feed" href="http://blog-snapshot-beta.openhatch.org/feed/" />
+<link rel="alternate" type="application/atom+xml" title="The OpenHatch blog Atom Feed" href="http://blog-snapshot-beta.openhatch.org/feed/atom/" />
+<link rel="pingback" href="http://blog-snapshot-beta.openhatch.org/xmlrpc.php" />
 
 <!-- Facebook OpenGraph image, if applicable -->
 <meta property="og:image" content="" />
@@ -18,7 +18,7 @@
      More info: http://codex.wordpress.org/Function_Reference/wp_head
 -->
 <link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="The OpenHatch blog &raquo; Do you live in the San Francisco Bay Area? Comments Feed" href="http://blog.openhatch.org/2010/san-francisco-bay-are/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The OpenHatch blog &raquo; Do you live in the San Francisco Bay Area? Comments Feed" href="http://blog-snapshot-beta.openhatch.org/2010/san-francisco-bay-are/feed/" />
 		<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/blog.openhatch.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.5"}};
 			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -37,16 +37,16 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
-<link rel='https://api.w.org/' href='http://blog.openhatch.org/wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.openhatch.org/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.openhatch.org/wp-includes/wlwmanifest.xml" /> 
-<link rel='prev' title='Let people help your project: Give them a button to click' href='http://blog.openhatch.org/2010/let-people-help-your-project-give-them-a-button-to-click/' />
-<link rel='next' title='Our bug importing is healthy, and you can check up on it' href='http://blog.openhatch.org/2010/our-bug-importing-is-healthy-and-you-can-check-up-on-it/' />
-<link rel="canonical" href="http://blog.openhatch.org/2010/san-francisco-bay-are/" />
-<link rel='shortlink' href='http://blog.openhatch.org/?p=514' />
+<link rel='https://api.w.org/' href='http://blog-snapshot-beta.openhatch.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog-snapshot-beta.openhatch.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog-snapshot-beta.openhatch.org/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Let people help your project: Give them a button to click' href='http://blog-snapshot-beta.openhatch.org/2010/let-people-help-your-project-give-them-a-button-to-click/' />
+<link rel='next' title='Our bug importing is healthy, and you can check up on it' href='http://blog-snapshot-beta.openhatch.org/2010/our-bug-importing-is-healthy-and-you-can-check-up-on-it/' />
+<link rel="canonical" href="http://blog-snapshot-beta.openhatch.org/2010/san-francisco-bay-are/" />
+<link rel='shortlink' href='http://blog-snapshot-beta.openhatch.org/?p=514' />
 <meta name='robots' content='noindex,follow' />
-<link rel="alternate" type="application/json+oembed" href="http://blog.openhatch.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.openhatch.org%2F2010%2Fsan-francisco-bay-are%2F" />
-<link rel="alternate" type="text/xml+oembed" href="http://blog.openhatch.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.openhatch.org%2F2010%2Fsan-francisco-bay-are%2F&#038;format=xml" />
+<link rel="alternate" type="application/json+oembed" href="http://blog-snapshot-beta.openhatch.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.openhatch.org%2F2010%2Fsan-francisco-bay-are%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://blog-snapshot-beta.openhatch.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.openhatch.org%2F2010%2Fsan-francisco-bay-are%2F&#038;format=xml" />
 		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
 				<style type="text/css" id="wp-custom-css">
 			/*
@@ -769,7 +769,7 @@ body.wordpress #sidebar > .module-body li li {
         </title>
 
         <link rel="shortcut icon" href="/favicon.ico" />
-	<link rel="canonical" href="http://blog.openhatch.org/2010/san-francisco-bay-are/" />
+	<link rel="canonical" href="http://blog-snapshot-beta.openhatch.org/2010/san-francisco-bay-are/" />
 
         <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
         <meta http-equiv='Content-Language' content='en-us' />
@@ -909,26 +909,26 @@ body.wordpress #sidebar > .module-body li li {
 		<li id="recent-posts-2" class="widget widget_recent_entries">		<h2 class="widgettitle">Recent Posts</h2>
 		<ul>
 					<li>
-				<a href="http://blog.openhatch.org/2017/celebrating-our-successes-and-winding-down-as-an-organization/">Celebrating our successes and winding down as an organization</a>
+				<a href="http://blog-snapshot-beta.openhatch.org/2017/celebrating-our-successes-and-winding-down-as-an-organization/">Celebrating our successes and winding down as an organization</a>
 						</li>
 					<li>
-				<a href="http://blog.openhatch.org/2015/tips-facts-thoughts-after-3-successful-semesters-of-osctc/">Tips, facts, thoughts after 3 successful semesters of OSCTC</a>
+				<a href="http://blog-snapshot-beta.openhatch.org/2015/tips-facts-thoughts-after-3-successful-semesters-of-osctc/">Tips, facts, thoughts after 3 successful semesters of OSCTC</a>
 						</li>
 					<li>
-				<a href="http://blog.openhatch.org/2015/finding-the-next-openhatch-board-member/">Finding the next OpenHatch board member</a>
+				<a href="http://blog-snapshot-beta.openhatch.org/2015/finding-the-next-openhatch-board-member/">Finding the next OpenHatch board member</a>
 						</li>
 					<li>
-				<a href="http://blog.openhatch.org/2015/moving-on/">Moving On</a>
+				<a href="http://blog-snapshot-beta.openhatch.org/2015/moving-on/">Moving On</a>
 						</li>
 					<li>
-				<a href="http://blog.openhatch.org/2015/preparing-for-the-pycon-sprints/">Preparing for the PyCon Sprints</a>
+				<a href="http://blog-snapshot-beta.openhatch.org/2015/preparing-for-the-pycon-sprints/">Preparing for the PyCon Sprints</a>
 						</li>
 				</ul>
 		</li>
 		<li id="recent-comments-2" class="widget widget_recent_comments"><h2 class="widgettitle">Recent Comments</h2>
-<ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Carol Willing</span> on <a href="http://blog.openhatch.org/2015/moving-on/#comment-14652">Moving On</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://gondwanaland.com/mlog/2014/12/31/happy-utc-new-year/' rel='external nofollow' class='url'>Happy UTC+0 New Year &#8211; Mike Linksvayer</a></span> on <a href="http://blog.openhatch.org/2014/newsletter-november-december-2014/#comment-10523">Thanks for believing in OpenHatch &#8212; here&#8217;s our end of year newsletter</a></li></ul></li>
+<ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Carol Willing</span> on <a href="http://blog-snapshot-beta.openhatch.org/2015/moving-on/#comment-14652">Moving On</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://gondwanaland.com/mlog/2014/12/31/happy-utc-new-year/' rel='external nofollow' class='url'>Happy UTC+0 New Year &#8211; Mike Linksvayer</a></span> on <a href="http://blog-snapshot-beta.openhatch.org/2014/newsletter-november-december-2014/#comment-10523">Thanks for believing in OpenHatch &#8212; here&#8217;s our end of year newsletter</a></li></ul></li>
 <li id="search-2" class="widget widget_search"><h2 class="widgettitle">Search</h2>
-<form role="search" method="get" id="searchform" class="searchform" action="http://blog.openhatch.org/">
+<form role="search" method="get" id="searchform" class="searchform" action="http://blog-snapshot-beta.openhatch.org/">
 				<div>
 					<label class="screen-reader-text" for="s">Search for:</label>
 					<input type="text" value="" name="s" id="s" />
@@ -943,8 +943,8 @@ body.wordpress #sidebar > .module-body li li {
   <div class="module-body">
     The OpenHatch blog is graciously powered by
     <a href="http://wordpress.org/">WordPress</a>.
-    <br /><a href="http://blog.openhatch.org/feed/">Entries (RSS)</a>
-    and <a href="http://blog.openhatch.org/comments/feed/">Comments (RSS)</a>.
+    <br /><a href="http://blog-snapshot-beta.openhatch.org/feed/">Entries (RSS)</a>
+    and <a href="http://blog-snapshot-beta.openhatch.org/comments/feed/">Comments (RSS)</a>.
     <!-- 27 queries. 0.121 seconds. -->
   </div>
 </div>
@@ -955,7 +955,7 @@ body.wordpress #sidebar > .module-body li li {
      <div class="module" id="post-514">
 <div class="module-head">
   <h2>
-    <a style='color: #333;' href="http://blog.openhatch.org/2010/san-francisco-bay-are/" rel="bookmark"
+    <a style='color: #333;' href="http://blog-snapshot-beta.openhatch.org/2010/san-francisco-bay-are/" rel="bookmark"
     title="Permanent Link to Do you live in the San Francisco Bay Area?">Do you live in the San Francisco Bay Area?</a>
   </h2>
 
@@ -974,7 +974,7 @@ body.wordpress #sidebar > .module-body li li {
 </div>
 
 <div class="module-foot">
-  <p class="postmetadata"> <!-- Posted in <a href="http://blog.openhatch.org/category/uncategorized/" rel="category tag">Uncategorized</a> | -->   <a href="http://blog.openhatch.org/2010/san-francisco-bay-are/#comments">3 Comments &#187;</a></p>
+  <p class="postmetadata"> <!-- Posted in <a href="http://blog-snapshot-beta.openhatch.org/category/uncategorized/" rel="category tag">Uncategorized</a> | -->   <a href="http://blog-snapshot-beta.openhatch.org/2010/san-francisco-bay-are/#comments">3 Comments &#187;</a></p>
 </div>
 </div>
 
@@ -995,12 +995,12 @@ body.wordpress #sidebar > .module-body li li {
 				<div class="comment-author vcard">
 			<img alt='' src='http://1.gravatar.com/avatar/1b03474429f0514c12e657cc02200fc6?s=32&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/1b03474429f0514c12e657cc02200fc6?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn"><a href='http://workhorsy.org' rel='external nofollow' class='url'>Matt Jones</a></cite> <span class="says">says:</span>		</div>
 		
-		<div class="comment-meta commentmetadata"><a href="http://blog.openhatch.org/2010/san-francisco-bay-are/#comment-50">
+		<div class="comment-meta commentmetadata"><a href="http://blog-snapshot-beta.openhatch.org/2010/san-francisco-bay-are/#comment-50">
 			April 29, 2010 at 1:11 am</a>		</div>
 
 		<p>Can you post the dates you will be visiting?</p>
 
-		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.openhatch.org/2010/san-francisco-bay-are/?replytocom=50#respond' onclick='return addComment.moveForm( "div-comment-50", "50", "respond", "514" )' aria-label='Reply to Matt Jones'>Reply</a></div>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog-snapshot-beta.openhatch.org/2010/san-francisco-bay-are/?replytocom=50#respond' onclick='return addComment.moveForm( "div-comment-50", "50", "respond", "514" )' aria-label='Reply to Matt Jones'>Reply</a></div>
 				</div>
 		</li><!-- #comment-## -->
 		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-51">
@@ -1008,7 +1008,7 @@ body.wordpress #sidebar > .module-body li li {
 				<div class="comment-author vcard">
 			<img alt='' src='http://0.gravatar.com/avatar/69d08082f80c93ca40c434e4f5bc9a5f?s=32&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/69d08082f80c93ca40c434e4f5bc9a5f?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn"><a href='http://www.systemateka.com' rel='external nofollow' class='url'>jim</a></cite> <span class="says">says:</span>		</div>
 		
-		<div class="comment-meta commentmetadata"><a href="http://blog.openhatch.org/2010/san-francisco-bay-are/#comment-51">
+		<div class="comment-meta commentmetadata"><a href="http://blog-snapshot-beta.openhatch.org/2010/san-francisco-bay-are/#comment-51">
 			April 29, 2010 at 2:22 pm</a>		</div>
 
 		<p>i&#8217;m interested in getting to know other OH personages. i hang out with </p>
@@ -1018,7 +1018,7 @@ body.wordpress #sidebar > .module-body li li {
 <p><a href="http://www.noisebridge.net" rel="nofollow">http://www.noisebridge.net</a><br />
 (i&#8217;m generally at noisebridge on tuesdays and fridays from 3 PM to 6 PM as well as on wednesdays from 6 PM to 8 PM)</p>
 
-		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.openhatch.org/2010/san-francisco-bay-are/?replytocom=51#respond' onclick='return addComment.moveForm( "div-comment-51", "51", "respond", "514" )' aria-label='Reply to jim'>Reply</a></div>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog-snapshot-beta.openhatch.org/2010/san-francisco-bay-are/?replytocom=51#respond' onclick='return addComment.moveForm( "div-comment-51", "51", "respond", "514" )' aria-label='Reply to jim'>Reply</a></div>
 				</div>
 		</li><!-- #comment-## -->
 		<li class="comment byuser comment-author-asheesh even thread-even depth-1" id="comment-52">
@@ -1026,14 +1026,14 @@ body.wordpress #sidebar > .module-body li li {
 				<div class="comment-author vcard">
 			<img alt='' src='http://0.gravatar.com/avatar/311e2e25841265550f884d3996a4e23b?s=32&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/311e2e25841265550f884d3996a4e23b?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn"><a href='http://asheesh.org' rel='external nofollow' class='url'>Asheesh</a></cite> <span class="says">says:</span>		</div>
 		
-		<div class="comment-meta commentmetadata"><a href="http://blog.openhatch.org/2010/san-francisco-bay-are/#comment-52">
+		<div class="comment-meta commentmetadata"><a href="http://blog-snapshot-beta.openhatch.org/2010/san-francisco-bay-are/#comment-52">
 			May 3, 2010 at 5:30 pm</a>		</div>
 
 		<p>Hey Matt and Jim,</p>
 <p>I&#8217;m still here in San Francisco! I&#8217;m here until Wednesday night. I&#8217;m giving a Brown Bag Lunch at Mozilla on Tuesday.</p>
 <p>Want to meet up? Drop me a line!</p>
 
-		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.openhatch.org/2010/san-francisco-bay-are/?replytocom=52#respond' onclick='return addComment.moveForm( "div-comment-52", "52", "respond", "514" )' aria-label='Reply to Asheesh'>Reply</a></div>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog-snapshot-beta.openhatch.org/2010/san-francisco-bay-are/?replytocom=52#respond' onclick='return addComment.moveForm( "div-comment-52", "52", "respond", "514" )' aria-label='Reply to Asheesh'>Reply</a></div>
 				</div>
 		</li><!-- #comment-## -->
         </ol>
@@ -1058,7 +1058,7 @@ body.wordpress #sidebar > .module-body li li {
 
 <div class="module-body">
 
-<form action="http://blog.openhatch.org/wp-comments-post.php" method="post" id="commentform">
+<form action="http://blog-snapshot-beta.openhatch.org/wp-comments-post.php" method="post" id="commentform">
 
 
 <p><input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required='true' />

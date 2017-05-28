@@ -5,12 +5,12 @@
 
 <!-- blog metadata etc. -->
 
-<link rel="alternate" type="application/rss+xml" title="The OpenHatch blog RSS Feed" href="http://blog.openhatch.org/feed/" />
-<link rel="alternate" type="application/atom+xml" title="The OpenHatch blog Atom Feed" href="http://blog.openhatch.org/feed/atom/" />
-<link rel="pingback" href="http://blog.openhatch.org/xmlrpc.php" />
+<link rel="alternate" type="application/rss+xml" title="The OpenHatch blog RSS Feed" href="http://blog-snapshot-beta.openhatch.org/feed/" />
+<link rel="alternate" type="application/atom+xml" title="The OpenHatch blog Atom Feed" href="http://blog-snapshot-beta.openhatch.org/feed/atom/" />
+<link rel="pingback" href="http://blog-snapshot-beta.openhatch.org/xmlrpc.php" />
 
 <!-- Facebook OpenGraph image, if applicable -->
-<meta property="og:image" content="http://blog.openhatch.org/wp-content/uploads/2015/06/ccsf-sept-2014-2-150x150.jpg" />
+<meta property="og:image" content="http://blog-snapshot-beta.openhatch.org/wp-content/uploads/2015/06/ccsf-sept-2014-2-150x150.jpg" />
 <!-- add some JavaScript, depending on if it's needed -->
 
 
@@ -18,7 +18,7 @@
      More info: http://codex.wordpress.org/Function_Reference/wp_head
 -->
 <link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="The OpenHatch blog &raquo; Tips, facts, thoughts after 3 successful semesters of OSCTC Comments Feed" href="http://blog.openhatch.org/2015/tips-facts-thoughts-after-3-successful-semesters-of-osctc/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The OpenHatch blog &raquo; Tips, facts, thoughts after 3 successful semesters of OSCTC Comments Feed" href="http://blog-snapshot-beta.openhatch.org/2015/tips-facts-thoughts-after-3-successful-semesters-of-osctc/feed/" />
 		<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/blog.openhatch.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.5"}};
 			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -37,15 +37,15 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
-<link rel='https://api.w.org/' href='http://blog.openhatch.org/wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.openhatch.org/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.openhatch.org/wp-includes/wlwmanifest.xml" /> 
-<link rel='prev' title='Finding the next OpenHatch board member' href='http://blog.openhatch.org/2015/finding-the-next-openhatch-board-member/' />
-<link rel='next' title='Celebrating our successes and winding down as an organization' href='http://blog.openhatch.org/2017/celebrating-our-successes-and-winding-down-as-an-organization/' />
-<link rel="canonical" href="http://blog.openhatch.org/2015/tips-facts-thoughts-after-3-successful-semesters-of-osctc/" />
-<link rel='shortlink' href='http://blog.openhatch.org/?p=2755' />
-<link rel="alternate" type="application/json+oembed" href="http://blog.openhatch.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.openhatch.org%2F2015%2Ftips-facts-thoughts-after-3-successful-semesters-of-osctc%2F" />
-<link rel="alternate" type="text/xml+oembed" href="http://blog.openhatch.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.openhatch.org%2F2015%2Ftips-facts-thoughts-after-3-successful-semesters-of-osctc%2F&#038;format=xml" />
+<link rel='https://api.w.org/' href='http://blog-snapshot-beta.openhatch.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog-snapshot-beta.openhatch.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog-snapshot-beta.openhatch.org/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Finding the next OpenHatch board member' href='http://blog-snapshot-beta.openhatch.org/2015/finding-the-next-openhatch-board-member/' />
+<link rel='next' title='Celebrating our successes and winding down as an organization' href='http://blog-snapshot-beta.openhatch.org/2017/celebrating-our-successes-and-winding-down-as-an-organization/' />
+<link rel="canonical" href="http://blog-snapshot-beta.openhatch.org/2015/tips-facts-thoughts-after-3-successful-semesters-of-osctc/" />
+<link rel='shortlink' href='http://blog-snapshot-beta.openhatch.org/?p=2755' />
+<link rel="alternate" type="application/json+oembed" href="http://blog-snapshot-beta.openhatch.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.openhatch.org%2F2015%2Ftips-facts-thoughts-after-3-successful-semesters-of-osctc%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://blog-snapshot-beta.openhatch.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.openhatch.org%2F2015%2Ftips-facts-thoughts-after-3-successful-semesters-of-osctc%2F&#038;format=xml" />
 		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
 				<style type="text/css" id="wp-custom-css">
 			/*
@@ -768,7 +768,7 @@ body.wordpress #sidebar > .module-body li li {
         </title>
 
         <link rel="shortcut icon" href="/favicon.ico" />
-	<link rel="canonical" href="http://blog.openhatch.org/2015/tips-facts-thoughts-after-3-successful-semesters-of-osctc/" />
+	<link rel="canonical" href="http://blog-snapshot-beta.openhatch.org/2015/tips-facts-thoughts-after-3-successful-semesters-of-osctc/" />
 
         <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
         <meta http-equiv='Content-Language' content='en-us' />
@@ -908,26 +908,26 @@ body.wordpress #sidebar > .module-body li li {
 		<li id="recent-posts-2" class="widget widget_recent_entries">		<h2 class="widgettitle">Recent Posts</h2>
 		<ul>
 					<li>
-				<a href="http://blog.openhatch.org/2017/celebrating-our-successes-and-winding-down-as-an-organization/">Celebrating our successes and winding down as an organization</a>
+				<a href="http://blog-snapshot-beta.openhatch.org/2017/celebrating-our-successes-and-winding-down-as-an-organization/">Celebrating our successes and winding down as an organization</a>
 						</li>
 					<li>
-				<a href="http://blog.openhatch.org/2015/tips-facts-thoughts-after-3-successful-semesters-of-osctc/">Tips, facts, thoughts after 3 successful semesters of OSCTC</a>
+				<a href="http://blog-snapshot-beta.openhatch.org/2015/tips-facts-thoughts-after-3-successful-semesters-of-osctc/">Tips, facts, thoughts after 3 successful semesters of OSCTC</a>
 						</li>
 					<li>
-				<a href="http://blog.openhatch.org/2015/finding-the-next-openhatch-board-member/">Finding the next OpenHatch board member</a>
+				<a href="http://blog-snapshot-beta.openhatch.org/2015/finding-the-next-openhatch-board-member/">Finding the next OpenHatch board member</a>
 						</li>
 					<li>
-				<a href="http://blog.openhatch.org/2015/moving-on/">Moving On</a>
+				<a href="http://blog-snapshot-beta.openhatch.org/2015/moving-on/">Moving On</a>
 						</li>
 					<li>
-				<a href="http://blog.openhatch.org/2015/preparing-for-the-pycon-sprints/">Preparing for the PyCon Sprints</a>
+				<a href="http://blog-snapshot-beta.openhatch.org/2015/preparing-for-the-pycon-sprints/">Preparing for the PyCon Sprints</a>
 						</li>
 				</ul>
 		</li>
 		<li id="recent-comments-2" class="widget widget_recent_comments"><h2 class="widgettitle">Recent Comments</h2>
-<ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Carol Willing</span> on <a href="http://blog.openhatch.org/2015/moving-on/#comment-14652">Moving On</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://gondwanaland.com/mlog/2014/12/31/happy-utc-new-year/' rel='external nofollow' class='url'>Happy UTC+0 New Year &#8211; Mike Linksvayer</a></span> on <a href="http://blog.openhatch.org/2014/newsletter-november-december-2014/#comment-10523">Thanks for believing in OpenHatch &#8212; here&#8217;s our end of year newsletter</a></li></ul></li>
+<ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Carol Willing</span> on <a href="http://blog-snapshot-beta.openhatch.org/2015/moving-on/#comment-14652">Moving On</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://gondwanaland.com/mlog/2014/12/31/happy-utc-new-year/' rel='external nofollow' class='url'>Happy UTC+0 New Year &#8211; Mike Linksvayer</a></span> on <a href="http://blog-snapshot-beta.openhatch.org/2014/newsletter-november-december-2014/#comment-10523">Thanks for believing in OpenHatch &#8212; here&#8217;s our end of year newsletter</a></li></ul></li>
 <li id="search-2" class="widget widget_search"><h2 class="widgettitle">Search</h2>
-<form role="search" method="get" id="searchform" class="searchform" action="http://blog.openhatch.org/">
+<form role="search" method="get" id="searchform" class="searchform" action="http://blog-snapshot-beta.openhatch.org/">
 				<div>
 					<label class="screen-reader-text" for="s">Search for:</label>
 					<input type="text" value="" name="s" id="s" />
@@ -942,8 +942,8 @@ body.wordpress #sidebar > .module-body li li {
   <div class="module-body">
     The OpenHatch blog is graciously powered by
     <a href="http://wordpress.org/">WordPress</a>.
-    <br /><a href="http://blog.openhatch.org/feed/">Entries (RSS)</a>
-    and <a href="http://blog.openhatch.org/comments/feed/">Comments (RSS)</a>.
+    <br /><a href="http://blog-snapshot-beta.openhatch.org/feed/">Entries (RSS)</a>
+    and <a href="http://blog-snapshot-beta.openhatch.org/comments/feed/">Comments (RSS)</a>.
     <!-- 29 queries. 0.124 seconds. -->
   </div>
 </div>
@@ -954,7 +954,7 @@ body.wordpress #sidebar > .module-body li li {
      <div class="module" id="post-2755">
 <div class="module-head">
   <h2>
-    <a style='color: #333;' href="http://blog.openhatch.org/2015/tips-facts-thoughts-after-3-successful-semesters-of-osctc/" rel="bookmark"
+    <a style='color: #333;' href="http://blog-snapshot-beta.openhatch.org/2015/tips-facts-thoughts-after-3-successful-semesters-of-osctc/" rel="bookmark"
     title="Permanent Link to Tips, facts, thoughts after 3 successful semesters of OSCTC">Tips, facts, thoughts after 3 successful semesters of OSCTC</a>
   </h2>
 
@@ -966,7 +966,7 @@ body.wordpress #sidebar > .module-body li li {
 </div>
 
 <div class="module-body">
-  <p>Hey! I was a student at City College of San Francisco and made <a href="http://blog.openhatch.org/2015/thank-you-from-city-college-of-san-francisco/" target="_blank">a post a few months ago thanking Open Hatch</a> for their effort in enabling us put on our third epic Open Source Comes to Campus event. </p>
+  <p>Hey! I was a student at City College of San Francisco and made <a href="http://blog-snapshot-beta.openhatch.org/2015/thank-you-from-city-college-of-san-francisco/" target="_blank">a post a few months ago thanking Open Hatch</a> for their effort in enabling us put on our third epic Open Source Comes to Campus event. </p>
 <p>With college being in recess for summer, I finally got to finish a summation on various experiences, thoughts and facts that I and my co-organizers had. I hope what&#8217;s below the cut will help future student organizers be prepared and current Open Hatch contributors become aware of what some student organizers are experiencing in the field.<br />
 <span id="more-2755"></span></p>
 <h1 id="before-we-head-off-a-short-history">Before we head off, a short history.</h1>
@@ -985,7 +985,7 @@ body.wordpress #sidebar > .module-body li li {
 <h2 id="know-yourself">Know yourself.</h2>
 <p>I could not possibly imagine spending as much time as I did on organizing an event that was nothing more than a mark on someone else&#8217;s check list. I wanted to materialize something that represented values that I would like to see more of in the world. </p>
 <p>For myself, I would not say I have always had some fervent love for open source software. I was and still am a novice to the open source world, but I had enough of a taste of it in my meanderings through the Internet and friends that I wanted to explore my interest further. I think that was an excellent indicator for me to know I had found the right event to put my time into: an unexplored interest that I was eager to learn more about.</p>
-<div id="attachment_2759" style="width: 310px" class="wp-caption left"><a href="http://blog.openhatch.org/wp-content/uploads/2015/06/ccsf-2013.jpg"><img src="http://blog.openhatch.org/wp-content/uploads/2015/06/ccsf-2013-300x225.jpg" alt="CCSF&#039;s first OSCTC event!" width="300" height="225" class="size-medium wp-image-2759" srcset="http://blog.openhatch.org/wp-content/uploads/2015/06/ccsf-2013-300x225.jpg 300w, http://blog.openhatch.org/wp-content/uploads/2015/06/ccsf-2013.jpg 1024w, http://blog.openhatch.org/wp-content/uploads/2015/06/ccsf-2013-576x432.jpg 576w" sizes="(max-width: 300px) 100vw, 300px" /></a><p class="wp-caption-text">CCSF&#8217;s first OSCTC event!</p></div>
+<div id="attachment_2759" style="width: 310px" class="wp-caption left"><a href="http://blog-snapshot-beta.openhatch.org/wp-content/uploads/2015/06/ccsf-2013.jpg"><img src="http://blog-snapshot-beta.openhatch.org/wp-content/uploads/2015/06/ccsf-2013-300x225.jpg" alt="CCSF&#039;s first OSCTC event!" width="300" height="225" class="size-medium wp-image-2759" srcset="http://blog-snapshot-beta.openhatch.org/wp-content/uploads/2015/06/ccsf-2013-300x225.jpg 300w, http://blog-snapshot-beta.openhatch.org/wp-content/uploads/2015/06/ccsf-2013.jpg 1024w, http://blog-snapshot-beta.openhatch.org/wp-content/uploads/2015/06/ccsf-2013-576x432.jpg 576w" sizes="(max-width: 300px) 100vw, 300px" /></a><p class="wp-caption-text">CCSF&#8217;s first OSCTC event!</p></div>
 <h1 id="pre-event">Pre-event</h1>
 <h2 id="preventing-common-student-issues">Preventing common student issues.</h2>
 <h3 id="host-training-days-before-the-event">Host training days before the event.</h3>
@@ -1012,7 +1012,7 @@ body.wordpress #sidebar > .module-body li li {
 <p>Actionable goals to improve a campus organizer’s ability to fundraise:<br />
 &#8211; Provide nicely formatted fill-in-the-blank emails which campus organizers could use to fire around to the places they think they can fundraise most successfully.<br />
 &#8211; Add a fundraising section for organizers to discuss their success or failures in fund raising.</p>
-<div id="attachment_2760" style="width: 310px" class="wp-caption aligncenter"><a href="http://blog.openhatch.org/wp-content/uploads/2015/06/ccsf-sept-2014-4.jpg"><img src="http://blog.openhatch.org/wp-content/uploads/2015/06/ccsf-sept-2014-4-300x225.jpg" alt="CCSF&#039;s second OSCTC event, a panel of mentors speaks to the eager students." width="300" height="225" class="size-medium wp-image-2760" srcset="http://blog.openhatch.org/wp-content/uploads/2015/06/ccsf-sept-2014-4-300x225.jpg 300w, http://blog.openhatch.org/wp-content/uploads/2015/06/ccsf-sept-2014-4-1024x768.jpg 1024w, http://blog.openhatch.org/wp-content/uploads/2015/06/ccsf-sept-2014-4-576x432.jpg 576w" sizes="(max-width: 300px) 100vw, 300px" /></a><p class="wp-caption-text">CCSF&#8217;s second OSCTC event, a panel of mentors speaks to the eager students.</p></div>
+<div id="attachment_2760" style="width: 310px" class="wp-caption aligncenter"><a href="http://blog-snapshot-beta.openhatch.org/wp-content/uploads/2015/06/ccsf-sept-2014-4.jpg"><img src="http://blog-snapshot-beta.openhatch.org/wp-content/uploads/2015/06/ccsf-sept-2014-4-300x225.jpg" alt="CCSF&#039;s second OSCTC event, a panel of mentors speaks to the eager students." width="300" height="225" class="size-medium wp-image-2760" srcset="http://blog-snapshot-beta.openhatch.org/wp-content/uploads/2015/06/ccsf-sept-2014-4-300x225.jpg 300w, http://blog-snapshot-beta.openhatch.org/wp-content/uploads/2015/06/ccsf-sept-2014-4-1024x768.jpg 1024w, http://blog-snapshot-beta.openhatch.org/wp-content/uploads/2015/06/ccsf-sept-2014-4-576x432.jpg 576w" sizes="(max-width: 300px) 100vw, 300px" /></a><p class="wp-caption-text">CCSF&#8217;s second OSCTC event, a panel of mentors speaks to the eager students.</p></div>
 <h2 id="finding-students">Finding students</h2>
 <p>We have been able to gather ~70 students almost every semester by<br />
 1.  sending emails to faculty asking them to make in class announcements<br />
@@ -1038,7 +1038,7 @@ body.wordpress #sidebar > .module-body li li {
 <p>OpenHatch is attempting to curate open source projects that are prepared to welcome newbies. These efforts are <a href="https://openhatch.org/wiki/OpenHatch_affiliated_projects">currently in the works</a>, with a few &#8220;recommended&#8221; projects that are particularly welcoming to a newbie. If a mentor has no project to on-board students to, they may find interest in helping students contribute to the projects on this list. Wikipedia is also really easy to begin contributing to and non-technical, making it easy for mentors and students alike to dive right in.</p>
 <p>However, mentors who already have some on-boarding process setup for novice contributors tend to find that no contributions are made at the end of the day. This is to be expected when most of the students are near total beginners. <strong>The real goal for a mentor interested in on-boarding students onto their project is to get students to stay interested in their project even after the event has ended</strong>. Reassuring students that the mentor is there to find them a part of the project that is interesting to the student, swapping emails and building excitement for why the project is so cool is an excellent way to retain potential contributors, and hopefully have them become self-sustaining members of the open source community.<br />
 </p>
-<div id="attachment_2759" style="width: 310px" class="wp-caption aligncenter"><a href="http://blog.openhatch.org/wp-content/uploads/2015/06/ccsf-2013.jpg"><img src="http://blog.openhatch.org/wp-content/uploads/2015/06/ccsf-2013-300x225.jpg" alt="CCSF&#039;s second OSCTC event!" width="300" height="225" class="size-medium wp-image-2759" srcset="http://blog.openhatch.org/wp-content/uploads/2015/06/ccsf-2013-300x225.jpg 300w, http://blog.openhatch.org/wp-content/uploads/2015/06/ccsf-2013.jpg 1024w, http://blog.openhatch.org/wp-content/uploads/2015/06/ccsf-2013-576x432.jpg 576w" sizes="(max-width: 300px) 100vw, 300px" /></a><p class="wp-caption-text">CCSF&#8217;s second OSCTC event!</p></div>
+<div id="attachment_2759" style="width: 310px" class="wp-caption aligncenter"><a href="http://blog-snapshot-beta.openhatch.org/wp-content/uploads/2015/06/ccsf-2013.jpg"><img src="http://blog-snapshot-beta.openhatch.org/wp-content/uploads/2015/06/ccsf-2013-300x225.jpg" alt="CCSF&#039;s second OSCTC event!" width="300" height="225" class="size-medium wp-image-2759" srcset="http://blog-snapshot-beta.openhatch.org/wp-content/uploads/2015/06/ccsf-2013-300x225.jpg 300w, http://blog-snapshot-beta.openhatch.org/wp-content/uploads/2015/06/ccsf-2013.jpg 1024w, http://blog-snapshot-beta.openhatch.org/wp-content/uploads/2015/06/ccsf-2013-576x432.jpg 576w" sizes="(max-width: 300px) 100vw, 300px" /></a><p class="wp-caption-text">CCSF&#8217;s second OSCTC event!</p></div>
 <h1 id="the-big-day-thoughts">The Big Day: Thoughts</h1>
 <h2 id="student-experiences">Student Experiences</h2>
 <p>I have attempted to gather some first hand accounts of students’ experiences. So far, I have two people who have responded to my queries:</p>
@@ -1057,7 +1057,7 @@ The mentor was kind enough to let me meet her for lunch and see what she does as
 <p id="thebeginning">The beginning of the day</p>
 </h2>
 <p>In the beginning of the day, students seemed a bit shy. I feel somewhat responsible for that as I imagined these students walking into a large room full of strangers without much guidance as to the day’s events. <strong>Planning for someone to be a door greeter, projecting the schedule on the wall (which Asheesh thought of, thanks!), and maybe playing some music may help ease students into the unfamiliar space</strong>. By the end of the day, none of this was a problem as it appeared that everyone was very engaged and talkative.</p>
-<p>I can&#8217;t help but mention that members of the Coders’ Club were so stoked on the event that we got together and made a thank you email for the mentors and Open Hatch. You can find that email as a blog post on OpenHatch&#8217;s blog, <a href="http://blog.openhatch.org/2015/thank-you-from-city-college-of-san-francisco/">here</a>.</p>
+<p>I can&#8217;t help but mention that members of the Coders’ Club were so stoked on the event that we got together and made a thank you email for the mentors and Open Hatch. You can find that email as a blog post on OpenHatch&#8217;s blog, <a href="http://blog-snapshot-beta.openhatch.org/2015/thank-you-from-city-college-of-san-francisco/">here</a>.</p>
 <h2 id="studentmentor-ratio">Student:Mentor ratio</h2>
 <p>From the sidelines, it seemed that some students can quickly get lost if there are not enough mentors to guide everyone through the activities. With our pairing of ~8 mentors for ~70 students, it seemed we could have used maybe twice the amount of mentors we had. <strong>I think it would be beneficial to have a list of &#8216;expert&#8217; students planned out in advance who could act as junior mentors to field some of the easier trouble shooting problems that inevitably arise as people begin the activities.</strong></p>
 <h2 id="favorite-sections">Favorite sections</h2>
@@ -1071,7 +1071,7 @@ The mentor was kind enough to let me meet her for lunch and see what she does as
 </div>
 
 <div class="module-foot">
-  <p class="postmetadata"> <!-- Posted in <a href="http://blog.openhatch.org/category/uncategorized/" rel="category tag">Uncategorized</a> | -->   <a href="http://blog.openhatch.org/2015/tips-facts-thoughts-after-3-successful-semesters-of-osctc/#respond"></a></p>
+  <p class="postmetadata"> <!-- Posted in <a href="http://blog-snapshot-beta.openhatch.org/category/uncategorized/" rel="category tag">Uncategorized</a> | -->   <a href="http://blog-snapshot-beta.openhatch.org/2015/tips-facts-thoughts-after-3-successful-semesters-of-osctc/#respond"></a></p>
 </div>
 </div>
 
@@ -1098,7 +1098,7 @@ The mentor was kind enough to let me meet her for lunch and see what she does as
 
 <div class="module-body">
 
-<form action="http://blog.openhatch.org/wp-comments-post.php" method="post" id="commentform">
+<form action="http://blog-snapshot-beta.openhatch.org/wp-comments-post.php" method="post" id="commentform">
 
 
 <p><input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required='true' />

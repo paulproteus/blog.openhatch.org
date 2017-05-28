@@ -5,9 +5,9 @@
 
 <!-- blog metadata etc. -->
 
-<link rel="alternate" type="application/rss+xml" title="The OpenHatch blog RSS Feed" href="http://blog.openhatch.org/feed/" />
-<link rel="alternate" type="application/atom+xml" title="The OpenHatch blog Atom Feed" href="http://blog.openhatch.org/feed/atom/" />
-<link rel="pingback" href="http://blog.openhatch.org/xmlrpc.php" />
+<link rel="alternate" type="application/rss+xml" title="The OpenHatch blog RSS Feed" href="http://blog-snapshot-beta.openhatch.org/feed/" />
+<link rel="alternate" type="application/atom+xml" title="The OpenHatch blog Atom Feed" href="http://blog-snapshot-beta.openhatch.org/feed/atom/" />
+<link rel="pingback" href="http://blog-snapshot-beta.openhatch.org/xmlrpc.php" />
 
 <!-- Facebook OpenGraph image, if applicable -->
 <meta property="og:image" content="" />
@@ -18,7 +18,7 @@
      More info: http://codex.wordpress.org/Function_Reference/wp_head
 -->
 <link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="The OpenHatch blog &raquo; Intermediate Python Workshop wrap-up Comments Feed" href="http://blog.openhatch.org/2012/intermediate-python-workshop-wrap-up/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The OpenHatch blog &raquo; Intermediate Python Workshop wrap-up Comments Feed" href="http://blog-snapshot-beta.openhatch.org/2012/intermediate-python-workshop-wrap-up/feed/" />
 		<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/blog.openhatch.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.5"}};
 			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -37,16 +37,16 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
-<link rel='https://api.w.org/' href='http://blog.openhatch.org/wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.openhatch.org/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.openhatch.org/wp-includes/wlwmanifest.xml" /> 
-<link rel='prev' title='Fall 2012 Open Source Comes to Campus is ramping up' href='http://blog.openhatch.org/2012/fall-open-source-comes-to-campus-is-ramping-up/' />
-<link rel='next' title='OpenHatch meets first fundraising goal!' href='http://blog.openhatch.org/2012/unlock-fundraising/' />
-<link rel="canonical" href="http://blog.openhatch.org/2012/intermediate-python-workshop-wrap-up/" />
-<link rel='shortlink' href='http://blog.openhatch.org/?p=1274' />
+<link rel='https://api.w.org/' href='http://blog-snapshot-beta.openhatch.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog-snapshot-beta.openhatch.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog-snapshot-beta.openhatch.org/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Fall 2012 Open Source Comes to Campus is ramping up' href='http://blog-snapshot-beta.openhatch.org/2012/fall-open-source-comes-to-campus-is-ramping-up/' />
+<link rel='next' title='OpenHatch meets first fundraising goal!' href='http://blog-snapshot-beta.openhatch.org/2012/unlock-fundraising/' />
+<link rel="canonical" href="http://blog-snapshot-beta.openhatch.org/2012/intermediate-python-workshop-wrap-up/" />
+<link rel='shortlink' href='http://blog-snapshot-beta.openhatch.org/?p=1274' />
 <meta name='robots' content='noindex,follow' />
-<link rel="alternate" type="application/json+oembed" href="http://blog.openhatch.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.openhatch.org%2F2012%2Fintermediate-python-workshop-wrap-up%2F" />
-<link rel="alternate" type="text/xml+oembed" href="http://blog.openhatch.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.openhatch.org%2F2012%2Fintermediate-python-workshop-wrap-up%2F&#038;format=xml" />
+<link rel="alternate" type="application/json+oembed" href="http://blog-snapshot-beta.openhatch.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.openhatch.org%2F2012%2Fintermediate-python-workshop-wrap-up%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://blog-snapshot-beta.openhatch.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.openhatch.org%2F2012%2Fintermediate-python-workshop-wrap-up%2F&#038;format=xml" />
 		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
 				<style type="text/css" id="wp-custom-css">
 			/*
@@ -769,7 +769,7 @@ body.wordpress #sidebar > .module-body li li {
         </title>
 
         <link rel="shortcut icon" href="/favicon.ico" />
-	<link rel="canonical" href="http://blog.openhatch.org/2012/intermediate-python-workshop-wrap-up/" />
+	<link rel="canonical" href="http://blog-snapshot-beta.openhatch.org/2012/intermediate-python-workshop-wrap-up/" />
 
         <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
         <meta http-equiv='Content-Language' content='en-us' />
@@ -909,26 +909,26 @@ body.wordpress #sidebar > .module-body li li {
 		<li id="recent-posts-2" class="widget widget_recent_entries">		<h2 class="widgettitle">Recent Posts</h2>
 		<ul>
 					<li>
-				<a href="http://blog.openhatch.org/2017/celebrating-our-successes-and-winding-down-as-an-organization/">Celebrating our successes and winding down as an organization</a>
+				<a href="http://blog-snapshot-beta.openhatch.org/2017/celebrating-our-successes-and-winding-down-as-an-organization/">Celebrating our successes and winding down as an organization</a>
 						</li>
 					<li>
-				<a href="http://blog.openhatch.org/2015/tips-facts-thoughts-after-3-successful-semesters-of-osctc/">Tips, facts, thoughts after 3 successful semesters of OSCTC</a>
+				<a href="http://blog-snapshot-beta.openhatch.org/2015/tips-facts-thoughts-after-3-successful-semesters-of-osctc/">Tips, facts, thoughts after 3 successful semesters of OSCTC</a>
 						</li>
 					<li>
-				<a href="http://blog.openhatch.org/2015/finding-the-next-openhatch-board-member/">Finding the next OpenHatch board member</a>
+				<a href="http://blog-snapshot-beta.openhatch.org/2015/finding-the-next-openhatch-board-member/">Finding the next OpenHatch board member</a>
 						</li>
 					<li>
-				<a href="http://blog.openhatch.org/2015/moving-on/">Moving On</a>
+				<a href="http://blog-snapshot-beta.openhatch.org/2015/moving-on/">Moving On</a>
 						</li>
 					<li>
-				<a href="http://blog.openhatch.org/2015/preparing-for-the-pycon-sprints/">Preparing for the PyCon Sprints</a>
+				<a href="http://blog-snapshot-beta.openhatch.org/2015/preparing-for-the-pycon-sprints/">Preparing for the PyCon Sprints</a>
 						</li>
 				</ul>
 		</li>
 		<li id="recent-comments-2" class="widget widget_recent_comments"><h2 class="widgettitle">Recent Comments</h2>
-<ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Carol Willing</span> on <a href="http://blog.openhatch.org/2015/moving-on/#comment-14652">Moving On</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://gondwanaland.com/mlog/2014/12/31/happy-utc-new-year/' rel='external nofollow' class='url'>Happy UTC+0 New Year &#8211; Mike Linksvayer</a></span> on <a href="http://blog.openhatch.org/2014/newsletter-november-december-2014/#comment-10523">Thanks for believing in OpenHatch &#8212; here&#8217;s our end of year newsletter</a></li></ul></li>
+<ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Carol Willing</span> on <a href="http://blog-snapshot-beta.openhatch.org/2015/moving-on/#comment-14652">Moving On</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://gondwanaland.com/mlog/2014/12/31/happy-utc-new-year/' rel='external nofollow' class='url'>Happy UTC+0 New Year &#8211; Mike Linksvayer</a></span> on <a href="http://blog-snapshot-beta.openhatch.org/2014/newsletter-november-december-2014/#comment-10523">Thanks for believing in OpenHatch &#8212; here&#8217;s our end of year newsletter</a></li></ul></li>
 <li id="search-2" class="widget widget_search"><h2 class="widgettitle">Search</h2>
-<form role="search" method="get" id="searchform" class="searchform" action="http://blog.openhatch.org/">
+<form role="search" method="get" id="searchform" class="searchform" action="http://blog-snapshot-beta.openhatch.org/">
 				<div>
 					<label class="screen-reader-text" for="s">Search for:</label>
 					<input type="text" value="" name="s" id="s" />
@@ -943,8 +943,8 @@ body.wordpress #sidebar > .module-body li li {
   <div class="module-body">
     The OpenHatch blog is graciously powered by
     <a href="http://wordpress.org/">WordPress</a>.
-    <br /><a href="http://blog.openhatch.org/feed/">Entries (RSS)</a>
-    and <a href="http://blog.openhatch.org/comments/feed/">Comments (RSS)</a>.
+    <br /><a href="http://blog-snapshot-beta.openhatch.org/feed/">Entries (RSS)</a>
+    and <a href="http://blog-snapshot-beta.openhatch.org/comments/feed/">Comments (RSS)</a>.
     <!-- 27 queries. 0.121 seconds. -->
   </div>
 </div>
@@ -955,7 +955,7 @@ body.wordpress #sidebar > .module-body li li {
      <div class="module" id="post-1274">
 <div class="module-head">
   <h2>
-    <a style='color: #333;' href="http://blog.openhatch.org/2012/intermediate-python-workshop-wrap-up/" rel="bookmark"
+    <a style='color: #333;' href="http://blog-snapshot-beta.openhatch.org/2012/intermediate-python-workshop-wrap-up/" rel="bookmark"
     title="Permanent Link to Intermediate Python Workshop wrap-up">Intermediate Python Workshop wrap-up</a>
   </h2>
 
@@ -1109,7 +1109,7 @@ You guys are awesome and make learning Python much less intimidating.
 </div>
 
 <div class="module-foot">
-  <p class="postmetadata"> <!-- Posted in <a href="http://blog.openhatch.org/category/uncategorized/" rel="category tag">Uncategorized</a> | -->   <a href="http://blog.openhatch.org/2012/intermediate-python-workshop-wrap-up/#comments">2 Comments &#187;</a></p>
+  <p class="postmetadata"> <!-- Posted in <a href="http://blog-snapshot-beta.openhatch.org/category/uncategorized/" rel="category tag">Uncategorized</a> | -->   <a href="http://blog-snapshot-beta.openhatch.org/2012/intermediate-python-workshop-wrap-up/#comments">2 Comments &#187;</a></p>
 </div>
 </div>
 
@@ -1130,7 +1130,7 @@ You guys are awesome and make learning Python much less intimidating.
 				<div class="comment-author vcard">
 			<img alt='' src='http://2.gravatar.com/avatar/5f727f5ea4e8a2f9b2fa160b924b67c2?s=32&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/5f727f5ea4e8a2f9b2fa160b924b67c2?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn"><a href='http://pythoncentral.org/' rel='external nofollow' class='url'>Amanda Simmons</a></cite> <span class="says">says:</span>		</div>
 		
-		<div class="comment-meta commentmetadata"><a href="http://blog.openhatch.org/2012/intermediate-python-workshop-wrap-up/#comment-120">
+		<div class="comment-meta commentmetadata"><a href="http://blog-snapshot-beta.openhatch.org/2012/intermediate-python-workshop-wrap-up/#comment-120">
 			August 19, 2012 at 6:44 am</a>		</div>
 
 		<p>Wow!<br />
@@ -1139,7 +1139,7 @@ I could feel the enthusiasm through your words and pics. It is commendable to se
 <p>Good luck!!<br />
 Amanda</p>
 
-		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.openhatch.org/2012/intermediate-python-workshop-wrap-up/?replytocom=120#respond' onclick='return addComment.moveForm( "div-comment-120", "120", "respond", "1274" )' aria-label='Reply to Amanda Simmons'>Reply</a></div>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog-snapshot-beta.openhatch.org/2012/intermediate-python-workshop-wrap-up/?replytocom=120#respond' onclick='return addComment.moveForm( "div-comment-120", "120", "respond", "1274" )' aria-label='Reply to Amanda Simmons'>Reply</a></div>
 				</div>
 		</li><!-- #comment-## -->
 		<li class="pingback odd alt thread-odd thread-alt depth-1" id="comment-1635">
@@ -1147,12 +1147,12 @@ Amanda</p>
 				<div class="comment-author vcard">
 						<cite class="fn"><a href='http://blog.newrelic.com/2014/08/28/python-next-generation-futuretalk-jessica-mckellar-video/' rel='external nofollow' class='url'>FutureTalk: Jessica McKellar on the Future of Python</a></cite> <span class="says">says:</span>		</div>
 		
-		<div class="comment-meta commentmetadata"><a href="http://blog.openhatch.org/2012/intermediate-python-workshop-wrap-up/#comment-1635">
+		<div class="comment-meta commentmetadata"><a href="http://blog-snapshot-beta.openhatch.org/2012/intermediate-python-workshop-wrap-up/#comment-1635">
 			August 28, 2014 at 10:04 am</a>		</div>
 
 		<p>[&#8230;] of running diversity and outreach initiatives within the Python community. From organizing numerous Boston Python Workshops to mentoring at GNOME Outreach for Women, Jessica is an advocate for creating inclusive open source [&#8230;]</p>
 
-		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.openhatch.org/2012/intermediate-python-workshop-wrap-up/?replytocom=1635#respond' onclick='return addComment.moveForm( "div-comment-1635", "1635", "respond", "1274" )' aria-label='Reply to FutureTalk: Jessica McKellar on the Future of Python'>Reply</a></div>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog-snapshot-beta.openhatch.org/2012/intermediate-python-workshop-wrap-up/?replytocom=1635#respond' onclick='return addComment.moveForm( "div-comment-1635", "1635", "respond", "1274" )' aria-label='Reply to FutureTalk: Jessica McKellar on the Future of Python'>Reply</a></div>
 				</div>
 		</li><!-- #comment-## -->
         </ol>
@@ -1177,7 +1177,7 @@ Amanda</p>
 
 <div class="module-body">
 
-<form action="http://blog.openhatch.org/wp-comments-post.php" method="post" id="commentform">
+<form action="http://blog-snapshot-beta.openhatch.org/wp-comments-post.php" method="post" id="commentform">
 
 
 <p><input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required='true' />
