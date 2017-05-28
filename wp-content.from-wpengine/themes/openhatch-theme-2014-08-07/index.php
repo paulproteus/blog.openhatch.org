@@ -74,7 +74,7 @@
                 font-size: 80%; }
             body#profile #importer { 
                 background-image:
-                url(//openhatch.org/static/images/ship.png) }
+                url(/downloaded-for-static-snapshot/ship.png) }
             body#profile #progressbar.working .ui-progressbar-value { 
                 background-image:
                 url(//openhatch.org/static/css/jquery-ui-lightness/images/pbar-ani.gif); }
