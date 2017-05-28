@@ -816,7 +816,7 @@ body.wordpress #sidebar > .module-body li li {
                 url(/downloaded-for-static-snapshot/wannahelp-button-bg.png); }
             body#project #wannahelp-button:active { 
                 background-image:
-                url(//openhatch.org/static/images/wannahelp-button-bg-active.png); }
+                url(/downloaded-for-static-snapshot/wannahelp-button-bg-active.png); }
             body#project #wannahelp-button:hover,
             body#project #wannahelp-button:focus { 
                 background-image:
