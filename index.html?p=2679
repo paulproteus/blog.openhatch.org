@@ -1,0 +1,1146 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+    <head>
+       <link rel="stylesheet" type="text/css" href="//openhatch.org/static/css/blog-style.css" />
+
+<!-- blog metadata etc. -->
+
+<link rel="alternate" type="application/rss+xml" title="The OpenHatch blog RSS Feed" href="http://blog.openhatch.org/feed/" />
+<link rel="alternate" type="application/atom+xml" title="The OpenHatch blog Atom Feed" href="http://blog.openhatch.org/feed/atom/" />
+<link rel="pingback" href="http://blog.openhatch.org/xmlrpc.php" />
+
+<!-- Facebook OpenGraph image, if applicable -->
+<meta property="og:image" content="" />
+<!-- add some JavaScript, depending on if it's needed -->
+
+
+<!-- Call the WordPress wp_head() function, which permits plugins etc. to load more things.
+     More info: http://codex.wordpress.org/Function_Reference/wp_head
+-->
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="The OpenHatch blog &raquo; OpenHatch newsletter, July 2014 Comments Feed" href="http://blog.openhatch.org/2014/newsletter-july-2014/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/blog.openhatch.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.5"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='https://api.w.org/' href='http://blog.openhatch.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.openhatch.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.openhatch.org/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='OpenHatch newsletter, June 2014' href='http://blog.openhatch.org/2014/newsletter-june-2014/' />
+<link rel='next' title='Welcome newcomers at Software Freedom Day' href='http://blog.openhatch.org/2014/welcome-newcomers-at-software-freedom-day/' />
+<link rel="canonical" href="http://blog.openhatch.org/2014/newsletter-july-2014/" />
+<link rel='shortlink' href='http://blog.openhatch.org/?p=2679' />
+<link rel="alternate" type="application/json+oembed" href="http://blog.openhatch.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.openhatch.org%2F2014%2Fnewsletter-july-2014%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://blog.openhatch.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.openhatch.org%2F2014%2Fnewsletter-july-2014%2F&#038;format=xml" />
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+				<style type="text/css" id="wp-custom-css">
+			/*
+You can add your own CSS here.
+
+Click the help icon above to learn more.
+*/
+
+/* fonts */
+@font-face {
+  font-family: Tuffy;
+  /* src: url('https://openhatch.org/static/fonts/tuffy_regular.ttf'); */
+  src: url('https://cdn.rawgit.com/google/fonts/c2b5d740/ofl/tuffy/Tuffy-Regular.ttf');
+}
+@font-face {
+  font-family: Tuffy;
+  font-weight: bold;
+  src: url('https://cdn.rawgit.com/google/fonts/c2b5d740/ofl/tuffy/Tuffy-Bold.ttf');
+}
+@font-face {
+  font-family: Tuffy;
+  font-style: italic;
+  src: url('https://cdn.rawgit.com/google/fonts/c2b5d740/ofl/tuffy/Tuffy-Italic.ttf');
+}
+@font-face {
+  font-family: Tuffy;
+  font-weight: bold;
+  font-style: italic;
+  src: url('https://cdn.rawgit.com/google/fonts/c2b5d740/ofl/tuffy/Tuffy-Bold-Italic.ttf');
+}
+/* coloration */
+.nav-bg {
+  background: #333 url('https://openhatch.org/static/images/dark-hatch.png') repeat;
+  box-shadow: 0 0 7px #333;
+  -moz-box-shadow: 0 0 7px #333;
+  -webkit-box-shadow: 0 0 7px #333;
+}
+/* size, width and padding stuff */
+/* CSSTODO -- do we use these actually?*/
+.enormous {
+  font-size: 3em;
+}
+.fairly-big {
+  font-size: 1.7em;
+}
+.enormous > div {
+  margin-bottom: 1em;
+}
+.normal-size {
+  font-size: 11pt;
+}
+/* other useful mixins */
+.screw-you-webkit {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+.centered {
+  margin: 0 auto;
+}
+/* styles */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  font: 11pt Tuffy, Helvetica, sans-serif;
+  background: #f8f8f8 url('https://openhatch.org/static/images/light-hatch.png') repeat;
+  color: #222;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 290px;
+}
+code {
+  overflow-x: auto;
+  display: inline-block;
+  width: 100%;
+  white-space: nowrap;
+}
+.link_like,
+a,
+body .ui-widget-content a {
+  color: #FF6D3D;
+  text-decoration: none;
+  cursor: pointer;
+  cursor: hand;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .clearfix {
+  zoom: 1;
+}
+/* IE6 */
+*:first-child + html .clearfix {
+  zoom: 1;
+}
+/* IE7 */
+/* deprecated; to remove in favor of .clearfix */
+.clearer {
+  width: 100%;
+  clear: both;
+  float: none;
+}
+/* for Firefox */
+input[type="submit"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: 0px;
+}
+/* for IE8 */
+input[type="submit"]:focus,
+input[type="button"]:focus {
+  outline: none;
+}
+.alt-text {
+  left: -9999px;
+  position: absolute;
+}
+/* ^^^ display: none would hide this from screenreaders. Let's hide this off stage left instead. */
+.hidden {
+  display: none;
+}
+a:hover,
+.ui-widget-content a:hover {
+  text-decoration: underline;
+}
+a img {
+  border-style: none;
+}
+abbr {
+  border-bottom: 1px dotted #999;
+}
+abbr.foss {
+  border: 0;
+  font-variant: small-caps;
+}
+h1 a,
+h1 a:hover {
+  text-decoration: none;
+}
+#container {
+  width: 1000px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+}
+#container::after {
+  content: ' ';
+  clear: both;
+  display: block;
+}
+.module {
+  /* width: 100%; */
+  margin-bottom: 15px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border: 3px solid rgba(100, 200, 255, 0.3);
+  background: rgba(255, 255, 255, 0.6);
+  float: left;
+}
+.module .module-head {
+  background: rgba(100, 200, 255, 0.3);
+  padding: 2px 20px;
+}
+.module .module-head ul li a {
+  float: right;
+  padding-top: 5px;
+}
+.module .module-head h3 {
+  text-shadow: 0 1px 0 #fff;
+  float: none;
+  padding: 4px 10px 7px 0;
+  font-size: 1.2em;
+}
+.module .module-body {
+  clear: both;
+  padding: 10px 20px 20px 20px;
+}
+.module .module-foot {
+  padding: 2px 20px 5px 20px;
+  text-align: right;
+}
+.module .module-foot .module-foot-left {
+  float: left;
+}
+.submodule-container {
+  float: none;
+  clear: both;
+  width: 100%;
+  margin: 0 auto;
+}
+.submodule {
+  background-color: #FFF;
+  margin: 0 10px 20px 0;
+  padding: 8px 10px;
+  border: 2px dashed #e4e4e4;
+  float: left;
+}
+.submodule .submodule-head {
+  margin-bottom: 5px;
+}
+.submodule .submodule-body {
+  clear: both;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  clear: both;
+}
+h1 {
+  font-weight: normal;
+  font-size: 23pt;
+}
+#nav-container {
+  width: 100%;
+  height: 67px;
+  background: #333 url('https://openhatch.org/static/images/dark-hatch.png') repeat;
+  box-shadow: 0 0 7px #333;
+  -moz-box-shadow: 0 0 7px #333;
+  -webkit-box-shadow: 0 0 7px #333;
+}
+#nav {
+  margin: 0 auto;
+  padding-top: 3px;
+  border-top: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 960px;
+}
+#nav h1 {
+  float: left;
+}
+#nav ul {
+  list-style: none;
+  margin: 0;
+  float: right;
+}
+#nav li {
+  float: right;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+#pagetop {
+  padding: 0;
+  clear: both;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 960px;
+}
+.up-top {
+  padding: 0;
+  margin-bottom: -15px;
+}
+ul#links {
+  margin-left: 20px;
+}
+#links li {
+  display: inline;
+  font-size: 12pt;
+  margin-top: 20px;
+}
+#account-links,
+#topnavlinks {
+  float: right;
+}
+#account-links #username,
+#topnavlinks #username {
+  font-weight: bold;
+}
+#account-links li,
+#topnavlinks li {
+  margin: 15px 0;
+}
+#account-links a,
+#topnavlinks a {
+  float: left;
+  padding: 5px 10px;
+  color: white;
+}
+#topnavlinks {
+  float: left;
+}
+#topnavlinks li {
+  font-size: 1.1em;
+}
+#content {
+  padding: 10px 0 30px 0;
+  clear: both;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 960px;
+}
+#footer-wrapper {
+  width: 100%;
+  clear: both;
+  padding-top: 40px;
+  position: absolute;
+  bottom: 0;
+}
+#footer {
+  width: 100%;
+  height: 250px;
+  padding: 10px 0px;
+  text-align: right;
+  margin: 0 auto;
+  background: #333 url('https://openhatch.org/static/images/dark-hatch.png') repeat;
+  box-shadow: 0 0 7px #333;
+  -moz-box-shadow: 0 0 7px #333;
+  -webkit-box-shadow: 0 0 7px #333;
+}
+#footer ul {
+  display: inline;
+  list-style-type: none;
+  max-width: 108em;
+  padding: 0 20px;
+}
+#footer li {
+  display: block;
+  text-align: left;
+  padding-left: 0;
+  margin-bottom: 0.3em;
+}
+#footer a {
+  color: #FFF;
+}
+#footer h3 {
+  color: #ddd;
+  font-size: 1em;
+  margin-bottom: 0.8em;
+}
+#footer .threecol {
+  width: 960px;
+  padding: 0 20px;
+  margin: 0 auto;
+  text-align: left;
+}
+#footer .column {
+  width: 210px;
+  display: inline-block;
+  margin: 0px 5px;
+  vertical-align: top;
+  text-align: left;
+  float: none;
+}
+#training-missions {
+  width: 100%;
+}
+h3 {
+  margin-bottom: 0px;
+  text-align: left;
+  clear: left;
+  font-weight: normal;
+  font-size: 1.1em;
+  color: #222;
+  letter-spacing: 0;
+  margin: 0;
+}
+h3.nofloat {
+  float: none;
+}
+img.show-more-link {
+  float: right;
+  position: relative;
+  top: 1px;
+}
+input[type='text'],
+input[type='password'],
+input[type='file'],
+textarea {
+  padding: 5px;
+  font-size: 11pt;
+  float: left;
+}
+input[type='submit'] {
+  padding: 1px 8px;
+  color: #222;
+  font-weight: bold;
+  float: left;
+}
+.alert {
+  padding: 15px 0;
+}
+.alert div {
+  background-color: #ffa;
+  color: #444;
+  padding: 8px 15px;
+  width: 700px;
+  font-size: 11pt;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+img {
+  border: 0;
+}
+img.left {
+  float: left;
+  padding: 0 10px 20px 0;
+}
+img.right {
+  float: right;
+  padding: 0 0 20px 10px;
+}
+.usernames {
+  font-size: 10pt;
+}
+#info .tag-type {
+  font-weight: normal;
+  display: block;
+  font-size: 8pt;
+}
+/* Columns in general float left, and have some margin-right to
+   create visual spacing. */
+.column {
+  float: left;
+  margin-right: 10px;
+}
+h4,
+.cute-header {
+  font-size: 9pt;
+  color: #666;
+  float: left;
+  margin: 0;
+  padding: 1px;
+}
+input[type='submit'] {
+  color: #333;
+  float: left;
+}
+#notifications {
+  text-align: center;
+  float: left;
+}
+.notification {
+  float: left;
+  width: 95%;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  padding: 10px;
+  color: #000;
+  margin-bottom: 10px;
+}
+.errorlist ul {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.errorlist li {
+  float: left;
+  padding: 5px 10px;
+  width: 410px;
+  color: #522;
+  background-color: #ffe4e4;
+  margin: 10px 0;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+#normal_login_form li {
+  list-style: none;
+}
+dt {
+  font-size: 120%;
+}
+dd {
+  margin-top: .5em;
+  margin-left: 1.2em;
+}
+#greeting {
+  background-color: #ffffc8;
+  background-color: rgba(255, 255, 200, 0.5);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  padding: 2%;
+  width: 96%;
+  margin-top: 10px;
+  border: 4px solid #fff;
+  float: left;
+}
+#greeting #about-openhatch {
+  font-size: 140%;
+  float: left;
+  width: 100%;
+  margin-right: 20px;
+}
+#greeting #invitation {
+  font-size: 120%;
+  margin-top: 10px;
+  text-align: center;
+  float: left;
+  width: 100%;
+}
+#greeting #next-steps {
+  float: left;
+  width: 100%;
+}
+#greeting #next-steps li {
+  font-size: 120%;
+  float: left;
+  width: 210px;
+  margin: 10px 20px 0 0;
+}
+#error #content {
+  padding: 0 300px;
+}
+#error #content .module {
+  width: 400px;
+}
+#error #content .module .head {
+  width: 96%;
+  color: #aaa;
+  padding: 2%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 96pt;
+}
+#error #content .module .body {
+  width: 90%;
+}
+.head .note {
+  float: right;
+  color: #777;
+  font-size: .9em;
+  padding: 6px;
+}
+.head .more {
+  float: right;
+  padding: 3px;
+}
+body ul.raquo_bullets {
+  margin-left: 0;
+  padding-left: 1.1em;
+  text-indent: -1em;
+  list-style: none;
+}
+body ul.raquo_bullets li {
+  margin-bottom: .4em;
+}
+body ul.raquo_bullets li:last-child {
+  margin-bottom: 0;
+}
+body ul.raquo_bullets li:before {
+  color: #999;
+  font-family: Georgia;
+  margin-right: 2px;
+  font-weight: bold;
+  content: "\00BB \0020";
+}
+body ul.raquo_bullets li code {
+  display: inline-table;
+  margin-left: 16px;
+}
+.contact_us {
+  display: inline-block;
+  text-align: center;
+}
+/* CSSTODO */
+body#login .post_login_action_explanation {
+  color: #444;
+  font-size: 1.5em;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  text-align: center;
+  float: left;
+  width: 98%;
+  margin-bottom: 10px;
+  padding: 8px;
+  background-color: #faffaa;
+}
+ol > li {
+  margin: 15px 0;
+}
+/* CSSTODO I think this is just missions*/
+input[rel='hint'].blur {
+  color: #777;
+}
+/* CSSTODO */
+body#people-map #search_engine_is_down_message {
+  float: left;
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 0;
+  font-size: 1.3em;
+}
+.ajax-loader-circle-txt-medium {
+  display: inline-block;
+  line-height: 32px;
+  padding-left: 32px;
+  background: url('https://openhatch.org/static/images/throbber.gif') no-repeat left;
+  font-weight: bold;
+  color: #444;
+}
+/* Stuff for jQuery UI Tabs */
+/* CSSTODO */
+.ui-tabs-hide {
+  display: none !important;
+}
+.tab_nav .ui-state-active {
+  font-weight: bold;
+}
+/* Stuff initially for the events page */
+/* CSSTODO */
+.module .left-image {
+  width: 180px;
+  height: 180px;
+  float: left;
+  margin-right: 10px;
+}
+.module .name-of-event {
+  font-size: 180%;
+  margin-bottom: 1em;
+}
+.module .rest-of-box {
+  margin: 15px;
+}
+.module .little-read-more {
+  width: 100px;
+  float: right;
+}
+.module .link-without-style {
+  color: inherit;
+}
+/* Add responsive design only for phones and tablets */
+@media (max-width: 800px) {
+  /* Based on observation, overwrite existing css styles */
+  #footer .threecol,
+  body #container,
+  body#missions_index .submodule,
+  body.one_column #main .submodule.skinny,
+  body.one_column #main .submodule.fat,
+  .column,
+  body#profile .project-display,
+  body#search #container #pagetop img#volunteer-opportunities,
+  #nav,
+  #pagetop,
+  body.wordpress,
+  #content {
+    width: 100%;
+  }
+  #footer .column {
+    width: 30%;
+  }
+}
+body#bugset_create textarea {
+  width: 98%;
+}
+body#bugset_create textarea,
+body#bugset_create input {
+  float: none;
+}
+body#bugset_create #button-container {
+  text-align: right;
+}
+body#bugset_create ul.errorlist li {
+  display: block;
+  float: none;
+  width: 97%;
+}
+body#bugset_create h1,
+body#search.bugsets h1,
+body#bugsets_main h1 {
+  margin: 10px 0 0 10px;
+  font-weight: bold;
+  color: #222;
+}
+#content>.two-column-left {
+	max-width: 250px;
+	/* padding-left: 65px; */
+}
+@media screen and (max-width: 800px) {
+	#content>.two-column-left {
+		display: none;
+	}
+}
+@media screen and (max-width: 500px) {
+    #content {
+      padding: 10px 0 0 0;
+    }
+}
+
+
+#content>.two-column-right {
+	max-width: 550px;	
+}
+.module>.module {
+    float: none;
+}
+.column>.column {
+    float: none;
+}
+.column>.module {
+    float: none;
+}
+
+body.wordpress #sidebar > .module-body li li {
+    width: inherit;
+}
+
+		</style>
+	 
+        <title>
+            OpenHatch newsletter, July 2014 | The OpenHatch blog
+        </title>
+
+        <link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="canonical" href="http://blog.openhatch.org/2014/newsletter-july-2014/" />
+
+        <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+        <meta http-equiv='Content-Language' content='en-us' />
+        <meta name='Description' content='OpenHatch, the open source involvement engine.'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style type='text/css'> /*<![CDATA[*/
+            
+            
+            @import url(//openhatch.org/static/packed/openhatch.css?1407021888);
+            
+
+            
+
+            body { 
+            #landing a.blog-feed { 
+                background-image:
+                url(//openhatch.org/static/images/base/landing/feed-icon-16x16-sprited.png) }
+            .person {
+                font-size: 80%; }
+            .geocode {
+                font-size: 80%; }
+            body#profile #importer { 
+                background-image:
+                url(//openhatch.org/static/images/ship.png) }
+            body#profile #progressbar.working .ui-progressbar-value { 
+                background-image:
+                url(//openhatch.org/static/css/jquery-ui-lightness/images/pbar-ani.gif); }
+            body#profile .portfolio_entry > .actions li.save_and_publish_button *,
+            body#profile .portfolio_entry > .actions li.save_button * { 
+                background-image:
+                url(//openhatch.org/static/images/icons/publish.png); }
+            body#profile .portfolio_entry > .actions li.delete_portfolio_entry a { 
+                background-image:
+                url(//openhatch.org/static/images/icons/delete.png); }
+            body#profile .citations li .actions a.delete_citation { 
+                background-image:
+                url(//openhatch.org/static/images/icons/delete-citation.png); }
+            body#profile #portfolio.viewer .portfolio_entry .submodule { 
+                background-image:
+                url(//openhatch.org/static/images/profile/portfolio/portfolio-entry-bg.png) }
+            body#project #wannahelp-button { 
+                background-image:
+                url(//openhatch.org/static/images/wannahelp-button-bg.png); }
+            body#project #wannahelp-button:active { 
+                background-image:
+                url(//openhatch.org/static/images/wannahelp-button-bg-active.png); }
+            body#project #wannahelp-button:hover,
+            body#project #wannahelp-button:focus { 
+                background-image:
+                url(//openhatch.org/static/images/wannahelp-button-bg-hover.png); }
+            body#project #wannahelp-button:hover:active { 
+                background-image:
+                url(//openhatch.org/static/images/wannahelp-button-bg-hover-active.png); }
+            body#project .next_steps_for_helpers { 
+                background-image:
+                url(//openhatch.org/static/images/bg-translucent-green.png); }
+            #footer { background: #333 url('//openhatch.org/static/images/dark-hatch.png') repeat; }
+
+            
+            /*]]>*/
+        </style>
+
+        <!--[if lt IE 8]>
+        <script src="http://ie7-js.googlecode.com/svn/version/2.0(beta3)/IE8.js"
+        type="text/javascript"></script>
+        <![endif]-->
+	
+		<script type="text/javascript" src="//openhatch.org/static/packed/header.js?1404446267"></script>
+	
+        
+        <link rel="stylesheet/less" type="text/css" href="//openhatch.org/static/less/base/base.less">
+        <link rel="stylesheet/less" type="text/css" href="//openhatch.org/static/less/base/one_column.less">
+        <link rel="stylesheet/less" type="text/css" href="//openhatch.org/static/less/base/two_column.less">
+        <link rel="stylesheet/less" type="text/css" href="//openhatch.org/static/less/base/three_column.less">
+        <link rel="stylesheet/less" type="text/css" href="//openhatch.org/static/less/base/landing.less">
+        
+        <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+        <script src="//openhatch.org/static/js/less-1.3.0.min.js" type="text/javascript"></script>
+        
+        
+
+    </head>
+
+    
+    <body id='body' class='two_columns wordpress'>
+
+        <div id="nav-container">
+
+                
+<div id='nav'>
+        <h1>
+            <a href='/'>
+                <img src='//openhatch.org/static/images/the-logo-bluegreen-87px.png'
+                        width='87' height='60' alt='openhatch' />
+            </a>
+        </h1>
+        <!-- no nav links for WordPress -->
+</div>
+
+                
+        </div>
+        
+        <div id="container">
+                
+                <div id="pagetop">
+                    
+                    
+                </div>
+                <div id='content'>
+                    
+<div class="column two-column-left">
+     <div id="left" class="column two-column-left">
+  <div id="sidebar" class="module">
+    <div class="module-body">
+      <ul id="sidebar-list">
+	<li style='list-style: none;'>OpenHatch.org is an <a href='//openhatch.org/'>open source involvement engine</a>. This is our blog and meta-world.</li>
+      <li><h2>About OpenHatch</h2>
+      <ul>
+	<li><a href="/">Latest blog posts</a></li>
+	<li><a href="//openhatch.org/about/">Who? and why?</a></li>
+	<li><a href="//openhatch.org/contact/">Contact us</a></li>
+	<li><a href="http://openhatch.readthedocs.org/en/latest/">Source code, etc.</a></li>
+	<li><a href="//openhatch.org/policies-etc/">Privacy policy</a></li>
+	<li><a href="//openhatch.org/">&laquo; Back to OpenHatch.org</a></li>
+      </ul>
+      </li>
+      <li id="text-2" class="widget widget_text"><h2 class="widgettitle">Get news about OpenHatch</h2>
+			<div class="textwidget"> <form method="post" action="http://lists.openhatch.org/mailman/subscribe/announce">
+  <p>Subscribe to our once-a-month newsletter! Your email address:</p>
+<p><input name="email"></p>
+
+  <p><input style="float: none;" type="submit" name="email-button" value="Subscribe"></p>
+</form>
+</div>
+		</li>
+		<li id="recent-posts-2" class="widget widget_recent_entries">		<h2 class="widgettitle">Recent Posts</h2>
+		<ul>
+					<li>
+				<a href="http://blog.openhatch.org/2017/celebrating-our-successes-and-winding-down-as-an-organization/">Celebrating our successes and winding down as an organization</a>
+						</li>
+					<li>
+				<a href="http://blog.openhatch.org/2015/tips-facts-thoughts-after-3-successful-semesters-of-osctc/">Tips, facts, thoughts after 3 successful semesters of OSCTC</a>
+						</li>
+					<li>
+				<a href="http://blog.openhatch.org/2015/finding-the-next-openhatch-board-member/">Finding the next OpenHatch board member</a>
+						</li>
+					<li>
+				<a href="http://blog.openhatch.org/2015/moving-on/">Moving On</a>
+						</li>
+					<li>
+				<a href="http://blog.openhatch.org/2015/preparing-for-the-pycon-sprints/">Preparing for the PyCon Sprints</a>
+						</li>
+				</ul>
+		</li>
+		<li id="recent-comments-2" class="widget widget_recent_comments"><h2 class="widgettitle">Recent Comments</h2>
+<ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Carol Willing</span> on <a href="http://blog.openhatch.org/2015/moving-on/#comment-14652">Moving On</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://gondwanaland.com/mlog/2014/12/31/happy-utc-new-year/' rel='external nofollow' class='url'>Happy UTC+0 New Year &#8211; Mike Linksvayer</a></span> on <a href="http://blog.openhatch.org/2014/newsletter-november-december-2014/#comment-10523">Thanks for believing in OpenHatch &#8212; here&#8217;s our end of year newsletter</a></li></ul></li>
+<li id="search-2" class="widget widget_search"><h2 class="widgettitle">Search</h2>
+<form role="search" method="get" id="searchform" class="searchform" action="http://blog.openhatch.org/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form></li>
+    </ul>
+  </div>
+</div>
+
+<div class="module" style="margin-bottom: 50px;">
+  <div class="module-body">
+    The OpenHatch blog is graciously powered by
+    <a href="http://wordpress.org/">WordPress</a>.
+    <br /><a href="http://blog.openhatch.org/feed/">Entries (RSS)</a>
+    and <a href="http://blog.openhatch.org/comments/feed/">Comments (RSS)</a>.
+    <!-- 27 queries. 0.121 seconds. -->
+  </div>
+</div>
+</div>
+ 
+</div>
+<div class="column two-column-right">
+     <div class="module" id="post-2679">
+<div class="module-head">
+  <h2>
+    <a style='color: #333;' href="http://blog.openhatch.org/2014/newsletter-july-2014/" rel="bookmark"
+    title="Permanent Link to OpenHatch newsletter, July 2014">OpenHatch newsletter, July 2014</a>
+  </h2>
+
+  <div style='float: left; clear: left; font-weight: bold; width: 100%; font-size: 8pt; padding: 10px 0; '>
+    by Mike Linksvayer    <span style='color: #777;'>&bull;</span>
+    July 31st, 2014  </div>
+
+  <div class='clearer'></div>
+</div>
+
+<div class="module-body">
+  <div   style="font-style:bold;z-index:0;position:relative;width:576px">
+      <img src="data:image/jpeg;base64,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" width="576" height="410"/></p>
+<div style="position:absolute;z-index:1;right:0;bottom:0;color:#f0f0f0;font-size:x-small">
+        <span property="dc:title" rel="cc:attributionURL">An open hatch in the <a href="https://www.omsi.edu/submarine">museum submarine at OMSI in Portland</a>, CC-BY Britta Gustafson</span>
+  </div>
+</div>
+<p>Welcome to OpenHatch newsletter number 24.</p>
+<p>WIRED reports on Open Source Comes to Campus: <a href="http://www.wired.com/2014/07/openhatch/">The Crusade to Bring More Women to Open Source</a>.</p>
+<p>Shauna Gordon-McKeon on <a href="http://www.shaunagm.net/blog/2014/06/open-source-bridge/">Deconstructing Contributions at Open Source Bridge</a>.</p>
+<p>Mako Hill&#8217;s write up of the <a href="https://openhatch.org/wiki/Community_Data_Science_Workshops/Reflections">community data science workshops</a>.</p
+
+
+<p>OpenHatch board member Deb Nicholson was honored with an <a href="http://en.wikipedia.org/wiki/O%27Reilly_Open_Source_Award#2014">O&#8217;Reilly Open Source Award</a> (<a href="https://www.youtube.com/watch?v=exbHzP2MH70#t=1m0s">video</a>) at OSCON.</p>
+<p>Shauna Gordon-McKeon participated on <a href="https://lists.debian.org/debian-events-na/2014/07/msg00000.html">a video panel about how to get involved in open source</a>.</p>
+<p>Our <a href="https://openhatch.org/wiki/Opportunities">FOSS Opportunities page</a> is a large and growing list of financially supported opportunities (usually internships)  for people (usually students) to work on free/open source projects.</p>
+<h3>Open Source Comes to Campus planning</h3>
+<p>The <a href="http://campus.openhatch.org/">Open Source Comes to Campus</a> fall schedule is being finalized, with over a dozen events set to run at schools from New York to San Francisco, from Morris, Minnesota to Lewisburg, PA.  Interested in organizing, volunteering at, or attending an event?  Email us!</p>
+<p>The <a href="http://lists.openhatch.org/mailman/listinfo/osctc-planning">planning mailing list</a> has active discussions led by Shauna about improving the curriculum and following up with attendees. Helpful feedback is welcome, especially if you also have experience running outreach workshops. Recent threads include:</p>
+<ul>
+<li><a href="http://lists.openhatch.org/pipermail/osctc-planning/2014-July/000087.html">How to better frame tutorials</a> (<a href="http://lists.openhatch.org/pipermail/osctc-planning/2014-July/000093.html">scaffolding with a good default pathway</a>!)</li>
+<li><a href="http://lists.openhatch.org/pipermail/osctc-planning/2014-July/000090.html">Getting more of our curriculum online</a> to better support both attendees and self-guided learners.</li>
+<li><a href="http://lists.openhatch.org/pipermail/osctc-planning/2014-July/000062.html">Figuring out effective ways to offer ongoing mentorship</a> after events (including <a href="http://lists.openhatch.org/pipermail/osctc-planning/2014-July/000076.html">the benefits of mentorship</a>, <a href="http://lists.openhatch.org/pipermail/osctc-planning/2014-July/000078.html">concrete tasks that can give students quick successes</a>, <a href="http://lists.openhatch.org/pipermail/osctc-planning/2014-July/000079.html">mentorship styles</a>, and <a href="http://lists.openhatch.org/pipermail/osctc-planning/2014-July/000100.html">the advantages of pairing as a form of mentoring</a>).</li>
+</ul>
+<h3>New projects in the OpenHatch volunteer opportunity finder</h3>
+<ul>
+<li><a href="https://openhatch.org/projects/Miam-Player">Miam-Player</a>, a nice music player. It&#8217;s for Windows, Linux, and OS X, written in C++ with <a href="http://qt-project.org/">Qt</a>.</li>
+</ul>
+<h3>OpenHatchy but not OpenHatch things around the web</h3>
+<p>Writeup of Geek Feminism&#8217;s <a href="http://geekfeminism.org/2014/07/02/code-of-conduct-timeline-and-postmortem/">path to a code of conduct</a>.</p>
+<p>Python is now the <a href="http://cacm.acm.org/blogs/blog-cacm/176450-python-is-now-the-most-popular-introductory-teaching-language-at-top-us-universities/fulltext">most popular introductory language at top US universities</a>.</p>
+<p>Amanda Menking asks how can a community that values transparency <a href="https://blog.wikimedia.org/2014/07/14/creating-safe-spaces/">create safe spaces</a>?</p>
+<p><a href="https://wiki.mozilla.org/Contribute/Workshops/Designing_for_participation/SelfDirectedSyllabus">Designing for Participation</a>: &#8220;created in order to get Mozilla community members to think about how they can structure the work Mozilla does to better enable contributions from anywhere.&#8221;</p>
+<p>Andy R. Terrel on <a href="http://andy.terrel.us/blog/2014/07/17/">SciPy2014</a>: &#8220;Sheila Miguez pointed out the incredible <a href="http://opensource-events.com/">in-person event handbook</a> from Shauna G. of Open Hatch. I think taking up the principles in this handbook is really needed. We have not made welcoming, goal setting, and clarifying structures a priority at events.&#8221;</p>
+<p>Article series edited by Jen Wike on <a href="https://opensource.com/community/14/7/young-professionals-open-source-way">young professionals and open source</a>.</p>
+<p>Free eDX course, <a href="https://www.edx.org/course/linuxfoundationx/linuxfoundationx-lfs101x-introduction-1621#.U9rJnoAihtA">Introduction to Linux</a> &#8220;for experienced computer users who have limited or no previous exposure to Linux&#8221;.</p>
+<p>Also check out links submitted to <a href="http://www.reddit.com/r/openhatch">/r/openhatch</a>, and add your finds!</p>
+<h3>Get involved</h3>
+<p>You can help write this newsletter! The August newsletter <a href="http://htmlpad.org/oh-newsletter-201408/edit">in progress</a> (<a href="http://htmlpad.org/oh-newsletter-201408">preview</a>). Join our <a href="http://lists.openhatch.org/mailman/listinfo/publicity">publicity list</a> or hop on <a href="http://webchat.freenode.net/?nick=openhatch_....&#038;channels=openhatch">#openhatch</a> with suggestions and questions.</p>
+<p>Thanks to Britta Gustafson and Shauna Gordon-McKeon for contributing to this edition!</p>
+<p><a href="https://openhatch.org/blog/tag/newsletter">Read previous newsletters.</a></p>
+<p><a href="https://www.facebook.com/openhatch">Like</a> <a href="https://plus.google.com/115325121477337042677">+1</a>, follow @openhatch at <a href="http://identi.ca/openhatch">identi.ca</a> or <a href="http://twitter.com/openhatch">Twitter</a>.</p>
+</div>
+
+<div class="module-foot">
+  <p class="postmetadata"> <!-- Posted in <a href="http://blog.openhatch.org/category/uncategorized/" rel="category tag">Uncategorized</a> | -->   <a href="http://blog.openhatch.org/2014/newsletter-july-2014/#respond">No comments yet &#187;</a></p>
+</div>
+</div>
+
+
+
+<!-- You can start editing here. -->
+
+                        <!-- If comments are open, but there are no comments. -->
+
+         </div>
+
+
+
+<div id="respond" class="module">
+
+<div class="module-head">
+<h3>Write a comment</h3>
+
+<div class="cancel-comment-reply">
+        <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2014/newsletter-july-2014/#respond" style="display:none;">Click here to cancel reply.</a></small>
+</div>
+<div class="clearer"></div>
+</div>
+
+<div class="module-body">
+
+<form action="http://blog.openhatch.org/wp-comments-post.php" method="post" id="commentform">
+
+
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required='true' />
+<label for="author"><small>Name (required)</small></label></p>
+
+<p><input type="text" name="email" id="email" value="" size="22" tabindex="2" aria-required='true' />
+<label for="email"><small>Mail (will not be published) (required)</small></label></p>
+
+<p><input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+<label for="url"><small>Website</small></label></p>
+
+
+<!--<p><small><strong>XHTML:</strong> You can use these tags: <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;s&gt; &lt;strike&gt; &lt;strong&gt; </code></small></p>-->
+
+<p><textarea name="comment" id="comment" cols="78" rows="10" tabindex="4"></textarea></p>
+
+<p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+<input type='hidden' name='comment_post_ID' value='2679' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="3a4712c61d" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="75"/></p>
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="navigation">
+  <div class="alignleft"></div>
+  <div class="alignright"></div>
+</div>
+
+ 
+</div>
+<!--- end second column -->
+<div class="more-content">
+    
+    
+</div>
+<!--- end more_content -->
+
+                </div><!-- /#content -->
+                
+        </div><!-- /#container -->
+        </div>
+
+        <div id='footer-wrapper'>
+          <div id='footer'>
+            
+	    <div class="threecol">
+              <div class="column">
+                <h3>OpenHatch organization</h3>
+
+                <ul>
+                  <li><a href="//openhatch.org/about/">about openhatch</a></li>
+                  <li><a href="//openhatch.org/sponsors/">sponsors</a></li>
+                  <li><a href="//openhatch.org/blog/">blog</a></li>
+                  <li><a href="//openhatch.org/contact/">contact</a></li>
+                  <li><a href="https://openhatch.org/wiki/Privacy_policy">privacy policy</a></li>
+                </ul>
+              </div>
+
+	      <div class="column">
+		<h3>OpenHatch web app code</h3>
+		<ul>
+		  <li><a href="http://openhatch.readthedocs.org/en/latest/README.html">Intro for developers</a></li>
+		  <li><a href="https://github.com/openhatch/oh-mainline">Github (source code)</a></li>
+		  <li><a href="http://lists.openhatch.org/mailman/listinfo/devel">Devel mailing list</a></li>
+		  <li><a href="http://openhatch.readthedocs.org/">Code docs</a></li>
+		  <li><a href="https://openhatch.org/bugs/">Bug tracker</a></li>
+		</ul>
+	      </div>
+
+	      <div class="column">
+		<h3>Other web tools</h3>
+		<ul>
+                  <li><a href="/wiki/">wiki</a></li>
+                  <li><a href="http://forum.openhatch.org/">forum</a></li>
+		</ul>
+	      </div>
+	    </div>
+            
+          </div>
+        </div>
+
+        
+        
+	<!--Includes for the javascript bundle are in base/assets.py-->
+	
+		<script type="text/javascript" src="//openhatch.org/static/packed/openhatch.js?1407021888"></script>
+	
+
+        
+        
+
+        
+        
+<!-- Goggle Analytics not included because you haven't set the settings.GOOGLE_ANALYTICS_CODE variable! -->
+        
+
+    </body>
+</html>
+

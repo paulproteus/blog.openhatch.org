@@ -1,0 +1,1595 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+    <head>
+       <link rel="stylesheet" type="text/css" href="//openhatch.org/static/css/blog-style.css" />
+
+<!-- blog metadata etc. -->
+
+<link rel="alternate" type="application/rss+xml" title="The OpenHatch blog RSS Feed" href="http://blog.openhatch.org/feed/" />
+<link rel="alternate" type="application/atom+xml" title="The OpenHatch blog Atom Feed" href="http://blog.openhatch.org/feed/atom/" />
+<link rel="pingback" href="http://blog.openhatch.org/xmlrpc.php" />
+
+<!-- Facebook OpenGraph image, if applicable -->
+
+<!-- add some JavaScript, depending on if it's needed -->
+
+
+<!-- Call the WordPress wp_head() function, which permits plugins etc. to load more things.
+     More info: http://codex.wordpress.org/Function_Reference/wp_head
+-->
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/blog.openhatch.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.5"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='https://api.w.org/' href='http://blog.openhatch.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.openhatch.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.openhatch.org/wp-includes/wlwmanifest.xml" /> 
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+				<style type="text/css" id="wp-custom-css">
+			/*
+You can add your own CSS here.
+
+Click the help icon above to learn more.
+*/
+
+/* fonts */
+@font-face {
+  font-family: Tuffy;
+  /* src: url('https://openhatch.org/static/fonts/tuffy_regular.ttf'); */
+  src: url('https://cdn.rawgit.com/google/fonts/c2b5d740/ofl/tuffy/Tuffy-Regular.ttf');
+}
+@font-face {
+  font-family: Tuffy;
+  font-weight: bold;
+  src: url('https://cdn.rawgit.com/google/fonts/c2b5d740/ofl/tuffy/Tuffy-Bold.ttf');
+}
+@font-face {
+  font-family: Tuffy;
+  font-style: italic;
+  src: url('https://cdn.rawgit.com/google/fonts/c2b5d740/ofl/tuffy/Tuffy-Italic.ttf');
+}
+@font-face {
+  font-family: Tuffy;
+  font-weight: bold;
+  font-style: italic;
+  src: url('https://cdn.rawgit.com/google/fonts/c2b5d740/ofl/tuffy/Tuffy-Bold-Italic.ttf');
+}
+/* coloration */
+.nav-bg {
+  background: #333 url('https://openhatch.org/static/images/dark-hatch.png') repeat;
+  box-shadow: 0 0 7px #333;
+  -moz-box-shadow: 0 0 7px #333;
+  -webkit-box-shadow: 0 0 7px #333;
+}
+/* size, width and padding stuff */
+/* CSSTODO -- do we use these actually?*/
+.enormous {
+  font-size: 3em;
+}
+.fairly-big {
+  font-size: 1.7em;
+}
+.enormous > div {
+  margin-bottom: 1em;
+}
+.normal-size {
+  font-size: 11pt;
+}
+/* other useful mixins */
+.screw-you-webkit {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+.centered {
+  margin: 0 auto;
+}
+/* styles */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  font: 11pt Tuffy, Helvetica, sans-serif;
+  background: #f8f8f8 url('https://openhatch.org/static/images/light-hatch.png') repeat;
+  color: #222;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 290px;
+}
+code {
+  overflow-x: auto;
+  display: inline-block;
+  width: 100%;
+  white-space: nowrap;
+}
+.link_like,
+a,
+body .ui-widget-content a {
+  color: #FF6D3D;
+  text-decoration: none;
+  cursor: pointer;
+  cursor: hand;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .clearfix {
+  zoom: 1;
+}
+/* IE6 */
+*:first-child + html .clearfix {
+  zoom: 1;
+}
+/* IE7 */
+/* deprecated; to remove in favor of .clearfix */
+.clearer {
+  width: 100%;
+  clear: both;
+  float: none;
+}
+/* for Firefox */
+input[type="submit"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: 0px;
+}
+/* for IE8 */
+input[type="submit"]:focus,
+input[type="button"]:focus {
+  outline: none;
+}
+.alt-text {
+  left: -9999px;
+  position: absolute;
+}
+/* ^^^ display: none would hide this from screenreaders. Let's hide this off stage left instead. */
+.hidden {
+  display: none;
+}
+a:hover,
+.ui-widget-content a:hover {
+  text-decoration: underline;
+}
+a img {
+  border-style: none;
+}
+abbr {
+  border-bottom: 1px dotted #999;
+}
+abbr.foss {
+  border: 0;
+  font-variant: small-caps;
+}
+h1 a,
+h1 a:hover {
+  text-decoration: none;
+}
+#container {
+  width: 1000px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+}
+#container::after {
+  content: ' ';
+  clear: both;
+  display: block;
+}
+.module {
+  /* width: 100%; */
+  margin-bottom: 15px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border: 3px solid rgba(100, 200, 255, 0.3);
+  background: rgba(255, 255, 255, 0.6);
+  float: left;
+}
+.module .module-head {
+  background: rgba(100, 200, 255, 0.3);
+  padding: 2px 20px;
+}
+.module .module-head ul li a {
+  float: right;
+  padding-top: 5px;
+}
+.module .module-head h3 {
+  text-shadow: 0 1px 0 #fff;
+  float: none;
+  padding: 4px 10px 7px 0;
+  font-size: 1.2em;
+}
+.module .module-body {
+  clear: both;
+  padding: 10px 20px 20px 20px;
+}
+.module .module-foot {
+  padding: 2px 20px 5px 20px;
+  text-align: right;
+}
+.module .module-foot .module-foot-left {
+  float: left;
+}
+.submodule-container {
+  float: none;
+  clear: both;
+  width: 100%;
+  margin: 0 auto;
+}
+.submodule {
+  background-color: #FFF;
+  margin: 0 10px 20px 0;
+  padding: 8px 10px;
+  border: 2px dashed #e4e4e4;
+  float: left;
+}
+.submodule .submodule-head {
+  margin-bottom: 5px;
+}
+.submodule .submodule-body {
+  clear: both;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  clear: both;
+}
+h1 {
+  font-weight: normal;
+  font-size: 23pt;
+}
+#nav-container {
+  width: 100%;
+  height: 67px;
+  background: #333 url('https://openhatch.org/static/images/dark-hatch.png') repeat;
+  box-shadow: 0 0 7px #333;
+  -moz-box-shadow: 0 0 7px #333;
+  -webkit-box-shadow: 0 0 7px #333;
+}
+#nav {
+  margin: 0 auto;
+  padding-top: 3px;
+  border-top: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 960px;
+}
+#nav h1 {
+  float: left;
+}
+#nav ul {
+  list-style: none;
+  margin: 0;
+  float: right;
+}
+#nav li {
+  float: right;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+#pagetop {
+  padding: 0;
+  clear: both;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 960px;
+}
+.up-top {
+  padding: 0;
+  margin-bottom: -15px;
+}
+ul#links {
+  margin-left: 20px;
+}
+#links li {
+  display: inline;
+  font-size: 12pt;
+  margin-top: 20px;
+}
+#account-links,
+#topnavlinks {
+  float: right;
+}
+#account-links #username,
+#topnavlinks #username {
+  font-weight: bold;
+}
+#account-links li,
+#topnavlinks li {
+  margin: 15px 0;
+}
+#account-links a,
+#topnavlinks a {
+  float: left;
+  padding: 5px 10px;
+  color: white;
+}
+#topnavlinks {
+  float: left;
+}
+#topnavlinks li {
+  font-size: 1.1em;
+}
+#content {
+  padding: 10px 0 30px 0;
+  clear: both;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 960px;
+}
+#footer-wrapper {
+  width: 100%;
+  clear: both;
+  padding-top: 40px;
+  position: absolute;
+  bottom: 0;
+}
+#footer {
+  width: 100%;
+  height: 250px;
+  padding: 10px 0px;
+  text-align: right;
+  margin: 0 auto;
+  background: #333 url('https://openhatch.org/static/images/dark-hatch.png') repeat;
+  box-shadow: 0 0 7px #333;
+  -moz-box-shadow: 0 0 7px #333;
+  -webkit-box-shadow: 0 0 7px #333;
+}
+#footer ul {
+  display: inline;
+  list-style-type: none;
+  max-width: 108em;
+  padding: 0 20px;
+}
+#footer li {
+  display: block;
+  text-align: left;
+  padding-left: 0;
+  margin-bottom: 0.3em;
+}
+#footer a {
+  color: #FFF;
+}
+#footer h3 {
+  color: #ddd;
+  font-size: 1em;
+  margin-bottom: 0.8em;
+}
+#footer .threecol {
+  width: 960px;
+  padding: 0 20px;
+  margin: 0 auto;
+  text-align: left;
+}
+#footer .column {
+  width: 210px;
+  display: inline-block;
+  margin: 0px 5px;
+  vertical-align: top;
+  text-align: left;
+  float: none;
+}
+#training-missions {
+  width: 100%;
+}
+h3 {
+  margin-bottom: 0px;
+  text-align: left;
+  clear: left;
+  font-weight: normal;
+  font-size: 1.1em;
+  color: #222;
+  letter-spacing: 0;
+  margin: 0;
+}
+h3.nofloat {
+  float: none;
+}
+img.show-more-link {
+  float: right;
+  position: relative;
+  top: 1px;
+}
+input[type='text'],
+input[type='password'],
+input[type='file'],
+textarea {
+  padding: 5px;
+  font-size: 11pt;
+  float: left;
+}
+input[type='submit'] {
+  padding: 1px 8px;
+  color: #222;
+  font-weight: bold;
+  float: left;
+}
+.alert {
+  padding: 15px 0;
+}
+.alert div {
+  background-color: #ffa;
+  color: #444;
+  padding: 8px 15px;
+  width: 700px;
+  font-size: 11pt;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+img {
+  border: 0;
+}
+img.left {
+  float: left;
+  padding: 0 10px 20px 0;
+}
+img.right {
+  float: right;
+  padding: 0 0 20px 10px;
+}
+.usernames {
+  font-size: 10pt;
+}
+#info .tag-type {
+  font-weight: normal;
+  display: block;
+  font-size: 8pt;
+}
+/* Columns in general float left, and have some margin-right to
+   create visual spacing. */
+.column {
+  float: left;
+  margin-right: 10px;
+}
+h4,
+.cute-header {
+  font-size: 9pt;
+  color: #666;
+  float: left;
+  margin: 0;
+  padding: 1px;
+}
+input[type='submit'] {
+  color: #333;
+  float: left;
+}
+#notifications {
+  text-align: center;
+  float: left;
+}
+.notification {
+  float: left;
+  width: 95%;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  padding: 10px;
+  color: #000;
+  margin-bottom: 10px;
+}
+.errorlist ul {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.errorlist li {
+  float: left;
+  padding: 5px 10px;
+  width: 410px;
+  color: #522;
+  background-color: #ffe4e4;
+  margin: 10px 0;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+#normal_login_form li {
+  list-style: none;
+}
+dt {
+  font-size: 120%;
+}
+dd {
+  margin-top: .5em;
+  margin-left: 1.2em;
+}
+#greeting {
+  background-color: #ffffc8;
+  background-color: rgba(255, 255, 200, 0.5);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  padding: 2%;
+  width: 96%;
+  margin-top: 10px;
+  border: 4px solid #fff;
+  float: left;
+}
+#greeting #about-openhatch {
+  font-size: 140%;
+  float: left;
+  width: 100%;
+  margin-right: 20px;
+}
+#greeting #invitation {
+  font-size: 120%;
+  margin-top: 10px;
+  text-align: center;
+  float: left;
+  width: 100%;
+}
+#greeting #next-steps {
+  float: left;
+  width: 100%;
+}
+#greeting #next-steps li {
+  font-size: 120%;
+  float: left;
+  width: 210px;
+  margin: 10px 20px 0 0;
+}
+#error #content {
+  padding: 0 300px;
+}
+#error #content .module {
+  width: 400px;
+}
+#error #content .module .head {
+  width: 96%;
+  color: #aaa;
+  padding: 2%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 96pt;
+}
+#error #content .module .body {
+  width: 90%;
+}
+.head .note {
+  float: right;
+  color: #777;
+  font-size: .9em;
+  padding: 6px;
+}
+.head .more {
+  float: right;
+  padding: 3px;
+}
+body ul.raquo_bullets {
+  margin-left: 0;
+  padding-left: 1.1em;
+  text-indent: -1em;
+  list-style: none;
+}
+body ul.raquo_bullets li {
+  margin-bottom: .4em;
+}
+body ul.raquo_bullets li:last-child {
+  margin-bottom: 0;
+}
+body ul.raquo_bullets li:before {
+  color: #999;
+  font-family: Georgia;
+  margin-right: 2px;
+  font-weight: bold;
+  content: "\00BB \0020";
+}
+body ul.raquo_bullets li code {
+  display: inline-table;
+  margin-left: 16px;
+}
+.contact_us {
+  display: inline-block;
+  text-align: center;
+}
+/* CSSTODO */
+body#login .post_login_action_explanation {
+  color: #444;
+  font-size: 1.5em;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  text-align: center;
+  float: left;
+  width: 98%;
+  margin-bottom: 10px;
+  padding: 8px;
+  background-color: #faffaa;
+}
+ol > li {
+  margin: 15px 0;
+}
+/* CSSTODO I think this is just missions*/
+input[rel='hint'].blur {
+  color: #777;
+}
+/* CSSTODO */
+body#people-map #search_engine_is_down_message {
+  float: left;
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 0;
+  font-size: 1.3em;
+}
+.ajax-loader-circle-txt-medium {
+  display: inline-block;
+  line-height: 32px;
+  padding-left: 32px;
+  background: url('https://openhatch.org/static/images/throbber.gif') no-repeat left;
+  font-weight: bold;
+  color: #444;
+}
+/* Stuff for jQuery UI Tabs */
+/* CSSTODO */
+.ui-tabs-hide {
+  display: none !important;
+}
+.tab_nav .ui-state-active {
+  font-weight: bold;
+}
+/* Stuff initially for the events page */
+/* CSSTODO */
+.module .left-image {
+  width: 180px;
+  height: 180px;
+  float: left;
+  margin-right: 10px;
+}
+.module .name-of-event {
+  font-size: 180%;
+  margin-bottom: 1em;
+}
+.module .rest-of-box {
+  margin: 15px;
+}
+.module .little-read-more {
+  width: 100px;
+  float: right;
+}
+.module .link-without-style {
+  color: inherit;
+}
+/* Add responsive design only for phones and tablets */
+@media (max-width: 800px) {
+  /* Based on observation, overwrite existing css styles */
+  #footer .threecol,
+  body #container,
+  body#missions_index .submodule,
+  body.one_column #main .submodule.skinny,
+  body.one_column #main .submodule.fat,
+  .column,
+  body#profile .project-display,
+  body#search #container #pagetop img#volunteer-opportunities,
+  #nav,
+  #pagetop,
+  body.wordpress,
+  #content {
+    width: 100%;
+  }
+  #footer .column {
+    width: 30%;
+  }
+}
+body#bugset_create textarea {
+  width: 98%;
+}
+body#bugset_create textarea,
+body#bugset_create input {
+  float: none;
+}
+body#bugset_create #button-container {
+  text-align: right;
+}
+body#bugset_create ul.errorlist li {
+  display: block;
+  float: none;
+  width: 97%;
+}
+body#bugset_create h1,
+body#search.bugsets h1,
+body#bugsets_main h1 {
+  margin: 10px 0 0 10px;
+  font-weight: bold;
+  color: #222;
+}
+#content>.two-column-left {
+	max-width: 250px;
+	/* padding-left: 65px; */
+}
+@media screen and (max-width: 800px) {
+	#content>.two-column-left {
+		display: none;
+	}
+}
+@media screen and (max-width: 500px) {
+    #content {
+      padding: 10px 0 0 0;
+    }
+}
+
+
+#content>.two-column-right {
+	max-width: 550px;	
+}
+.module>.module {
+    float: none;
+}
+.column>.column {
+    float: none;
+}
+.column>.module {
+    float: none;
+}
+
+body.wordpress #sidebar > .module-body li li {
+    width: inherit;
+}
+
+		</style>
+	 
+        <title>
+            The OpenHatch blog | Page 3
+        </title>
+
+        <link rel="shortcut icon" href="/favicon.ico" />
+	
+        <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+        <meta http-equiv='Content-Language' content='en-us' />
+        <meta name='Description' content='OpenHatch, the open source involvement engine.'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style type='text/css'> /*<![CDATA[*/
+            
+            
+            @import url(//openhatch.org/static/packed/openhatch.css?1407021888);
+            
+
+            
+
+            body { 
+            #landing a.blog-feed { 
+                background-image:
+                url(//openhatch.org/static/images/base/landing/feed-icon-16x16-sprited.png) }
+            .person {
+                font-size: 80%; }
+            .geocode {
+                font-size: 80%; }
+            body#profile #importer { 
+                background-image:
+                url(//openhatch.org/static/images/ship.png) }
+            body#profile #progressbar.working .ui-progressbar-value { 
+                background-image:
+                url(//openhatch.org/static/css/jquery-ui-lightness/images/pbar-ani.gif); }
+            body#profile .portfolio_entry > .actions li.save_and_publish_button *,
+            body#profile .portfolio_entry > .actions li.save_button * { 
+                background-image:
+                url(//openhatch.org/static/images/icons/publish.png); }
+            body#profile .portfolio_entry > .actions li.delete_portfolio_entry a { 
+                background-image:
+                url(//openhatch.org/static/images/icons/delete.png); }
+            body#profile .citations li .actions a.delete_citation { 
+                background-image:
+                url(//openhatch.org/static/images/icons/delete-citation.png); }
+            body#profile #portfolio.viewer .portfolio_entry .submodule { 
+                background-image:
+                url(//openhatch.org/static/images/profile/portfolio/portfolio-entry-bg.png) }
+            body#project #wannahelp-button { 
+                background-image:
+                url(//openhatch.org/static/images/wannahelp-button-bg.png); }
+            body#project #wannahelp-button:active { 
+                background-image:
+                url(//openhatch.org/static/images/wannahelp-button-bg-active.png); }
+            body#project #wannahelp-button:hover,
+            body#project #wannahelp-button:focus { 
+                background-image:
+                url(//openhatch.org/static/images/wannahelp-button-bg-hover.png); }
+            body#project #wannahelp-button:hover:active { 
+                background-image:
+                url(//openhatch.org/static/images/wannahelp-button-bg-hover-active.png); }
+            body#project .next_steps_for_helpers { 
+                background-image:
+                url(//openhatch.org/static/images/bg-translucent-green.png); }
+            #footer { background: #333 url('//openhatch.org/static/images/dark-hatch.png') repeat; }
+
+            
+            /*]]>*/
+        </style>
+
+        <!--[if lt IE 8]>
+        <script src="http://ie7-js.googlecode.com/svn/version/2.0(beta3)/IE8.js"
+        type="text/javascript"></script>
+        <![endif]-->
+	
+		<script type="text/javascript" src="//openhatch.org/static/packed/header.js?1404446267"></script>
+	
+        
+        <link rel="stylesheet/less" type="text/css" href="//openhatch.org/static/less/base/base.less">
+        <link rel="stylesheet/less" type="text/css" href="//openhatch.org/static/less/base/one_column.less">
+        <link rel="stylesheet/less" type="text/css" href="//openhatch.org/static/less/base/two_column.less">
+        <link rel="stylesheet/less" type="text/css" href="//openhatch.org/static/less/base/three_column.less">
+        <link rel="stylesheet/less" type="text/css" href="//openhatch.org/static/less/base/landing.less">
+        
+        <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+        <script src="//openhatch.org/static/js/less-1.3.0.min.js" type="text/javascript"></script>
+        
+        
+
+    </head>
+
+    
+    <body id='body' class='two_columns wordpress'>
+
+        <div id="nav-container">
+
+                
+<div id='nav'>
+        <h1>
+            <a href='/'>
+                <img src='//openhatch.org/static/images/the-logo-bluegreen-87px.png'
+                        width='87' height='60' alt='openhatch' />
+            </a>
+        </h1>
+        <!-- no nav links for WordPress -->
+</div>
+
+                
+        </div>
+        
+        <div id="container">
+                
+                <div id="pagetop">
+                    
+                    
+                </div>
+                <div id='content'>
+                    
+<div class="column two-column-left">
+     <div id="left" class="column two-column-left">
+  <div id="sidebar" class="module">
+    <div class="module-body">
+      <ul id="sidebar-list">
+	<li style='list-style: none;'>OpenHatch.org is an <a href='//openhatch.org/'>open source involvement engine</a>. This is our blog and meta-world.</li>
+      <li><h2>About OpenHatch</h2>
+      <ul>
+	<li><a href="/">Latest blog posts</a></li>
+	<li><a href="//openhatch.org/about/">Who? and why?</a></li>
+	<li><a href="//openhatch.org/contact/">Contact us</a></li>
+	<li><a href="http://openhatch.readthedocs.org/en/latest/">Source code, etc.</a></li>
+	<li><a href="//openhatch.org/policies-etc/">Privacy policy</a></li>
+	<li><a href="//openhatch.org/">&laquo; Back to OpenHatch.org</a></li>
+      </ul>
+      </li>
+      <li id="text-2" class="widget widget_text"><h2 class="widgettitle">Get news about OpenHatch</h2>
+			<div class="textwidget"> <form method="post" action="http://lists.openhatch.org/mailman/subscribe/announce">
+  <p>Subscribe to our once-a-month newsletter! Your email address:</p>
+<p><input name="email"></p>
+
+  <p><input style="float: none;" type="submit" name="email-button" value="Subscribe"></p>
+</form>
+</div>
+		</li>
+		<li id="recent-posts-2" class="widget widget_recent_entries">		<h2 class="widgettitle">Recent Posts</h2>
+		<ul>
+					<li>
+				<a href="http://blog.openhatch.org/2017/celebrating-our-successes-and-winding-down-as-an-organization/">Celebrating our successes and winding down as an organization</a>
+						</li>
+					<li>
+				<a href="http://blog.openhatch.org/2015/tips-facts-thoughts-after-3-successful-semesters-of-osctc/">Tips, facts, thoughts after 3 successful semesters of OSCTC</a>
+						</li>
+					<li>
+				<a href="http://blog.openhatch.org/2015/finding-the-next-openhatch-board-member/">Finding the next OpenHatch board member</a>
+						</li>
+					<li>
+				<a href="http://blog.openhatch.org/2015/moving-on/">Moving On</a>
+						</li>
+					<li>
+				<a href="http://blog.openhatch.org/2015/preparing-for-the-pycon-sprints/">Preparing for the PyCon Sprints</a>
+						</li>
+				</ul>
+		</li>
+		<li id="recent-comments-2" class="widget widget_recent_comments"><h2 class="widgettitle">Recent Comments</h2>
+<ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Carol Willing</span> on <a href="http://blog.openhatch.org/2015/moving-on/#comment-14652">Moving On</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://gondwanaland.com/mlog/2014/12/31/happy-utc-new-year/' rel='external nofollow' class='url'>Happy UTC+0 New Year &#8211; Mike Linksvayer</a></span> on <a href="http://blog.openhatch.org/2014/newsletter-november-december-2014/#comment-10523">Thanks for believing in OpenHatch &#8212; here&#8217;s our end of year newsletter</a></li></ul></li>
+<li id="search-2" class="widget widget_search"><h2 class="widgettitle">Search</h2>
+<form role="search" method="get" id="searchform" class="searchform" action="http://blog.openhatch.org/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form></li>
+    </ul>
+  </div>
+</div>
+
+<div class="module" style="margin-bottom: 50px;">
+  <div class="module-body">
+    The OpenHatch blog is graciously powered by
+    <a href="http://wordpress.org/">WordPress</a>.
+    <br /><a href="http://blog.openhatch.org/feed/">Entries (RSS)</a>
+    and <a href="http://blog.openhatch.org/comments/feed/">Comments (RSS)</a>.
+    <!-- 25 queries. 0.125 seconds. -->
+  </div>
+</div>
+</div>
+ 
+</div>
+<div class="column two-column-right">
+     <div class="module" id="post-2602">
+<div class="module-head">
+  <h2>
+    <a style='color: #333;' href="http://blog.openhatch.org/2014/open-source-comes-to-princeton/" rel="bookmark"
+    title="Permanent Link to Open Source Comes to Princeton">Open Source Comes to Princeton</a>
+  </h2>
+
+  <div style='float: left; clear: left; font-weight: bold; width: 100%; font-size: 8pt; padding: 10px 0; '>
+    by Katherine    <span style='color: #777;'>&bull;</span>
+    May 5th, 2014  </div>
+
+  <div class='clearer'></div>
+</div>
+
+<div class="module-body">
+  <p dir="ltr"><img class="aligncenter size-full wp-image-2605" alt="poster for Princeton workshop" src="http://openhatch.org/blog/wp-content/uploads/2014/05/OSAPworkshopposter_final.jpg" width="584" height="378" /></p>
+<p dir="ltr">On November 24, Open Source at Princeton helped run an Open Source Comes to Campus event with OpenHatch. (Warning: the word “open” will occur very often in this post.) <a href="http://openhatch.org/about/">OpenHatch</a> is a <a href="http://openhatch.org/about/">non-profit</a> dedicated to matching prospective free software contributors with communities, tools, and education. They provide online tools for new contributors and organize and support outreach events. Open Source Comes to Campus is a one-day workshop to teach the tools and culture of open source development and to help students make contributions to real projects. Groups at <a href="http://campus.openhatch.org/#pastevents">21 schools</a> have run this event, including 10 women-in-CS organizations.</p>
+<p>We were super excited to run this event, and it seems that people were as excited to attend—we received 80 sign-ups, of which about 40 people showed up. Here’s how it went.</p>
+<p><img alt="students at Princeton workshop" src="http://openhatch.org/blog/wp-content/uploads/2014/05/all.png" width="584" height="391" /></p>
+<p><strong>The schedule</strong></p>
+<p>The workshop was held on a Sunday from 10 am to 5 pm. You can see the schedule <a href="https://openhatch.org/wiki/Princeton_schedule">here</a>. <a href="https://www.mediawiki.org/wiki/User:Sharihareswara_%28WMF%29">Sumana Harihareswara</a>, our wonderful speaker from the Wikimedia Foundation and Hacker School, delivered the introduction to open source communications tools.</p>
+<p>People seemed to really enjoy the activities. First, OpenHatch found two cute bugs, accessible to beginners and documented in issue trackers. They were <a href="http://bit.ly/no-december">“No December”</a> (that is, in a certain version of Android, the month December disappeared) and <a href="http://bit.ly/cant-print">“can’t print on Tuesdays.”</a> Pairs of people looked at the bugs and tried to explain the causes to each other. I won’t spoil why they were happening—take a look at the handout <a href="https://github.com/openhatch/open-source-comes-to-campus/blob/master/curriculum/handouts/Communications_Handout.pdf">here</a>!</p>
+<p><img class="aligncenter size-full wp-image-2608" alt="presenters at Princeton Workshop" src="http://openhatch.org/blog/wp-content/uploads/2014/05/sumana.png" width="584" height="378" /></p>
+<p>Attendees also really enjoyed the git mini projects. They worked in groups of five with one mentor each. They cloned a sample repo that was the Princeton page with quirky changes added in, made changes on their machines, made pull requests, and got them merged in. After the merge, they could refresh the page to see their changes. It was rewarding because of the instant and visual feedback. Here’s a <a href="https://princeton-2.github.io/%20">sample page</a> and here are the <a href="https://github.com/princeton-2/princeton-2.github.io/pulls?direction=desc&amp;page=1&amp;sort=created&amp;state=closed">pull requests</a>.</p>
+<p dir="ltr"><strong>Contributions</strong></p>
+<p>The contributions workshop was designed to be the capstone of the workshop, where attendees would finally have the chance to make their own changes. In reality, there were mixed responses. Some attendees left early, whereas some attendees got really excited about their bugs and stayed for an hour after the workshop ended.</p>
+<p dir="ltr"><img class="aligncenter size-full wp-image-2611" alt="a mentor talks to an attendee at the workshop" src="http://openhatch.org/blog/wp-content/uploads/2014/05/explain.png" width="584" height="442" /></p>
+<p>OpenHatch put together a great <a href="https://openhatch.org/wiki/First_Tasks">First Tasks</a> page that listed welcoming bite-size issues for beginners to fix, including projects like Dreamwidth, WelcomeBot, the Open Science Collaboration Blog, and OpenHatch itself. We also had mentors familiar with projects like OpenStates, Debian, and MediaWiki.</p>
+<p>The attendees made six pull requests total, of which three were successfully merged (yay!), two not completed by the students, and one fixed by the maintainer. Most contributions went to OpenHatch itself and OpenStates. Unfortunately, Dreamwidth, WCWeekly, and Open Science Collaboration blog didn’t get contributions, possibly because the maintainers weren’t present at the video call.</p>
+<p>One sample pull request: Scott, a student here, worked on OpenStates. He found that a legislator had unsightly Javascript on her page, and <a href="https://code.google.com/p/openstates/issues/detail?id=833&amp;groupby=priority&amp;colspec=ID%20Status%20Milestone%20Component%20State%20Owner%20Summary">diagnosed the cause</a> in the source code, which was that House representatives’ pages were missing the closing &lt;/div&gt; tag. A maintainer for the project emailed the source website, and the error was fixed.</p>
+<p>You can find details of the other pull requests <a href="https://docs.google.com/a/princeton.edu/document/d/1r8h-Ju4GUvKcBymsK7gSK2CeJG-1mEeBHTG_d-AQu80/edit">here</a>.</p>
+<p dir="ltr"><strong>Attendee statistics</strong></p>
+<p>We were excited about the fact that the people who signed up (and showed up) were about 30% women! (Compare this to the <a href="http://adainitiative.org/2011/12/the-founder-gap-why-we-need-more-women-in-open-source/">estimated 2%</a> of women in the wider open-source community.) I hope our emphasis on reaching out to Princeton Women in CS and making the event beginner-friendly played a part in this.</p>
+<p>In response to the question “Please briefly describe your involvement in open source,” most people had never contributed before, but many had used Firefox, WordPress, Eclipse, Ubuntu, and various other flavors of Linux. One great anonymous response: “My brother forced me to install Ubuntu and use gcc to code, but I never really did much with it.” Many people mentioned that they were particularly interested in contributing to Linux, Firefox, and Chromium.</p>
+<p>The majority of people used Macs, more than half were already comfortable using the command line, and freshmen and sophomores made up about 70% of the registrants.</p>
+<p dir="ltr"><img class="aligncenter size-full wp-image-2612" alt="sign up stats" src="http://openhatch.org/blog/wp-content/uploads/2014/05/signup.png" width="584" height="591" /></p>
+<p dir="ltr"><strong>Future directions</strong></p>
+<p dir="ltr"><strong></strong>Some things we learned:</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">People really liked the more structured projects, like diagnosing bugs and practicing making pull requests. Some attendees struggled with the more-unstructured contributions workshop. We would encourage mentors to take a more active role in guiding students.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Alternatively, maybe find projects with more bite-size issues to address. Maybe add features instead of fixing bugs? Writing <a href="https://www.eff.org/https-everywhere/rulesets">HTTPS Everywhere rulesets</a> could be well-structured and rewarding.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Some attendees wanted the lectures to be more interactive.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">We should have encouraged people to follow the Hacker School <a href="https://www.hackerschool.com/manual#sub-sec-social-rules">social rules</a> for a more welcoming environment.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">The workshop was rather long, and we forgot to ask most people to fill out the exit survey.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Experienced CS students who attended the workshop weren’t annoyed by the review of the basics. In fact, one of them came up to us and said that he was very glad to see that we were going over git and version control, because a welcoming environment for beginners signaled that it would be welcoming for everyone else.</p>
+</li>
+</ul>
+<p>We’ve been continuing our work at Open Source at Princeton. Right now we’re running a long-term initiative with ThoughtWorks, a software consultancy, for students to contribute to <a href="http://openmrs.org/">OpenMRS</a>, an open-source electronic medical records platform. You can find our documentation and progress <a href="http://opensourceprinceton.wikidot.com/">here</a>.</p>
+<p>We’ll end with this encouraging exit survey response from an attendee:</p>
+<p>“The skills you&#8217;re introducing people to&#8230; no, the world you&#8217;re introducing people to—it is so valuable for everybody that this world is nourished. And there is no better way to build the community around it than to pair people off with mentors who can give one-on-one attention to these future open source contributors.”</p>
+<p><img class="aligncenter size-full wp-image-2613" alt="workshop organizers hugging" src="http://openhatch.org/blog/wp-content/uploads/2014/05/hug.png" width="584" height="486" /></p>
+<p dir="ltr"><strong>Thanks!</strong></p>
+<p>It took a lot of time and effort to make this happen, and we’d like to thank the following people and organizations.</p>
+<p>Members of OpenHatch: Shauna Gordon-McKeon and Asheesh Laroia.</p>
+<p>Members of Open Source at Princeton: Lisha Ruan, Katherine Ye, Valerie Morin, Dorothy Chen, Evelyn Ding, Colleen Carroll, Diana Liao, and Annie Chu.</p>
+<p>Mentors: David Prager Branner (Hacker School), Omar Rizwan (Hacker School), Katerina Barone-Adesi (Hacker School), Jeremy Baron (MediaWiki, OpenHatch), <a href="https://www.mediawiki.org/wiki/User:Sharihareswara_%28WMF%29">Sumana Harihareswara</a> (Wikimedia Foundation, Hacker School), Alex Clare (eBay, Hacker School), Alec Story (Google), and Paul Tagliamonte (Sunlight Foundation, Debian).</p>
+<p>(There was one mentor for every five students!)</p>
+<p>Organizations: Jane Street, GitHub, and Google sponsored us, and Princeton Women in CS helped us a lot with logistics.</p>
+<p>This workshop was inspired by the OpenHatch <a href="http://openhatch.org/blog/2014/teaching-open-source-at-columbia-university/">workshop</a> held at Columbia University.</p>
+</div>
+
+<div class="module-foot">
+  <p class="postmetadata"> <!-- Posted in <a href="http://blog.openhatch.org/category/uncategorized/" rel="category tag">Uncategorized</a> | -->   <a href="http://blog.openhatch.org/2014/open-source-comes-to-princeton/#respond">No comments yet &#187;</a></p>
+</div>
+</div>
+
+<div class="module" id="post-2598">
+<div class="module-head">
+  <h2>
+    <a style='color: #333;' href="http://blog.openhatch.org/2014/openhatch-newsletter-april-2014/" rel="bookmark"
+    title="Permanent Link to OpenHatch newsletter, April 2014">OpenHatch newsletter, April 2014</a>
+  </h2>
+
+  <div style='float: left; clear: left; font-weight: bold; width: 100%; font-size: 8pt; padding: 10px 0; '>
+    by Mike Linksvayer    <span style='color: #777;'>&bull;</span>
+    April 30th, 2014  </div>
+
+  <div class='clearer'></div>
+</div>
+
+<div class="module-body">
+  <div  style="z-index:0;position:relative;width:576px"   about="//openhatch.org/blog/wp-content/uploads/2014/04/oh-pycon2014.jpg">
+      <img src="//openhatch.org/blog/wp-content/uploads/2014/04/oh-pycon2014.jpg" width="576" height="324"/></p>
+<div style="position:absolute;z-index:1;right:0;bottom:0;color:#f0f0f0;font-size:x-small">
+        <a property="dc:title" rel="cc:attributionURL" href="https://twitter.com/bugZPDX/status/455891395333484545">The @openhatch sprint team at #pycon! Next year I have to stay longer!!</a>
+  </div>
+</div>
+<p>Welcome to OpenHatch newsletter number 21.</p>
+<p>Report on PyCon US 2014 forthcoming. <a href="http://www.pyvideo.org/category/50/pycon-us-2014">Videos</a> feature many talks by OpenHatch-related people and on OpenHatchy topics!</p>
+<p>Free ebook <a href="http://opensource.com/resources/how-get-started-open-source">How to get started with open source</a> includes a chapter on Open Source Comes to Campus Q&#038;A by Shauna Gordon-McKeon.</p>
+<p>Reports on Open Source Comes to Campus events recently held at <a href="http://openhatch.org/blog/2014/teaching-open-source-at-umass-amherst/">UMass Amherst</a> and <a href="http://openhatch.org/blog/2014/teaching-open-source-at-rutgers-university/">Rutgers</a>.</p>
+<p>Four Open Source Comes to Campus events were held this month, at <a href="http://hackmason.org/openhatch/">George Mason University</a>, SUNY Stony Brook, <a href="http://chicago.openhatch.org/">Northeastern Illinois University</a>, and <a href="http://openhatch.mit.edu/">MIT</a>.  Pictures and blog posts coming soon!  Next month is <a href="http://hartnell.openhatch.org/">Hartnell College</a> on May 3rd and <a href="http://davis.openhatch.org/">UC-Davis</a>  on May 10th.  There&#8217;s still room for students and mentors at both!   Click the links to sign up.</p>
+<p>OpenHatch participant Kyzz <a href="http://openhatch.org/blog/2014/what-openhatch-has-taught-me/ ">wrote about what he has learned</a> from asking and answering questions on our IRC channel.</p>
+<p>Bruce Byfield writes in Linux Magazine on <a href="http://www.linux-magazine.com/Online/Features/OpenHatch">OpenHatch: Non-profit advises projects, helps volunteers</a> and <a href="http://www.linux-magazine.com/Online/Blogs/Off-the-Beat-Bruce-Byfield-s-Blog/The-birth-of-SpinachCon">The birth of SpinachCon</a>.</p>
+<p>Philip Durbin attended the recent OpenHatch event at MIT, found out about AppInventor, and his <a href="https://plus.google.com/+PhilipDurbin/posts/PbtgTWgqQry">7 year old just made her first app.</a></p>
+<h3>New projects in the OpenHatch volunteer opportunity finder</h3>
+<ul>
+<li><a href="https://openhatch.org/projects/Blindspot">Blindspot</a>, &#8220;an accessible Windowless Windows desktop app, focussing on providing access to the Spotify service to blind or partially-sighted screen reader users&#8221;.</li>
+<li><a href="https://openhatch.org/projects/SCons">SCons</a>, &#8220;an improved, cross-platform substitute for the classic Make utility&#8221;.</li>
+<li><a href="http://openhatch.org/projects/Oscar">Oscar</a>, &#8220;an open-source ecommerce framework for Django&#8221;.</li>
+</ul>
+<h3>OpenHatchy but not OpenHatch things around the web</h3>
+<p><a href="http://networkcollectiv.es/2014/03/09/community-data-science-workshops/">Community Data Science Workshops at UW</a> &#8212; &#8220;designed with lots of help and inspiration from Shauna Gordon-McKeon and Asheesh Laroia of OpenHatch and lots of inspiration from the Boston Python Workshop.&#8221;</p>
+<p><a href="https://plus.google.com/+AudreyTang/posts/gcymHuaxsru">Programming Languages and RailsGirls.tw</a> transcript and slides from talk by Audrey Tang.</p>
+<p>Steve Klabnik on <a href="http://words.steveklabnik.com/how-to-be-an-open-source-gardener">How to be an open source gardener</a>.</p>
+<p>Rachel Nabors writes <a href="http://rachelnabors.com/2012/04/of-github-and-pull-requests-and-comics/">Of GitHub and Pull Requests (and comics)</a>.</p>
+<p>Bonnie Bogle on <a href="https://www.mapbox.com/blog/women-who-code-mapbox/">Women Who Code @Mapbox</a>.</p>
+<p>Julie Evans on <a href="http://jvns.ca/blog/2014/04/26/i-dont-feel-guilty-about-not-contributing-to-open-source/">not feeling guilty about not contributing to open source</a>, and when to contribute.</p>
+<p>Also check out links submitted to <a href="http://www.reddit.com/r/openhatch">/r/openhatch</a>, and add your finds!</p>
+<h3>Get involved</h3>
+<p>You can help write this newsletter! The May newsletter <a href="http://htmlpad.org/oh-newsletter-201405/edit">in progress</a> (<a href="http://htmlpad.org/oh-newsletter-201405">preview</a>). Join our <a href="http://lists.openhatch.org/mailman/listinfo/publicity">publicity list</a> or hop on <a href="http://webchat.freenode.net/?nick=openhatch_....&#038;channels=openhatch">#openhatch</a> with suggestions and questions.</p>
+<p>Thanks to Britta Gustafson and Shauna Gordon-McKeon for contributing to this edition!</p>
+<p><a href="https://openhatch.org/blog/tag/newsletter">Read previous newsletters.</a></p>
+<p><a href="https://www.facebook.com/openhatch">Like</a> <a href="https://plus.google.com/115325121477337042677">+1</a>, follow @openhatch at <a href="http://identi.ca/openhatch">identi.ca</a> or <a href="http://twitter.com/openhatch">Twitter</a>.</p>
+</div>
+
+<div class="module-foot">
+  <p class="postmetadata"> <!-- Posted in <a href="http://blog.openhatch.org/category/uncategorized/" rel="category tag">Uncategorized</a> | -->   <a href="http://blog.openhatch.org/2014/openhatch-newsletter-april-2014/#respond">No comments yet &#187;</a></p>
+</div>
+</div>
+
+<div class="module" id="post-2591">
+<div class="module-head">
+  <h2>
+    <a style='color: #333;' href="http://blog.openhatch.org/2014/what-openhatch-has-taught-me/" rel="bookmark"
+    title="Permanent Link to What OpenHatch has taught me">What OpenHatch has taught me</a>
+  </h2>
+
+  <div style='float: left; clear: left; font-weight: bold; width: 100%; font-size: 8pt; padding: 10px 0; '>
+    by Kyzz    <span style='color: #777;'>&bull;</span>
+    April 22nd, 2014  </div>
+
+  <div class='clearer'></div>
+</div>
+
+<div class="module-body">
+  <blockquote><p>There’s a saying that goes something like this: “We are what we repeatedly do.  Excellence then, is not an act, but a habit” – Aristotle</p></blockquote>
+<p>&nbsp;</p>
+<p>In my opinion OpenHatch embodies this saying each time I dive deeper into the community.  Although I have yet to contribute much due to time constraints I still find the contributors delightful.  I found myself in the OpenHatch IRC channel asking questions about FOSS and trying to learn, and many people gladly take time out of their day to answer your questions and further your understanding of what you’re working on.  The most shocking part to me was how efficient OpenHatch is about getting people involved in the open source community –  from the ground up.  One of the more interesting workshops the folks over at OpenHatch have been working on is “Open Source Comes to Campus.”  Essentially, volunteers come to your college campus to teach practical skills needed to contribute to open source projects.</p>
+<p>I think that open source software is very important to keep around and is a great place to start for people who want to learn.  You don’t even have to know how to code to be a part of something really special – as long as you have some sort of skill you can contribute.  I have yet to have a bad experience with anyone from this community, and thanks to everyone at OpenHatch who has sparked my interests in free software.  Personally, I try to welcome newcomers to the community and answer general questions that may come up.  I also keep up with a few OpenHatch mailing lists and when I have enough time I hope to contribute to the code base.</p>
+<p>The biggest thing that I’ve learned from OpenHatch is that no matter how big or small your contribution matters, and it feels AWESOME to be a part of something that might help others.  The second biggest thing I’ve learned is to never be afraid to ask a question, but also don’t forget to listen.  Often times, when you are learning new things it’s hard to understand the first time around.  If you don’t understand, just ASK.  Everyone I have come in contact with in this community has a great humility to them, and they really do help.  To get involved just drop by the OpenHatch IRC channel on freenode!</p>
+<p>Before I started frequenting OpenHatch I never found a community that was anything close to the awesome atmosphere for self and community growth.  The first time interacting with a new community online you would generally feel some apprehension.  You may be interested in how to contribute, and all those questions have been asked a million times, but it’s important that your voice is heard!  Although, one thing worth mentioning is that is it NEVER necessary to ask to ask a question – just ask away!</p>
+</div>
+
+<div class="module-foot">
+  <p class="postmetadata"> <!-- Posted in <a href="http://blog.openhatch.org/category/uncategorized/" rel="category tag">Uncategorized</a> | -->   <a href="http://blog.openhatch.org/2014/what-openhatch-has-taught-me/#respond">No comments yet &#187;</a></p>
+</div>
+</div>
+
+<div class="module" id="post-2569">
+<div class="module-head">
+  <h2>
+    <a style='color: #333;' href="http://blog.openhatch.org/2014/teaching-open-source-at-rutgers-university/" rel="bookmark"
+    title="Permanent Link to Teaching open source at Rutgers University">Teaching open source at Rutgers University</a>
+  </h2>
+
+  <div style='float: left; clear: left; font-weight: bold; width: 100%; font-size: 8pt; padding: 10px 0; '>
+    by Shauna    <span style='color: #777;'>&bull;</span>
+    April 17th, 2014  </div>
+
+  <div class='clearer'></div>
+</div>
+
+<div class="module-body">
+  <p dir="ltr"><img class="aligncenter size-full wp-image-2583" alt="students at Rutgers OSCTC" src="http://openhatch.org/blog/wp-content/uploads/2014/04/IMG_41893.jpg" width="577" height="385" /></p>
+<p dir="ltr">On Monday, October 21st, we ran our seventeenth Open Source Comes to Campus event at Rutgers University.  We were invited to Rutgers by <a href="http://www.raakshasi.com/">Sri Raga Velagapudi</a>, who we met at <a href="http://openhatch.org/blog/2014/openhatch-at-grace-hopper-open-source-day/">Grace Hopper Open Source Day</a> only two weeks before.  Myself, Sri, and Prachi Pendse, a CS graduate student, worked hard to pull off a great event on short notice.</p>
+<p dir="ltr">This was our first weekday event, and unsurprisingly there were a lot of students coming and going as they fit the event in between classes. Despite being short-staffed (three staff and thirty students made for a 1:10 mentor:student ratio) we had little trouble keeping students caught up.  This was due in large part to the friendliness of the attendees, who often reached out to help students who were arriving late.  We also made use of the <a href="https://openhatch.org/wiki/What_You_Missed">What You Missed</a> wiki page.</p>
+<p dir="ltr">The event was also shorter than average.  The time was mostly lost from our contributions workshop, the last activity of the day.  This meant that students were only able to get through the first steps of contributing, such as picking a project, and reading through an issue to understand it.  Students got a great deal out of these beginning steps, and did not seem to mind having to stop before they&#8217;d even decided what to work on.  This is an important lesson for events with longer workshops: students shouldn&#8217;t feel rushed or pushed to contribute, but encouraged to take their time familiarizing themselves the process.</p>
+<p dir="ltr">We learned as much as our students did from this event!  We hope to return to Rutgers soon.</p>
+</div>
+
+<div class="module-foot">
+  <p class="postmetadata"> <!-- Posted in <a href="http://blog.openhatch.org/category/uncategorized/" rel="category tag">Uncategorized</a> | -->   <a href="http://blog.openhatch.org/2014/teaching-open-source-at-rutgers-university/#respond">No comments yet &#187;</a></p>
+</div>
+</div>
+
+<div class="module" id="post-2508">
+<div class="module-head">
+  <h2>
+    <a style='color: #333;' href="http://blog.openhatch.org/2014/teaching-open-source-at-umass-amherst/" rel="bookmark"
+    title="Permanent Link to Teaching open source at UMass Amherst">Teaching open source at UMass Amherst</a>
+  </h2>
+
+  <div style='float: left; clear: left; font-weight: bold; width: 100%; font-size: 8pt; padding: 10px 0; '>
+    by Shauna    <span style='color: #777;'>&bull;</span>
+    April 9th, 2014  </div>
+
+  <div class='clearer'></div>
+</div>
+
+<div class="module-body">
+  <p>&nbsp;</p>
+<p style="text-align: center;"><img class="size-full wp-image-2561 aligncenter" alt="Students working at Open Source Comes to Campus - UMass." src="http://openhatch.org/blog/wp-content/uploads/2014/04/umass.jpg" width="576" height="384" /></p>
+<p>On Sunday, March 9th, we ran another Open Source Comes to Campus event at UMass Amherst.  We ran a first event <a href="http://openhatch.org/blog/2013/umass/">at UMass last April</a>, and hope to run another next year!  Many thanks to our wonderful in-person mentors <a href="http://mars.wne.edu/~hellis/">Heidi Ellis</a>, Karl Wurst, and <a href="http://terriyu.info/blog">Terri Yu</a>, and to our remote mentors <a href="http://blogs.gnome.org/marina">Marina Zhurakhinskaya</a>, Sean Lip, Yana Malysheva, and Jacob Davis.</p>
+<p><strong>Contributions</strong></p>
+<ul>
+<li>The first contribution of the day came during the first hour!  One student noticed a mistake in our bug tracker activity and, with our encouragement, <a href="https://github.com/openhatch/open-source-comes-to-campus/issues/71">filed a bug</a>.</li>
+<li>During the contributions workshop, two students worked on issues in the <a href="http://osc.centerforopenscience.org/">Open Science Collaboration blog</a>.  Both involved <a href="https://github.com/getpelican/pelican-plugins">adding plug-ins</a> to the blogging framework Pelican so the students were able to help each other with the process.  One student gave readers the ability to share individual blog posts via email and social media <a href="https://github.com/CenterForOpenScience/osc/pull/59">with the click of a button</a>. Another student gave authors the ability to <a href="https://github.com/CenterForOpenScience/osc/pull/60">place parts of articles behind a cut</a>.  Both enhancements have been merged into the project and are being used by the community.</li>
+<li>One student attempted to work on the <a href="http://osc.centerforopenscience.org/">Open Science Collaboration blog</a>, but had difficulty setting up Pelican on Windows.  Not to be deterred, she stayed an hour after the event was technically over working with a remote mentor to fix the problem.</li>
+<li>Mentor Heidi Ellis led a small group of students interested in <a href="https://wiki.gnome.org/action/show/Projects/MouseTrap">Mousetrap</a>, a GNOME application that allows users with physical disabilities to move a mouse cursor.  Working together on a single machine, they found and reported <a href="https://bugzilla.gnome.org/show_bug.cgi?id=725999">a bug that was causing the program to crash</a>.</li>
+<li>Another student contributed to <a href="https://github.com/shaunagm/oh-irc-bot">WelcomeBot</a>, a small OpenHatch project which aims to welcome newcomers to our IRC channel even when no one else is there.  <a href="https://github.com/shaunagm/oh-irc-bot/pull/7">He implemented</a> a vast improvement in how the bot recognizes when it&#8217;s being greeted or asked for help.</li>
+</ul>
+<p><strong>Notes</strong></p>
+<ul>
+<li>With deadlines for the <a href="http://gnome.org/opw/">Outreach Program for Women</a> and <a href="https://www.google-melange.com/gsoc/homepage/google/gsoc2014">Google Summer of Code</a> coming up, we spent a lot of time talk about opportunities for students and how to pursue them. OPW organizer Marina Zhurakhinskaya talked with students over video chat during our career panel and mentored student applicants during the contributions workshop.  Several students remarked on how much they appreciated her help.  Although the focus we give to internships will vary based on proximity to application deadlines, we plan on highlighting these kinds of opportunities more prominently, and have made <a href="https://openhatch.org/wiki/Opportunities">a wiki page on the topic</a> to help us do so.</li>
+<li>We tried out <a href="https://openhatch.org/wiki/Open_Source_Comes_to_Campus/Curriculum/Directory">a new version</a> of the Practicing Git activity. We aimed to retain the interactive elements of <a href="https://openhatch.org/wiki/Open_Source_Comes_to_Campus/Curriculum/Git">our typical activity</a> while allowing the tutorial to be lead by a single presenter. The new activity also had the benefit of being not <em>entirely</em> a toy project.  The activity was generally well received, making it a good option for events where only a single mentor is comfortable teaching git.</li>
+<li>The Contributions Workshop continues to improve.  All but one student stayed through the entirety of the workshop, with more than a third of students continuing past the official ending time.  Two student submitted pull requests to projects later that night.  At the same time, we did have some difficulty connecting students with our remote mentors.  We received a ton of useful feedback from the maintainers of our first <a href="http://campus.openhatch.org/projects.html">OpenHatch-Affiliated Project</a>, <a href="https://code.google.com/p/oppia/">Oppia</a>.  We hope that by introducing students to projects before the event, arranging for video-based introductions, and pairing remote mentors with local mentors, we can continue making the Contributions Workshop even more enjoyable.</li>
+<li>UMass once again opened itself up to students from other schools, and once again Mt Holyoke was well represented.  Given the interest in open source from Mt Holyoke, we hope to run an event there soon!</li>
+</ul>
+</div>
+
+<div class="module-foot">
+  <p class="postmetadata"> <!-- Posted in <a href="http://blog.openhatch.org/category/uncategorized/" rel="category tag">Uncategorized</a> | -->   <a href="http://blog.openhatch.org/2014/teaching-open-source-at-umass-amherst/#respond">No comments yet &#187;</a></p>
+</div>
+</div>
+
+<div class="module" id="post-2552">
+<div class="module-head">
+  <h2>
+    <a style='color: #333;' href="http://blog.openhatch.org/2014/newsletter-march-2014/" rel="bookmark"
+    title="Permanent Link to OpenHatch newsletter, March 2014">OpenHatch newsletter, March 2014</a>
+  </h2>
+
+  <div style='float: left; clear: left; font-weight: bold; width: 100%; font-size: 8pt; padding: 10px 0; '>
+    by Mike Linksvayer    <span style='color: #777;'>&bull;</span>
+    March 31st, 2014  </div>
+
+  <div class='clearer'></div>
+</div>
+
+<div class="module-body">
+  <div  style="z-index:0;position:relative;width:576px"   about="http://openhatch.org/blog/wp-content/uploads/2014/03/openhatch-sticker-lineup.jpg">
+      <img src="http://openhatch.org/blog/wp-content/uploads/2014/03/openhatch-sticker-lineup.jpg" width="576" height="432"/></p>
+<div style="position:absolute;z-index:1;right:0;bottom:0;color:#f0f0f0;font-size:small">
+        <a property="dc:title" rel="cc:attributionURL" href="https://twitter.com/jillysciarilly/status/448825210326626304">OMG @terrimyu is the sweetest thing EVER!!! Love love love my @openhatch stickers!!!</a>
+  </div>
+</div>
+<p>Welcome to OpenHatch newsletter number 20.</p>
+<p><a href="http://www.framablog.org/index.php/post/2014/03/05/guide-preparation-evenement-logiciel-libre">French translation</a> of the OpenHatch <a href="http://opensource-events.com/">In-Person Event Handbook</a>.</p>
+<p><a href="https://openhatch.org/blog/2014/spinachcon-zero-a-huge-success/">SpinachCon Zero == A Huge Success!</a> for free software user testing hackathon:</p>
+<blockquote><p>We also have some exciting plans for the future. As you may have guessed  by where this blog’s been posted, OpenHatch is going to be the official  organizational home for SpinachCon going forward. Once we’ve sorted  through the data and suggestions we gathered at the first event, we’ll  improve the tests and materials so they can be shared and used at other  events. OpenHatch has long been interested in finding more ways for  non-technical contributors to participate in the creation of free  software, so this is a great fit! OpenHatch already hosts the very  popular Open Source Comes to Campus  events at schools around the country. We often get asked, “What can we  do next?” and hosting a SpinachCon will soon be one of the answers we  can give.</p></blockquote>
+<p>Two Open Source Comes to Campus events this month, at <a href="http://umass.openhatch.org/">UMass-Amherst</a> and <a href="http://ccsf.openhatch.org/">City College of San Francisco</a>.  Blog posts coming soon.  Coming up in April: George Mason University (April 19th), Northeastern Illinois University (April 26th) and MIT (April 26th and 27th).  Contact us if you want to get involved!</p>
+<p>List of <a href="https://openhatch.org/blog/2014/summer-internships-for-open-source-enthusiasts/">Summer Internships for Open Source Enthusiasts</a>. Still time to apply for several!</p>
+<p><a href="https://openhatch.org/blog/2014/january-sprint/">How we prepared an open source sprint that converted friends into new contributors.</a> Scroll to the bottom for a bonus ASCII patch-review flow chart.</p>
+<p>Two new wiki pages: <a href="https://openhatch.org/wiki/Contributing_to_Python">Contributing to Python</a> and <a href="https://openhatch.org/wiki/Triaging_Python_tickets">Triaging Python tickets</a>. (&#8220;<a href='https://twitter.com/jessicamckellar/status/446019537629351936'>Python has 800 patches stalling on a review. Want to help me review them? Great way to start contributing.</a>&#8220;)</p>
+<h3>New projects in the OpenHatch volunteer opportunity finder</h3>
+<ul>
+<li><a href="http://openhatch.org/projects/ProteanOS">ProteanOS</a> is a fully-free operating system distribution of binary packages, configurable for a wide variety of embedded systems. It invites newcomers to help with <a href="http://www.proteanos.com/dev/pkg/needed/">making</a> and <a href="http://www.proteanos.com/dev/pkg/spf-2.0/">updating</a> software packages, developing distribution tools, drafting technical documentation, and <a href="http://www.proteanos.com/dev/">more</a>.</li>
+</ul>
+<h3>OpenHatchy but not OpenHatch things around the web</h3>
+<p>Outreach Program for Women wins the Free Software Foundation&#8217;s <a href="http://www.fsf.org/news/free-software-award-winners-announced">Award for Projects of Social Benefit</a>!</p>
+<p>Selena Deckelmann&#8217;s slides and speaker notes on <a href="https://speakerdeck.com/selenamarie/what-beginners-teach-us-passion-projects">What Beginners Teach Us</a>.</p>
+<p>RIT launches first <a href="http://www.rit.edu/news/story.php?id=50590">minor in free and open source software and free culture</a>.</p>
+<p><a href="https://www.edx.org/course/linuxfoundationx/linuxfoundationx-lfs101x-introduction-1621">Introduction to Linux MOOC</a> starting 3rd quarter 2014.</p>
+<p><a href="http://blog.loomio.org/2014/03/08/open-sourcing-feminism-the-challenge-of-collective-intelligence-in-2014/">Open Sourcing Feminism: The Challenge of Collective Intelligence in 2014</a> by Vivien Maidaborn, one of two female founders of Loomio.</p>
+<p><a href="https://news.ycombinator.com/item?id=7407080">Ask HN: Best OSS Projects for Beginning Contributors</a></p>
+<p>Knight News Challenge entry from Sandra Ordenez: <a href="https://www.newschallenge.org/challenge/2014/feedback-review/increasing-diversity-in-open-source-for-a-better-internet">Increasing Diversity in Open Source for a Better Internet</a>.</p>
+<p>Wikimedia series on <a href="http://blog.wikimedia.org/2014/03/25/seeing-through-the-eyes-of-new-technical-contributors/">Seeing through the eyes of new technical contributors</a>.</p>
+<p>Lukas Blakk, <a href="http://lukasblakk.com/ascend-project-kickoff/">Project Ascend Kickoff</a>:</p>
+<blockquote><p>I had an idea to create an open source version and specifically target  participants who come from underemployed, LGBTQ, Latin@, and African  American populations – aka: people who are terribly underrepresented in  tech but also very much more so in Open Source. The idea was that  instead of people paying to come learn to become developers in the  capitalist, Startup-focused, feeding-frenzy the Silicon Valley promotes  we could instead seed other towns, other communities with open source  and create an in-depth technical contribution training program that more  mirrored the experience I had with Dave Humphrey at Seneca College.</p></blockquote>
+<p>Opensource.com: <a href="http://opensource.com/education/14/3/open-education-workshop-explores-foss">Academic computer science education group puts focus on open source</a>.</p>
+<p>Also check out links submitted to <a href="http://www.reddit.com/r/openhatch">/r/openhatch</a>, and add your finds!</p>
+<h3>Get involved</h3>
+<p>You can help write this newsletter! The April newsletter <a href="http://htmlpad.org/oh-newsletter-201404/edit">in progress</a> (<a href="http://htmlpad.org/oh-newsletter-201404">preview</a>). Join our <a href="http://lists.openhatch.org/mailman/listinfo/publicity">publicity list</a> or hop on <a href="http://webchat.freenode.net/?nick=openhatch_....&#038;channels=openhatch">#openhatch</a> with suggestions and questions.</p>
+<p>Thanks to Britta Gustafson and Shauna Gordon-McKeon for contributing to this edition!</p>
+<p><a href="https://openhatch.org/blog/tag/newsletter">Read previous newsletters.</a></p>
+<p><a href="https://www.facebook.com/openhatch">Like</a> <a href="https://plus.google.com/115325121477337042677">+1</a>, follow @openhatch at <a href="http://identi.ca/openhatch">identi.ca</a> or <a href="http://twitter.com/openhatch">Twitter</a>.</p>
+</div>
+
+<div class="module-foot">
+  <p class="postmetadata"> <!-- Posted in <a href="http://blog.openhatch.org/category/uncategorized/" rel="category tag">Uncategorized</a> | -->   <a href="http://blog.openhatch.org/2014/newsletter-march-2014/#respond">No comments yet &#187;</a></p>
+</div>
+</div>
+
+<div class="module" id="post-2523">
+<div class="module-head">
+  <h2>
+    <a style='color: #333;' href="http://blog.openhatch.org/2014/spinachcon-zero-a-huge-success/" rel="bookmark"
+    title="Permanent Link to SpinachCon Zero == A Huge Success!">SpinachCon Zero == A Huge Success!</a>
+  </h2>
+
+  <div style='float: left; clear: left; font-weight: bold; width: 100%; font-size: 8pt; padding: 10px 0; '>
+    by freedeb    <span style='color: #777;'>&bull;</span>
+    March 27th, 2014  </div>
+
+  <div class='clearer'></div>
+</div>
+
+<div class="module-body">
+  <p><strong>Sometimes your favorite free software has a piece of spinach in its teeth, and they need you to let them know.</strong></p>
+<p><a href="http://openhatch.org/blog/wp-content/uploads/2014/03/small-GnashGnuSpinach.png"><img src="http://openhatch.org/blog/wp-content/uploads/2014/03/small-GnashGnuSpinach.png" alt="small-GnashGnuSpinach" width="180" height="188" class="alignright size-full wp-image-2525" /></a></p>
+<p>We had a really great group at the <a href="https://www.fsf.org/blogs/community/the-0th-spinachcon">inaugural SpinachCon</a>. Around 30 people participated in friendly user-testing, aka pointing out the &#8220;spinach&#8221; in free software. Four projects; Hyperkitty &#8212; a user-facing Mailman application, <a href="http://www.inkscape.org/en/">Inkscape</a> &#8212; fantastic vector graphics editor, <a href="https://www.libreoffice.org/">LibreOffice</a> &#8212; a free office suite and <a href="http://www.mediagoblin.org">MediaGoblin</a> &#8212; a decentralized media-hosting platform, brought machines and tasks for users to test. We had a mix of people who were in town a bit early for <a href="https://libreplanet.org/2014/">LibrePlanet</a> and locals from our awesome <a href="http://www.meetup.com/desktop-linux-users-group/">Boston/Cambridge area Desktop GNU/Linux Users group</a>. The end result was a lot of great and varied user feedback for the participating projects over the course of the five hour event. </p>
+<div id="attachment_2533" style="width: 586px" class="wp-caption aligncenter"><a href="http://openhatch.org/blog/wp-content/uploads/2014/03/mediagoblintesting_medium.jpg"><img src="http://openhatch.org/blog/wp-content/uploads/2014/03/mediagoblintesting_medium-576x383.jpg" alt="CC-BY-SA 3.0 By Bryan Smith" width="576" height="383" class="size-medium wp-image-2533" /></a><p class="wp-caption-text"><a href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA 3.0</a> By <a href="http://media.fossetcon.org/u/bryan/">Bryan Smith</a></p></div>
+<p>You might be wondering what kind of feedback we got. There&#8217;s a great write-up on what Hyperkitty got out of the event <a href="http://blog.linuxgrrl.com/2014/03/25/hyperkitty-at-the-0th-spinachcon/">here.</a> A lot of the MediaGoblin and LibreOffice feedback was procedural, which I think is probably some of the hardest stuff for developers to see for themselves. Examples included critiques; &#8220;I couldn&#8217;t find the search box&#8221; and &#8220;I thought it was going to confirm, but it didn&#8217;t&#8221; as well as positive comments like, &#8220;I liked the simplicity of the interface&#8221; and &#8220;The overall feel is nice.&#8221; All of the folks who brought projects in for user-testing said they were really glad they did. </p>
+<p>As the person who asked everyone to participate, I have a ton of thank-you&#8217;s to dispense. <a href="http://industry-lab.com/">Industry Lab</a> was very gracious as we slowly sucked all their spare tables and chairs into the spacious room we took over for the day. MediaGoblin&#8217;s technical lead Chris Webber took time out from the middle of <a href="http://www.mediagoblin.org/pages/campaign.html" title="Busy and important!">a busy funding campaign</a> to set up some testing instances. Robinson Tryon took an incredibly early train down from Vermont to lead people through LibreOffice tasks. Máirín Duffy brought HyperKitty (and her tiny daughter) into the city so we could all see the new face of Mailman. Martin Owens also brought his small daughter in and took notes as people worked their way through Inkscape tutorials. We hit some small snags &#8212; not unexpected whenever you&#8217;re trying to do something new &#8212; so I&#8217;d especially like to thank all our attendees for being so patient and understanding. Lastly, thanks to the <a href="http://openinventionnetwork.com/" title="Thanks!">Open Invention Network</a> for providing USB keys and buying us lunch; lots of spinach salad and plenty of pizza was eaten. </p>
+<div id="attachment_2535" style="width: 586px" class="wp-caption aligncenter"><a href="http://openhatch.org/blog/wp-content/uploads/2014/03/cannedspinach_medium.jpg"><img src="http://openhatch.org/blog/wp-content/uploads/2014/03/cannedspinach_medium-576x383.jpg" alt="CC-BY-SA 3.0 by Bryan Smith" width="576" height="383" class="size-medium wp-image-2535" /></a><p class="wp-caption-text"><a href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA 3.0</a> by <a href="http://media.fossetcon.org/u/bryan/">Bryan Smith</a></p></div>
+<p>We also have some exciting plans for the future. As you may have guessed by where this blog&#8217;s been posted, OpenHatch is going to be the official organizational home for SpinachCon going forward. Once we&#8217;ve sorted through the data and suggestions we gathered at the first event, we&#8217;ll improve the tests and materials so they can be shared and used at other events. OpenHatch has long been interested in finding more ways for non-technical contributors to participate in the creation of free software, so this is a great fit! OpenHatch already hosts the very popular <a href="http://campus.openhatch.org/">Open Source Comes to Campus</a> events at schools around the country. We often get asked, &#8220;What can we do next?&#8221; and hosting a SpinachCon will soon be one of the answers we can give. </p>
+<p>In the short-term, we&#8217;re looking to schedule another local event. In the spirit of meta-spinach finding, we&#8217;d love to hear your comments on how to make the second SpinachCon even better if you attended last Friday&#8217;s event. We&#8217;ll be announcing the next local iteration via the <a href="http://www.meetup.com/desktop-linux-users-group/" title="Join here.">Boston Desktop GNU/Linux Users group</a>.</p>
+</div>
+
+<div class="module-foot">
+  <p class="postmetadata"> <!-- Posted in <a href="http://blog.openhatch.org/category/uncategorized/" rel="category tag">Uncategorized</a> | -->   <a href="http://blog.openhatch.org/2014/spinachcon-zero-a-huge-success/#comments">1 Comment &#187;</a></p>
+</div>
+</div>
+
+<div class="module" id="post-2510">
+<div class="module-head">
+  <h2>
+    <a style='color: #333;' href="http://blog.openhatch.org/2014/summer-internships-for-open-source-enthusiasts/" rel="bookmark"
+    title="Permanent Link to Summer Internships for Open Source Enthusiasts">Summer Internships for Open Source Enthusiasts</a>
+  </h2>
+
+  <div style='float: left; clear: left; font-weight: bold; width: 100%; font-size: 8pt; padding: 10px 0; '>
+    by Shauna    <span style='color: #777;'>&bull;</span>
+    March 19th, 2014  </div>
+
+  <div class='clearer'></div>
+</div>
+
+<div class="module-body">
+  <p>It&#8217;s the heart of internship application season, and we want to spread the word about opportunities to contribute to open source this summer. The following list of internships are all funded, open to (though not always limited to) students, and taking place over the summer.</p>
+<p>Some of these internships are coming up <em>very</em> soon.  In an ideal world, this blog post would&#8217;ve been up a month ago.  Our apologies!  Please check the application deadlines first.</p>
+<p><strong>Multi-project Programs</strong></p>
+<p>The following programs support students working on multiple projects for several different organizations.</p>
+<ul>
+<li><a href="https://www.google-melange.com/gsoc/homepage/google/gsoc2014">Google Summer of Code</a> is the largest and best known program supporting student participation in open source.  This coding-focused internship funds thousands of students across the globe as they work on hundreds of open source projects.  The deadline this year is <strong>March 21st</strong>.</li>
+<li>The<a href="https://wiki.gnome.org/OutreachProgramForWomen"> GNOME Outreach Project for Women</a> is like Google Summer of Code, but smaller, not exclusively focused on code contributions, and restricted to people assigned female at birth and/or identifying as a woman, genderqueer, genderfluid, or genderfree (regardless of assignment at birth).  It&#8217;s also not limited to students.  The deadline this year is <strong>March 31st</strong>.</li>
+<li><a href="http://railsgirlssummerofcode.org/">Rails Girls Summer of Code</a> is a relatively new program (this is their second year) sponsoring work on Rails and Ruby open source projects.  People who self-identify as female or have experience being socialized female are given preference during selection.  The program is not limited to students, but professional developers should not apply.  The deadline this year is <strong>May 2nd</strong>.</li>
+<li>The <a href="http://www.dataone.org/internships">DataONE summer internship program</a> supports work on projects aligning with DataONE&#8217;s mission: &#8220;the foundation of new innovative environmental science through a distributed framework and sustainable cyberinfrastructure that meets the needs of science and society for open, persistent, robust, and secure access to well-described and easily discovered Earth observational data.&#8221;  Undergraduate and graduate students, as well as postgraduates of up to 5 years, are encouraged to apply.  The deadline this year is <strong>March 18th</strong>.</li>
+</ul>
+<p><strong>Single Project Programs</strong></p>
+<p>The following programs support students working within a single organization.</p>
+<ul>
+<li><span style="line-height: 13px;"><a href="https://meta.wikimedia.org/wiki/Grants:IEG">Wikimedia&#8217;s Individual Engagement Grants</a> support &#8220;projects that provide opportunities to reach the Wikimedia movement&#8217;s goal of spreading participation in free culture across boundaries of language, gender, and geography. We seek out opportunities for growth in under-represented demographics, smaller and newer Wikimedia projects, and communities in the global south.&#8221;  These grants are ideal for people who are already involved in the Wikimedia community and have their own ideas about how to improve it!  The deadline this year is <strong>March 31st</strong>.</span></li>
+<li><a href="https://www.khanacademy.org/careers/interns">Khan Academy</a>, the non-profit education website, is looking for software developer interns &#8220;to create a free virtual classroom for the world&#8221;.  Their website does not list an application deadline.</li>
+<li><a href="http://centerforopenscience.org/jobs/#devintern">The Center for Open Science</a>, a new non-profit focused on &#8220;improving the alignment between scientific values and scientific practices to improve the accumulation and application of knowledge&#8221; has closed their application for this year&#8217;s summer interns. Bookmark them for next year!</li>
+</ul>
+<p>See something we&#8217;ve missed?  Leave a comment and/or add it to our <a href="https://openhatch.org/wiki/Opportunities">Opportunities wiki page</a>, and we&#8217;ll update this post.</p>
+<p><strong>Edited to add &#8211; </strong>Thanks to Ashwini Oruganti (<a href="https://twitter.com/_ashfall_/status/447083057426604032">Ashfall</a> on Twitter), we have two more opportunities to list:</p>
+<ul>
+<li>The <a href="http://www.x.org/wiki/XorgEVoC/">X.Org Endless Vacation of Code</a> is a program sponsoring students to work on the X Window System.  They encourage a broad range of proposals, especially technical documentation.  The program is not limited to the summer, and has no application deadline.</li>
+<li><a href="http://sophia.estec.esa.int/socis2014/">Summer of Code in Space (SOCIS)</a> is run by the European Space Agency and offers students stipends &#8220;to write code for various space-related open source software projects.&#8221;  It&#8217;s limited to undergraduate and graduate students attending institutions based in <a href="http://sophia.estec.esa.int/socis2014/faq#socis_elig_student_who">specific European countries</a>.  The deadline this year is <strong>May 15th</strong>.<a href="http://sophia.estec.esa.int/socis2014/"><br />
+</a></li>
+</ul>
+<p>&nbsp;</p>
+</div>
+
+<div class="module-foot">
+  <p class="postmetadata"> <!-- Posted in <a href="http://blog.openhatch.org/category/uncategorized/" rel="category tag">Uncategorized</a> | -->   <a href="http://blog.openhatch.org/2014/summer-internships-for-open-source-enthusiasts/#comments">1 Comment &#187;</a></p>
+</div>
+</div>
+
+<div class="module" id="post-2464">
+<div class="module-head">
+  <h2>
+    <a style='color: #333;' href="http://blog.openhatch.org/2014/january-sprint/" rel="bookmark"
+    title="Permanent Link to How we prepared an open source sprint that converted friends into new contributors: OpenHatch sprint report, San Francisco, January 4, 2014">How we prepared an open source sprint that converted friends into new contributors: OpenHatch sprint report, San Francisco, January 4, 2014</a>
+  </h2>
+
+  <div style='float: left; clear: left; font-weight: bold; width: 100%; font-size: 8pt; padding: 10px 0; '>
+    by Britta    <span style='color: #777;'>&bull;</span>
+    March 2nd, 2014  </div>
+
+  <div class='clearer'></div>
+</div>
+
+<div class="module-body">
+  <p><i>(Written by Asheesh and Britta)</i></p>
+<p><img src="//openhatch.org/blog/wp-content/uploads/2014/02/out.jpg" alt="Photo" width="576" height="384" class="alignnone size-full wp-image-2467" /></p>
+<p>On Saturday January 4, eight OpenHatch volunteers, new and experienced, gathered in San Francisco to work together on improving the OpenHatch website. We took over a couple tables in a cafe with a sprawl of laptops, cords, huge salads, and people asking each other lots of questions.
+</p>
+<p>To prepare for the event, Asheesh Laroia and Susan Tan followed the <a href="http://opensource-events.com/">In-Person Event Handbook</a>, a guide maintained by Shauna Gordon-McKeon. Susan sent pre-event announcements and acquired a generous food sponsorship from the Python Software Foundation. Asheesh worked on a list of tasks people might work on, and after the sprint ended, updated the list of tasks with their current status.</p>
+<p>Out of nine sprinters (Susan, Ni, Nate, Meghan, Mark, Jack (remote), Britta, Becka, Asheesh), four were new or almost-new contributors to OpenHatch &#8212; exciting! Thanks to Susan for reaching out to the Hackbright community to help invite new contributors.</p>
+<h3>More about the structure</h3>
+<p>New contributors sometimes find themselves lost while trying to find some part of the project where they can make a difference. As part of pre-sprint prep, per the <a href="http://opensource-events.com/#defining-tasks-for-attendees">Defining tasks for attendees</a> recommendations, we identified the following categories of useful things to do:</p>
+<ul>
+<li>Reviewing pull requests that fix existing issues, and giving people feedback, or merging them</li>
+<li>Fix technical issues that are obstacles for new contributors</li>
+<li>Read documentation for clarity, and fix if possible</li>
+<li>Fix high-priority technical issues that are obstacles for users</li>
+</ul>
+<p>Within each section, we mentioned specific tasks, including:</p>
+<ul>
+<li>A plain-English description of what to do</li>
+<li>An estimate of how long it might take</li>
+<li>Where to find more information, such as a bug report link</li>
+<li>The skills and tools needed to achieve the task</li>
+<li>Who, if anyone, in the room was working on it</li>
+</ul>
+<p>You can see a <a href="https://etherpad.mozilla.org/ep/pad/view/ohsprint/zq96blvinZ">snapshot of that document</a> taken when the event ended.</p>
+<p>To help attendees know what to expect, we sent an <a href="http://lists.openhatch.org/pipermail/devel/2014-January/003366.html">email</a> to the OpenHatch development mailing list before the event began.</p>
+<p>We think that spending time coming up with these categories, and naming specific tasks, helped people understand how they could best use their skills and interests. The plain-English descriptions helped people find something to work on. One person who cares passionately about Python web app deployment found a Heroku-related issue to address; another who loves copy-editing found a way to do that. Yet another person who had her own ideas got to work on them, successfully ignoring the list!</p>
+<p>Most of all, since the list was already prepared when attendees arrived, we could focus our mentorship time on answering questions about how to do something, going beyond just <em>what</em> to do.</p>
+<h3>What we worked on</h3>
+<ul>
+<li><a href="https://github.com/urbackmk">Meghan</a>, a brand-new contributor to OpenHatch (and to open source projects!), tackled a mysterious and strange <a href="http://openhatch.org/bugs/issue747">bug</a> that had been lingering in the bug tracker for a long time: when searching the volunteer opportunity finder, and using voice input (such as on Android), the placeholder text in the search field wasn&#8217;t cleared properly.  Neither she nor anyone else could reproduce the issue, so she simplified the implementation to use the HTML5 <a href="http://davidwalsh.name/html5-placeholder">placeholder</a> attribute rather than possibly error-prone Javascript. It&#8217;s always a great pleasure when new contributors&#8217; first commits are a net removal of lines of code! Working on this in person supported lots of interactive question-answering, resulting in a stellar, well-tested pull request that was quickly merged.</li>
+<li><a href="https://twitter.com/nickelmu">Ni Mu</a>, who had previously contributed to the design of <a href="http://opensource-events.com/">The In-Person Event Handbook</a> but hadn&#8217;t contributed much to Python projects before, evaluated a reported bug with the <a href="http://openhatch.org/missions/diffpatch">training mission teaching using diff and patch</a>, and closed it as already resolved. Yay for clearing out bug tracker cruft!</li>
+<li><a href="https://twitter.com/natea">Nate Aune</a>, a new contributor to OpenHatch, improved documentation of how OpenHatch uses Heroku, and improved code to make the app&#8217;s migrations run properly on PostgreSQL, which is the database engine on Heroku. Asheesh merged <a href="https://github.com/openhatch/oh-mainline/pull/184">these changes</a> and added some commits on top to fix small formatting issues.</li>
+<li><a href="https://twitter.com/beckastar">Becka</a> (who first joined us at the 2013 PyCon sprints) read through pull requests, including <a href="https://github.com/openhatch/oh-mainline/pull/170">this very pleasant one</a>, and she learned more about setting up a local environment for working on OpenHatch.</li>
+<li><a href="http://openhatch.org/people/brittag/">Britta Gustafson</a>, who has been a communications volunteer for a few months, wrote down suggestions for homepage improvements (<a href="http://lists.openhatch.org/pipermail/devel/2014-January/003370.html">Let&#8217;s link important things from the homepage</a> and <a href="http://lists.openhatch.org/pipermail/devel/2014-January/003371.html">Let&#8217;s also put more social media on the homepage</a>), and she made initial mockups and then discussed them with other contributors. It was pleasantly effective to have an in-person focused conversation about significant visual changes instead of just sharing screenshots via IRC and email. After the sprint, we iterated more on the mockups and Susan implemented the changes, and they are live. Britta also fixed some broken styling that was hiding text in a <a href="https://openhatch.org/blog/how-can-openhatch-help-me-contribute-to-free-software/">useful old blog post</a>.</li>
+<li><a href="http://openhatch.org/people/onceuponatimeforever/">Susan Tan</a>, who has been contributing to OpenHatch code for a few months, began the significant task of deleting a feature that hadn&#8217;t really worked well for a while &#8212; a map on the people search page &#8212; which is now successfully removed from the site. She also answered questions for new contributors. Additionally, before the event, she had sent announcement emails and worked with the Python Software Foundation to get food sponsorship.</li>
+<li><a href="http://openhatch.org/people/marktraceur/">Mark Holmquist</a> (who was a first-time committer at an <a href="http://openhatch.org/blog/2012/may-sprint/">in-person sprint in May 2012</a>) reviewed pull requests that fixed CSS and wording problems, and he reviewed the text on the <a href="http://campus.openhatch.org/">Open Source Comes to Campus website</a>, suggesting edits to improve clarity and consistency. These improvements are live.</li>
+<li><a href="http://openhatch.org/people/pythonian4000/">Jack Grigg</a>, a long-time contributor, reviewed some code-removal work first submitted at the <a href="http://openhatch.org/blog/2014/openhatch-at-grace-hopper-open-source-day/">Grace Hopper Conference Open Source Day</a>; he <a href="https://github.com/openhatch/oh-mainline/pull/185">revised the commits</a>, and Asheesh pushed them. In the past, we used <a href="http://www.celeryproject.org/">celery</a> for background tasks; we&#8217;ve simplified our codebase to not use celery at all, and this removes all traces of celery from the app.</li>
+<li><a href="http://openhatch.org/people/paulproteus/">Asheesh</a>, who had the most experience with the codebase, had prepared the list of tasks for new contributors to work on, and worked with attendees to answer questions or review code. </li>
+<li>Post-sprint, <a href="https://www.horde.net/~jwm/">John Morrissey</a> (a long-time contributor who first joined us at PyCon sprints) asked on the email list for more guidelines on how to review code contributions with small issues. In response, Asheesh created an <a href="http://www.asciiflow.com/#585181832642635082/1872680033">ASCII flow chart</a>.</li>
+</ul>
+<h3>Thanks and follow-up</h3>
+<p>A couple things we forgot to prepare, to remind ourselves for next time: a specific plan to take a photo of everyone (our photo is missing a couple people!) and bringing name tags. After the sprint, we walked over to a nearby bar for beer and non-beer, and we chatted some more. (Interestingly, we sent out a post-sprint survey but most participants didn&#8217;t fill it out; the events mailing list later had a <a href="http://lists.openhatch.org/pipermail/events/2014-February/000572.html">good discussion</a> of how to get post-event feedback.)</p>
+<p>If this sort of thing sounds like fun to you, join the <a href="http://lists.openhatch.org/mailman/listinfo/devel">Devel mailing list</a> and stay tuned for the next sprint announcement!</p>
+<p>Thanks to Susan Tan and Asheesh Laroia for all their pre- and post-sprint organizing work. Thanks too to all the attendees, in-person and remote. </p>
+<p>We&#8217;re grateful to the Python Software Foundation for sponsoring food!</p>
+<p>If you&#8217;re interested in running an event like this for your open source project, check out the <a href="http://pythonsprints.com/">Python Sprints website</a> to learn more about food sponsorship, read the <a href="http://opensource-events.com/">In-Person Event Handbook</a>, and join the <a href="http://lists.openhatch.org/mailman/listinfo/events/">OpenHatch outreach event community</a> to ask questions!</p>
+<h3>Bonus for those who scrolled this far</h3>
+<p>Please enjoy our new patch-review flow chart.</p>
+<p><code style="font-size: 75%; line-height: 100%; width: 100%; overflow-x: auto; display: block; white-space: pre;"><br />
+      +--------------------------------------------------+<br />
+      |  Is the submitter sitting right in front of you? |<br />
+      |    (A presence in online chat, e.g. IRC, counts.)|<br />
+      +--------------------------------------------------+<br />
+             +                             +++<br />
+            yes                            | no<br />
+             +                             | +<br />
+             |                             | +<br />
+             |                             | |<br />
+             v                             | |<br />
+ +-------------------------------------+   | |<br />
+ | Ask them to revise the submission,  |   | |<br />
+ | after providing detailed review,    |   | |<br />
+ | and make sure to help them resubmit |   | |<br />
+ | in case they have questions.        |   | |<br />
+ +-----------+-------------------------+   | |<br />
+             |                             | |<br />
+             |                             | |<br />
+ +-----------v-----------------------+     | |<br />
+ | Did they finish revising the      |     | |<br />
+ | submission to your satisfaction   |     | |<br />
+ | before they left your presence?   |     | |<br />
+ |                                   |     | |<br />
+ +-----------------------------------+     | |<br />
+        +                +                 | |<br />
+       yes               no                | |<br />
+        +                +                 | |<br />
+        |                +-----------------+ |<br />
+        |                                    |<br />
+        v                                    |<br />
+     +-----------------------------+         |<br />
+     | Merge it (and say thanks!)  |         |<br />
+     +-----------------------------+         |<br />
+                                             |<br />
+                                     +-------+<br />
+             +-----------------------v------------------------+<br />
+             |  Do you have a reasonable belief that          |<br />
+             |  they will respond to feedback within a        |<br />
+             |  short period (e.g., 2-3 days, tops)? You      |<br />
+             |  might look at their responsiveness to past     |<br />
+             |  comments to get a sense of that, and/or their |<br />
+             |  general tone on the pull request, e.g. their  |<br />
+             |  degree of tiredness/frustratedness vs their   |<br />
+             |  degree of eagerness.                          |<br />
+             +------+-----------------------------------------+<br />
+                    +                            +<br />
+                   yes                           no<br />
+                    +                            +<br />
+                    v                         +--v------------------------------+<br />
+     +--------------------------------------+ | Are they an experienced         |<br />
+     | Leave a comment indicating the       | | contributor, whose last commits |<br />
+     | code style issues you have,          | | indicate that their concept of  |<br />
+     | preferably pointing to existing      | | code style is similar to yours? |<br />
+     | OpenHatch docs or mailing list       | | (For first-timers, choose &quot;no&quot;.)|<br />
+     | posts about the style, and say that  | +---------------------------------+<br />
+     | you hope they&#39;ll get a chance to     |      +                   +<br />
+     | make the desired changes, but even   |     yes                  no<br />
+     | if not, you&#39;ll be happy to make them |      +                   +<br />
+     | yourself and merge it on or after    |+-----v---------------+   |<br />
+     | 3 days from now. Leave a note saying || Do like this, but   |   |<br />
+     | if they want more than 3, just ask.  || &quot;a month&quot; instead of|   |<br />
+     +--------------------------------------+| 3 days.             |   |<br />
+                     ^                       |                     |   |<br />
+                     |                       +-----+---------------+   |<br />
+                     |                             |                   v<br />
+                     |                             |      +----------------------------------------+<br />
+                     |                             |      |  Thank them for this                   |<br />
+                     |                             |      |  contribution, and leave               |<br />
+                     +-----------------------------+      |  a detailed review indicating          |<br />
+                                                          |  what changes you would make           |<br />
+                                                          |  and that you have pushed their        |<br />
+                                                          |  work, with those changes on top.      |<br />
+                                                          +----------------------------------------+<br />
+                     </code></p>
+</div>
+
+<div class="module-foot">
+  <p class="postmetadata"> <!-- Posted in <a href="http://blog.openhatch.org/category/uncategorized/" rel="category tag">Uncategorized</a> | -->   <a href="http://blog.openhatch.org/2014/january-sprint/#respond">No comments yet &#187;</a></p>
+</div>
+</div>
+
+<div class="module" id="post-2501">
+<div class="module-head">
+  <h2>
+    <a style='color: #333;' href="http://blog.openhatch.org/2014/newsletter-february-2014/" rel="bookmark"
+    title="Permanent Link to OpenHatch newsletter, February 2014">OpenHatch newsletter, February 2014</a>
+  </h2>
+
+  <div style='float: left; clear: left; font-weight: bold; width: 100%; font-size: 8pt; padding: 10px 0; '>
+    by Mike Linksvayer    <span style='color: #777;'>&bull;</span>
+    February 28th, 2014  </div>
+
+  <div class='clearer'></div>
+</div>
+
+<div class="module-body">
+  <div  style="z-index:0;position:relative;width:576px"   about="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Papageitaucher_Fratercula_arctica.jpg/576px-Papageitaucher_Fratercula_arctica.jpg">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Papageitaucher_Fratercula_arctica.jpg/576px-Papageitaucher_Fratercula_arctica.jpg" width="576" height="384"/></p>
+<div style="position:absolute;z-index:1;right:0;bottom:0;">
+    <small style="color:#f0f0f0"><br />
+      <a property="dc:title" rel="cc:attributionURL" href="https://commons.wikimedia.org/wiki/File:Papageitaucher_Fratercula_arctica.jpg">Puffin</a> by Richard Bartz / <a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="license">CC-BY-SA</a> / <a href="https://commons.wikimedia.org/wiki/Commons:Picture_of_the_Year/2013/Introduction">Picture of the Year Finalist</a><br />
+    </small>
+  </div>
+</div>
+<p>Welcome to OpenHatch newsletter number 19.</p>
+<p><a href="https://openhatch.org/blog/2014/goals-for-open-source-comes-to-campus-in-2014/">Our goals in 2014</a> for Open Source Comes to Campus.</p>
+<p><a href="http://openhatch.org/blog/2014/introducing-setup-sprints/">Introducing setup sprints</a>: getting project installation, documenation, and contribution process ready for contributions by newcomers, especially students at Open Source Comes to Campus events.</p>
+<p><a href="http://opensource.com/life/14/2/newcomer-frequently-asked-questions">Things newcomers to open source rarely ask but often wonder</a>, Shauna Gordon-McKeon writes at opensource.com.</p>
+<p><a href="http://opensource-usability.blogspot.com/2013/12/guest-post-in-2014-lets-make-open.html">In 2014, let&#8217;s make open source software more usable</a>, Asheesh Laroia guest-posts on the Open Source Software &#038; Usability blog.</p>
+<p>Julie Pichon, <a href="http://www.mail-archive.com/openstack-dev@lists.openstack.org/msg16335.html">[openstack-dev] Interested in attracting new contributors?</a></p>
+<blockquote>
+<p>OpenHatch doesn&#8217;t spam, you get one email a week if one or more people<br />
+indicated they want to help. The initial effort is not time-consuming,<br />
+following OpenHatch&#8217;s advice [4] you can refine a nice &#8220;initial<br />
+contact&#8221; email that helps you get people started and understand what<br />
+they are interested in quickly. I don&#8217;t find the time commitment to be<br />
+too much so far, and it&#8217;s incredibly gratifying to see someone<br />
+submitting their first patch after you answered a couple of questions<br />
+or helped resolve a hairy git issue. I&#8217;m happy to chat about it more,<br />
+if you&#8217;re curious or have any questions.</p>
+<p>In any case if you&#8217;d like to attract more contributors to your project,<br />
+and/or help newcomers get started in open-source, consider adding your<br />
+project to OpenHatch too!</p>
+</blockquote>
+<p>OpenHatch <a href="https://news.ycombinator.com/item?id=7161081">discussed on Hacker News</a>.</p>
+<h3>OpenHatchy but not OpenHatch things around the web</h3>
+<p>The Ada Initiative on <a href="http://adainitiative.org/2014/02/howto-design-a-code-of-conduct-for-your-community/">HOWTO design a code of conduct for your community</a>.</p>
+<p><a href="https://twitter.com/jrdixey/status/431287414733017088">Jennifer Dixey</a>:</p>
+<blockquote><p>openhatch.org/  looks a little bit like Drupal Ladders for the whole world of OSS. Contributing is easier than ever! via @thecodepath</p></blockquote>
+<p><a href="http://drupalladder.org/">drupalladder.org</a>:</p>
+<blockquote><p>The Goal of the Drupal Ladder is to have 1% of the Drupal Community contributing to core.</p></blockquote>
+<p><a href="https://opensource.com/life/14/1/women-open-source-week">A week of articles</a> on women in open source at opensource.com.</p>
+<p>A career panel of sorts, in an article: <a href="http://www.businessinsider.com/women-in-linux-quietly-running-the-world-2014-2">These Women Are Building The Software That Quietly Runs The World</a>.</p>
+<p><a href="http://techcrunch.com/2014/02/21/women-outnumber-men-for-the-first-time-in-berkeleys-intro-to-computer-science-course/">Women Outnumber Men For The First Time In Berkeley’s Intro To Computer Science Course</a>; will they have the opportunity to contribute to open source? Related: <a href="http://www.mercurynews.com/mike-cassidy/ci_25201424/can-early-computer-science-education-boost-number-women">Can early computer science education boost number of women in tech?</a></p>
+<p>The <a href="http://scistarter.com/">Scistarter project finder</a> is a <em>little</em> bit like the <a href="http://openhatch.org/search/">OpenHatch volunteer opportunity finder</a>, but for science projects.</p>
+<p>Also check out links submitted to <a href="http://www.reddit.com/r/openhatch">/r/openhatch</a>, and add your finds!</p>
+<h3>Get involved</h3>
+<p>You can help write this newsletter! The March newsletter <a href="http://htmlpad.org/oh-newsletter-201403/edit">in progress</a> (<a href="http://htmlpad.org/oh-newsletter-201403">preview</a>). Join our <a href="http://lists.openhatch.org/mailman/listinfo/publicity">publicity list</a> or hop on <a href="http://webchat.freenode.net/?nick=openhatch_....&#038;channels=openhatch">#openhatch</a> with suggestions and questions.</p>
+<p><a href="https://openhatch.org/blog/tag/newsletter">Read previous newsletters.</a></p>
+<p><a href="https://www.facebook.com/openhatch">Like</a> <a href="https://plus.google.com/115325121477337042677">+1</a>, follow @openhatch at <a href="http://identi.ca/openhatch">identi.ca</a> or <a href="http://twitter.com/openhatch">Twitter</a>.</p>
+</div>
+
+<div class="module-foot">
+  <p class="postmetadata"> <!-- Posted in <a href="http://blog.openhatch.org/category/uncategorized/" rel="category tag">Uncategorized</a> | -->   <a href="http://blog.openhatch.org/2014/newsletter-february-2014/#respond">No comments yet &#187;</a></p>
+</div>
+</div>
+
+
+<div class="navigation">
+  <div class="alignleft"><a href="http://blog.openhatch.org/page/4/" >&laquo; Older Entries</a></div>
+  <div class="alignright"><a href="http://blog.openhatch.org/page/2/" >Newer Entries &raquo;</a></div>
+</div>
+
+ 
+</div>
+<!--- end second column -->
+<div class="more-content">
+    
+    
+</div>
+<!--- end more_content -->
+
+                </div><!-- /#content -->
+                
+        </div><!-- /#container -->
+        </div>
+
+        <div id='footer-wrapper'>
+          <div id='footer'>
+            
+	    <div class="threecol">
+              <div class="column">
+                <h3>OpenHatch organization</h3>
+
+                <ul>
+                  <li><a href="//openhatch.org/about/">about openhatch</a></li>
+                  <li><a href="//openhatch.org/sponsors/">sponsors</a></li>
+                  <li><a href="//openhatch.org/blog/">blog</a></li>
+                  <li><a href="//openhatch.org/contact/">contact</a></li>
+                  <li><a href="https://openhatch.org/wiki/Privacy_policy">privacy policy</a></li>
+                </ul>
+              </div>
+
+	      <div class="column">
+		<h3>OpenHatch web app code</h3>
+		<ul>
+		  <li><a href="http://openhatch.readthedocs.org/en/latest/README.html">Intro for developers</a></li>
+		  <li><a href="https://github.com/openhatch/oh-mainline">Github (source code)</a></li>
+		  <li><a href="http://lists.openhatch.org/mailman/listinfo/devel">Devel mailing list</a></li>
+		  <li><a href="http://openhatch.readthedocs.org/">Code docs</a></li>
+		  <li><a href="https://openhatch.org/bugs/">Bug tracker</a></li>
+		</ul>
+	      </div>
+
+	      <div class="column">
+		<h3>Other web tools</h3>
+		<ul>
+                  <li><a href="/wiki/">wiki</a></li>
+                  <li><a href="http://forum.openhatch.org/">forum</a></li>
+		</ul>
+	      </div>
+	    </div>
+            
+          </div>
+        </div>
+
+        
+        
+	<!--Includes for the javascript bundle are in base/assets.py-->
+	
+		<script type="text/javascript" src="//openhatch.org/static/packed/openhatch.js?1407021888"></script>
+	
+
+        
+        
+
+        
+        
+<!-- Goggle Analytics not included because you haven't set the settings.GOOGLE_ANALYTICS_CODE variable! -->
+        
+
+    </body>
+</html>
+

@@ -1,0 +1,1429 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+    <head>
+       <link rel="stylesheet" type="text/css" href="//openhatch.org/static/css/blog-style.css" />
+
+<!-- blog metadata etc. -->
+
+<link rel="alternate" type="application/rss+xml" title="The OpenHatch blog RSS Feed" href="http://blog.openhatch.org/feed/" />
+<link rel="alternate" type="application/atom+xml" title="The OpenHatch blog Atom Feed" href="http://blog.openhatch.org/feed/atom/" />
+<link rel="pingback" href="http://blog.openhatch.org/xmlrpc.php" />
+
+<!-- Facebook OpenGraph image, if applicable -->
+
+<!-- add some JavaScript, depending on if it's needed -->
+
+
+<!-- Call the WordPress wp_head() function, which permits plugins etc. to load more things.
+     More info: http://codex.wordpress.org/Function_Reference/wp_head
+-->
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/blog.openhatch.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.5"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='https://api.w.org/' href='http://blog.openhatch.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.openhatch.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.openhatch.org/wp-includes/wlwmanifest.xml" /> 
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+				<style type="text/css" id="wp-custom-css">
+			/*
+You can add your own CSS here.
+
+Click the help icon above to learn more.
+*/
+
+/* fonts */
+@font-face {
+  font-family: Tuffy;
+  /* src: url('https://openhatch.org/static/fonts/tuffy_regular.ttf'); */
+  src: url('https://cdn.rawgit.com/google/fonts/c2b5d740/ofl/tuffy/Tuffy-Regular.ttf');
+}
+@font-face {
+  font-family: Tuffy;
+  font-weight: bold;
+  src: url('https://cdn.rawgit.com/google/fonts/c2b5d740/ofl/tuffy/Tuffy-Bold.ttf');
+}
+@font-face {
+  font-family: Tuffy;
+  font-style: italic;
+  src: url('https://cdn.rawgit.com/google/fonts/c2b5d740/ofl/tuffy/Tuffy-Italic.ttf');
+}
+@font-face {
+  font-family: Tuffy;
+  font-weight: bold;
+  font-style: italic;
+  src: url('https://cdn.rawgit.com/google/fonts/c2b5d740/ofl/tuffy/Tuffy-Bold-Italic.ttf');
+}
+/* coloration */
+.nav-bg {
+  background: #333 url('https://openhatch.org/static/images/dark-hatch.png') repeat;
+  box-shadow: 0 0 7px #333;
+  -moz-box-shadow: 0 0 7px #333;
+  -webkit-box-shadow: 0 0 7px #333;
+}
+/* size, width and padding stuff */
+/* CSSTODO -- do we use these actually?*/
+.enormous {
+  font-size: 3em;
+}
+.fairly-big {
+  font-size: 1.7em;
+}
+.enormous > div {
+  margin-bottom: 1em;
+}
+.normal-size {
+  font-size: 11pt;
+}
+/* other useful mixins */
+.screw-you-webkit {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+.centered {
+  margin: 0 auto;
+}
+/* styles */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  font: 11pt Tuffy, Helvetica, sans-serif;
+  background: #f8f8f8 url('https://openhatch.org/static/images/light-hatch.png') repeat;
+  color: #222;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 290px;
+}
+code {
+  overflow-x: auto;
+  display: inline-block;
+  width: 100%;
+  white-space: nowrap;
+}
+.link_like,
+a,
+body .ui-widget-content a {
+  color: #FF6D3D;
+  text-decoration: none;
+  cursor: pointer;
+  cursor: hand;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .clearfix {
+  zoom: 1;
+}
+/* IE6 */
+*:first-child + html .clearfix {
+  zoom: 1;
+}
+/* IE7 */
+/* deprecated; to remove in favor of .clearfix */
+.clearer {
+  width: 100%;
+  clear: both;
+  float: none;
+}
+/* for Firefox */
+input[type="submit"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: 0px;
+}
+/* for IE8 */
+input[type="submit"]:focus,
+input[type="button"]:focus {
+  outline: none;
+}
+.alt-text {
+  left: -9999px;
+  position: absolute;
+}
+/* ^^^ display: none would hide this from screenreaders. Let's hide this off stage left instead. */
+.hidden {
+  display: none;
+}
+a:hover,
+.ui-widget-content a:hover {
+  text-decoration: underline;
+}
+a img {
+  border-style: none;
+}
+abbr {
+  border-bottom: 1px dotted #999;
+}
+abbr.foss {
+  border: 0;
+  font-variant: small-caps;
+}
+h1 a,
+h1 a:hover {
+  text-decoration: none;
+}
+#container {
+  width: 1000px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+}
+#container::after {
+  content: ' ';
+  clear: both;
+  display: block;
+}
+.module {
+  /* width: 100%; */
+  margin-bottom: 15px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border: 3px solid rgba(100, 200, 255, 0.3);
+  background: rgba(255, 255, 255, 0.6);
+  float: left;
+}
+.module .module-head {
+  background: rgba(100, 200, 255, 0.3);
+  padding: 2px 20px;
+}
+.module .module-head ul li a {
+  float: right;
+  padding-top: 5px;
+}
+.module .module-head h3 {
+  text-shadow: 0 1px 0 #fff;
+  float: none;
+  padding: 4px 10px 7px 0;
+  font-size: 1.2em;
+}
+.module .module-body {
+  clear: both;
+  padding: 10px 20px 20px 20px;
+}
+.module .module-foot {
+  padding: 2px 20px 5px 20px;
+  text-align: right;
+}
+.module .module-foot .module-foot-left {
+  float: left;
+}
+.submodule-container {
+  float: none;
+  clear: both;
+  width: 100%;
+  margin: 0 auto;
+}
+.submodule {
+  background-color: #FFF;
+  margin: 0 10px 20px 0;
+  padding: 8px 10px;
+  border: 2px dashed #e4e4e4;
+  float: left;
+}
+.submodule .submodule-head {
+  margin-bottom: 5px;
+}
+.submodule .submodule-body {
+  clear: both;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  clear: both;
+}
+h1 {
+  font-weight: normal;
+  font-size: 23pt;
+}
+#nav-container {
+  width: 100%;
+  height: 67px;
+  background: #333 url('https://openhatch.org/static/images/dark-hatch.png') repeat;
+  box-shadow: 0 0 7px #333;
+  -moz-box-shadow: 0 0 7px #333;
+  -webkit-box-shadow: 0 0 7px #333;
+}
+#nav {
+  margin: 0 auto;
+  padding-top: 3px;
+  border-top: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 960px;
+}
+#nav h1 {
+  float: left;
+}
+#nav ul {
+  list-style: none;
+  margin: 0;
+  float: right;
+}
+#nav li {
+  float: right;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+#pagetop {
+  padding: 0;
+  clear: both;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 960px;
+}
+.up-top {
+  padding: 0;
+  margin-bottom: -15px;
+}
+ul#links {
+  margin-left: 20px;
+}
+#links li {
+  display: inline;
+  font-size: 12pt;
+  margin-top: 20px;
+}
+#account-links,
+#topnavlinks {
+  float: right;
+}
+#account-links #username,
+#topnavlinks #username {
+  font-weight: bold;
+}
+#account-links li,
+#topnavlinks li {
+  margin: 15px 0;
+}
+#account-links a,
+#topnavlinks a {
+  float: left;
+  padding: 5px 10px;
+  color: white;
+}
+#topnavlinks {
+  float: left;
+}
+#topnavlinks li {
+  font-size: 1.1em;
+}
+#content {
+  padding: 10px 0 30px 0;
+  clear: both;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 960px;
+}
+#footer-wrapper {
+  width: 100%;
+  clear: both;
+  padding-top: 40px;
+  position: absolute;
+  bottom: 0;
+}
+#footer {
+  width: 100%;
+  height: 250px;
+  padding: 10px 0px;
+  text-align: right;
+  margin: 0 auto;
+  background: #333 url('https://openhatch.org/static/images/dark-hatch.png') repeat;
+  box-shadow: 0 0 7px #333;
+  -moz-box-shadow: 0 0 7px #333;
+  -webkit-box-shadow: 0 0 7px #333;
+}
+#footer ul {
+  display: inline;
+  list-style-type: none;
+  max-width: 108em;
+  padding: 0 20px;
+}
+#footer li {
+  display: block;
+  text-align: left;
+  padding-left: 0;
+  margin-bottom: 0.3em;
+}
+#footer a {
+  color: #FFF;
+}
+#footer h3 {
+  color: #ddd;
+  font-size: 1em;
+  margin-bottom: 0.8em;
+}
+#footer .threecol {
+  width: 960px;
+  padding: 0 20px;
+  margin: 0 auto;
+  text-align: left;
+}
+#footer .column {
+  width: 210px;
+  display: inline-block;
+  margin: 0px 5px;
+  vertical-align: top;
+  text-align: left;
+  float: none;
+}
+#training-missions {
+  width: 100%;
+}
+h3 {
+  margin-bottom: 0px;
+  text-align: left;
+  clear: left;
+  font-weight: normal;
+  font-size: 1.1em;
+  color: #222;
+  letter-spacing: 0;
+  margin: 0;
+}
+h3.nofloat {
+  float: none;
+}
+img.show-more-link {
+  float: right;
+  position: relative;
+  top: 1px;
+}
+input[type='text'],
+input[type='password'],
+input[type='file'],
+textarea {
+  padding: 5px;
+  font-size: 11pt;
+  float: left;
+}
+input[type='submit'] {
+  padding: 1px 8px;
+  color: #222;
+  font-weight: bold;
+  float: left;
+}
+.alert {
+  padding: 15px 0;
+}
+.alert div {
+  background-color: #ffa;
+  color: #444;
+  padding: 8px 15px;
+  width: 700px;
+  font-size: 11pt;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+img {
+  border: 0;
+}
+img.left {
+  float: left;
+  padding: 0 10px 20px 0;
+}
+img.right {
+  float: right;
+  padding: 0 0 20px 10px;
+}
+.usernames {
+  font-size: 10pt;
+}
+#info .tag-type {
+  font-weight: normal;
+  display: block;
+  font-size: 8pt;
+}
+/* Columns in general float left, and have some margin-right to
+   create visual spacing. */
+.column {
+  float: left;
+  margin-right: 10px;
+}
+h4,
+.cute-header {
+  font-size: 9pt;
+  color: #666;
+  float: left;
+  margin: 0;
+  padding: 1px;
+}
+input[type='submit'] {
+  color: #333;
+  float: left;
+}
+#notifications {
+  text-align: center;
+  float: left;
+}
+.notification {
+  float: left;
+  width: 95%;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  padding: 10px;
+  color: #000;
+  margin-bottom: 10px;
+}
+.errorlist ul {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.errorlist li {
+  float: left;
+  padding: 5px 10px;
+  width: 410px;
+  color: #522;
+  background-color: #ffe4e4;
+  margin: 10px 0;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+#normal_login_form li {
+  list-style: none;
+}
+dt {
+  font-size: 120%;
+}
+dd {
+  margin-top: .5em;
+  margin-left: 1.2em;
+}
+#greeting {
+  background-color: #ffffc8;
+  background-color: rgba(255, 255, 200, 0.5);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  padding: 2%;
+  width: 96%;
+  margin-top: 10px;
+  border: 4px solid #fff;
+  float: left;
+}
+#greeting #about-openhatch {
+  font-size: 140%;
+  float: left;
+  width: 100%;
+  margin-right: 20px;
+}
+#greeting #invitation {
+  font-size: 120%;
+  margin-top: 10px;
+  text-align: center;
+  float: left;
+  width: 100%;
+}
+#greeting #next-steps {
+  float: left;
+  width: 100%;
+}
+#greeting #next-steps li {
+  font-size: 120%;
+  float: left;
+  width: 210px;
+  margin: 10px 20px 0 0;
+}
+#error #content {
+  padding: 0 300px;
+}
+#error #content .module {
+  width: 400px;
+}
+#error #content .module .head {
+  width: 96%;
+  color: #aaa;
+  padding: 2%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 96pt;
+}
+#error #content .module .body {
+  width: 90%;
+}
+.head .note {
+  float: right;
+  color: #777;
+  font-size: .9em;
+  padding: 6px;
+}
+.head .more {
+  float: right;
+  padding: 3px;
+}
+body ul.raquo_bullets {
+  margin-left: 0;
+  padding-left: 1.1em;
+  text-indent: -1em;
+  list-style: none;
+}
+body ul.raquo_bullets li {
+  margin-bottom: .4em;
+}
+body ul.raquo_bullets li:last-child {
+  margin-bottom: 0;
+}
+body ul.raquo_bullets li:before {
+  color: #999;
+  font-family: Georgia;
+  margin-right: 2px;
+  font-weight: bold;
+  content: "\00BB \0020";
+}
+body ul.raquo_bullets li code {
+  display: inline-table;
+  margin-left: 16px;
+}
+.contact_us {
+  display: inline-block;
+  text-align: center;
+}
+/* CSSTODO */
+body#login .post_login_action_explanation {
+  color: #444;
+  font-size: 1.5em;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  text-align: center;
+  float: left;
+  width: 98%;
+  margin-bottom: 10px;
+  padding: 8px;
+  background-color: #faffaa;
+}
+ol > li {
+  margin: 15px 0;
+}
+/* CSSTODO I think this is just missions*/
+input[rel='hint'].blur {
+  color: #777;
+}
+/* CSSTODO */
+body#people-map #search_engine_is_down_message {
+  float: left;
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 0;
+  font-size: 1.3em;
+}
+.ajax-loader-circle-txt-medium {
+  display: inline-block;
+  line-height: 32px;
+  padding-left: 32px;
+  background: url('https://openhatch.org/static/images/throbber.gif') no-repeat left;
+  font-weight: bold;
+  color: #444;
+}
+/* Stuff for jQuery UI Tabs */
+/* CSSTODO */
+.ui-tabs-hide {
+  display: none !important;
+}
+.tab_nav .ui-state-active {
+  font-weight: bold;
+}
+/* Stuff initially for the events page */
+/* CSSTODO */
+.module .left-image {
+  width: 180px;
+  height: 180px;
+  float: left;
+  margin-right: 10px;
+}
+.module .name-of-event {
+  font-size: 180%;
+  margin-bottom: 1em;
+}
+.module .rest-of-box {
+  margin: 15px;
+}
+.module .little-read-more {
+  width: 100px;
+  float: right;
+}
+.module .link-without-style {
+  color: inherit;
+}
+/* Add responsive design only for phones and tablets */
+@media (max-width: 800px) {
+  /* Based on observation, overwrite existing css styles */
+  #footer .threecol,
+  body #container,
+  body#missions_index .submodule,
+  body.one_column #main .submodule.skinny,
+  body.one_column #main .submodule.fat,
+  .column,
+  body#profile .project-display,
+  body#search #container #pagetop img#volunteer-opportunities,
+  #nav,
+  #pagetop,
+  body.wordpress,
+  #content {
+    width: 100%;
+  }
+  #footer .column {
+    width: 30%;
+  }
+}
+body#bugset_create textarea {
+  width: 98%;
+}
+body#bugset_create textarea,
+body#bugset_create input {
+  float: none;
+}
+body#bugset_create #button-container {
+  text-align: right;
+}
+body#bugset_create ul.errorlist li {
+  display: block;
+  float: none;
+  width: 97%;
+}
+body#bugset_create h1,
+body#search.bugsets h1,
+body#bugsets_main h1 {
+  margin: 10px 0 0 10px;
+  font-weight: bold;
+  color: #222;
+}
+#content>.two-column-left {
+	max-width: 250px;
+	/* padding-left: 65px; */
+}
+@media screen and (max-width: 800px) {
+	#content>.two-column-left {
+		display: none;
+	}
+}
+@media screen and (max-width: 500px) {
+    #content {
+      padding: 10px 0 0 0;
+    }
+}
+
+
+#content>.two-column-right {
+	max-width: 550px;	
+}
+.module>.module {
+    float: none;
+}
+.column>.column {
+    float: none;
+}
+.column>.module {
+    float: none;
+}
+
+body.wordpress #sidebar > .module-body li li {
+    width: inherit;
+}
+
+		</style>
+	 
+        <title>
+            The OpenHatch blog | Page 8
+        </title>
+
+        <link rel="shortcut icon" href="/favicon.ico" />
+	
+        <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+        <meta http-equiv='Content-Language' content='en-us' />
+        <meta name='Description' content='OpenHatch, the open source involvement engine.'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style type='text/css'> /*<![CDATA[*/
+            
+            
+            @import url(//openhatch.org/static/packed/openhatch.css?1407021888);
+            
+
+            
+
+            body { 
+            #landing a.blog-feed { 
+                background-image:
+                url(//openhatch.org/static/images/base/landing/feed-icon-16x16-sprited.png) }
+            .person {
+                font-size: 80%; }
+            .geocode {
+                font-size: 80%; }
+            body#profile #importer { 
+                background-image:
+                url(//openhatch.org/static/images/ship.png) }
+            body#profile #progressbar.working .ui-progressbar-value { 
+                background-image:
+                url(//openhatch.org/static/css/jquery-ui-lightness/images/pbar-ani.gif); }
+            body#profile .portfolio_entry > .actions li.save_and_publish_button *,
+            body#profile .portfolio_entry > .actions li.save_button * { 
+                background-image:
+                url(//openhatch.org/static/images/icons/publish.png); }
+            body#profile .portfolio_entry > .actions li.delete_portfolio_entry a { 
+                background-image:
+                url(//openhatch.org/static/images/icons/delete.png); }
+            body#profile .citations li .actions a.delete_citation { 
+                background-image:
+                url(//openhatch.org/static/images/icons/delete-citation.png); }
+            body#profile #portfolio.viewer .portfolio_entry .submodule { 
+                background-image:
+                url(//openhatch.org/static/images/profile/portfolio/portfolio-entry-bg.png) }
+            body#project #wannahelp-button { 
+                background-image:
+                url(//openhatch.org/static/images/wannahelp-button-bg.png); }
+            body#project #wannahelp-button:active { 
+                background-image:
+                url(//openhatch.org/static/images/wannahelp-button-bg-active.png); }
+            body#project #wannahelp-button:hover,
+            body#project #wannahelp-button:focus { 
+                background-image:
+                url(//openhatch.org/static/images/wannahelp-button-bg-hover.png); }
+            body#project #wannahelp-button:hover:active { 
+                background-image:
+                url(//openhatch.org/static/images/wannahelp-button-bg-hover-active.png); }
+            body#project .next_steps_for_helpers { 
+                background-image:
+                url(//openhatch.org/static/images/bg-translucent-green.png); }
+            #footer { background: #333 url('//openhatch.org/static/images/dark-hatch.png') repeat; }
+
+            
+            /*]]>*/
+        </style>
+
+        <!--[if lt IE 8]>
+        <script src="http://ie7-js.googlecode.com/svn/version/2.0(beta3)/IE8.js"
+        type="text/javascript"></script>
+        <![endif]-->
+	
+		<script type="text/javascript" src="//openhatch.org/static/packed/header.js?1404446267"></script>
+	
+        
+        <link rel="stylesheet/less" type="text/css" href="//openhatch.org/static/less/base/base.less">
+        <link rel="stylesheet/less" type="text/css" href="//openhatch.org/static/less/base/one_column.less">
+        <link rel="stylesheet/less" type="text/css" href="//openhatch.org/static/less/base/two_column.less">
+        <link rel="stylesheet/less" type="text/css" href="//openhatch.org/static/less/base/three_column.less">
+        <link rel="stylesheet/less" type="text/css" href="//openhatch.org/static/less/base/landing.less">
+        
+        <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+        <script src="//openhatch.org/static/js/less-1.3.0.min.js" type="text/javascript"></script>
+        
+        
+
+    </head>
+
+    
+    <body id='body' class='two_columns wordpress'>
+
+        <div id="nav-container">
+
+                
+<div id='nav'>
+        <h1>
+            <a href='/'>
+                <img src='//openhatch.org/static/images/the-logo-bluegreen-87px.png'
+                        width='87' height='60' alt='openhatch' />
+            </a>
+        </h1>
+        <!-- no nav links for WordPress -->
+</div>
+
+                
+        </div>
+        
+        <div id="container">
+                
+                <div id="pagetop">
+                    
+                    
+                </div>
+                <div id='content'>
+                    
+<div class="column two-column-left">
+     <div id="left" class="column two-column-left">
+  <div id="sidebar" class="module">
+    <div class="module-body">
+      <ul id="sidebar-list">
+	<li style='list-style: none;'>OpenHatch.org is an <a href='//openhatch.org/'>open source involvement engine</a>. This is our blog and meta-world.</li>
+      <li><h2>About OpenHatch</h2>
+      <ul>
+	<li><a href="/">Latest blog posts</a></li>
+	<li><a href="//openhatch.org/about/">Who? and why?</a></li>
+	<li><a href="//openhatch.org/contact/">Contact us</a></li>
+	<li><a href="http://openhatch.readthedocs.org/en/latest/">Source code, etc.</a></li>
+	<li><a href="//openhatch.org/policies-etc/">Privacy policy</a></li>
+	<li><a href="//openhatch.org/">&laquo; Back to OpenHatch.org</a></li>
+      </ul>
+      </li>
+      <li id="text-2" class="widget widget_text"><h2 class="widgettitle">Get news about OpenHatch</h2>
+			<div class="textwidget"> <form method="post" action="http://lists.openhatch.org/mailman/subscribe/announce">
+  <p>Subscribe to our once-a-month newsletter! Your email address:</p>
+<p><input name="email"></p>
+
+  <p><input style="float: none;" type="submit" name="email-button" value="Subscribe"></p>
+</form>
+</div>
+		</li>
+		<li id="recent-posts-2" class="widget widget_recent_entries">		<h2 class="widgettitle">Recent Posts</h2>
+		<ul>
+					<li>
+				<a href="http://blog.openhatch.org/2017/celebrating-our-successes-and-winding-down-as-an-organization/">Celebrating our successes and winding down as an organization</a>
+						</li>
+					<li>
+				<a href="http://blog.openhatch.org/2015/tips-facts-thoughts-after-3-successful-semesters-of-osctc/">Tips, facts, thoughts after 3 successful semesters of OSCTC</a>
+						</li>
+					<li>
+				<a href="http://blog.openhatch.org/2015/finding-the-next-openhatch-board-member/">Finding the next OpenHatch board member</a>
+						</li>
+					<li>
+				<a href="http://blog.openhatch.org/2015/moving-on/">Moving On</a>
+						</li>
+					<li>
+				<a href="http://blog.openhatch.org/2015/preparing-for-the-pycon-sprints/">Preparing for the PyCon Sprints</a>
+						</li>
+				</ul>
+		</li>
+		<li id="recent-comments-2" class="widget widget_recent_comments"><h2 class="widgettitle">Recent Comments</h2>
+<ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Carol Willing</span> on <a href="http://blog.openhatch.org/2015/moving-on/#comment-14652">Moving On</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://gondwanaland.com/mlog/2014/12/31/happy-utc-new-year/' rel='external nofollow' class='url'>Happy UTC+0 New Year &#8211; Mike Linksvayer</a></span> on <a href="http://blog.openhatch.org/2014/newsletter-november-december-2014/#comment-10523">Thanks for believing in OpenHatch &#8212; here&#8217;s our end of year newsletter</a></li></ul></li>
+<li id="search-2" class="widget widget_search"><h2 class="widgettitle">Search</h2>
+<form role="search" method="get" id="searchform" class="searchform" action="http://blog.openhatch.org/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form></li>
+    </ul>
+  </div>
+</div>
+
+<div class="module" style="margin-bottom: 50px;">
+  <div class="module-body">
+    The OpenHatch blog is graciously powered by
+    <a href="http://wordpress.org/">WordPress</a>.
+    <br /><a href="http://blog.openhatch.org/feed/">Entries (RSS)</a>
+    and <a href="http://blog.openhatch.org/comments/feed/">Comments (RSS)</a>.
+    <!-- 25 queries. 0.119 seconds. -->
+  </div>
+</div>
+</div>
+ 
+</div>
+<div class="column two-column-right">
+     <div class="module" id="post-1654">
+<div class="module-head">
+  <h2>
+    <a style='color: #333;' href="http://blog.openhatch.org/2013/celebrating-five-and-counting-python-workshops-for-women-in-philadelphia/" rel="bookmark"
+    title="Permanent Link to Celebrating five (and counting) Python workshops for women in Philadelphia">Celebrating five (and counting) Python workshops for women in Philadelphia</a>
+  </h2>
+
+  <div style='float: left; clear: left; font-weight: bold; width: 100%; font-size: 8pt; padding: 10px 0; '>
+    by Dana Bauer    <span style='color: #777;'>&bull;</span>
+    April 8th, 2013  </div>
+
+  <div class='clearer'></div>
+</div>
+
+<div class="module-body">
+  <p>Since June 2011, members of the <a title="PhillyPUG" href="http://www.meetup.com/phillypug/" target="_blank">Philadelphia Python Users Group</a> have offered special “<a title="PyStar Philly" href="https://twitter.com/PyStarPhilly" target="_blank">PyStar</a>” workshops and project nights to introduce Python to a diverse group of new coders. Our semi-annual <a href="http://www.meetup.com/phillypug/events/108553202/" target="_blank">project-based introduction to Python</a> event — currently taught by <a title="Dana Bauer" href="https://twitter.com/geography76" target="_blank">Dana Bauer</a>, <a title="Maneesha Sane" href="https://twitter.com/phillywanderer" target="_blank">Maneesha Sane</a>, <a title="Sarah Gray" href="https://twitter.com/sarah_eliz_gray" target="_blank">Sarah Gray</a>, <a title="Pam Selle" href="https://twitter.com/pamasaur" target="_blank">Pam Selle</a>, <a title="Mjumbe Poe" href="https://twitter.com/mjumbewu" target="_blank">Mjumbe Poe</a>, and <a title="Bennet Huber" href="https://twitter.com/bennethuber" target="_blank">Bennet Huber</a> — is designed to appeal to women with little or no programming experience.</p>
+<p><span style="font-size: 13px;line-height: 19px">Over the past two years, our workshop instructors have learned that a team-teaching approach is the key to success. Last weekend, at our <a title="python workshop" href="http://www.meetup.com/phillypug/events/108553202/" target="_blank">fifth Python workshop</a>, Dana and Mjumbe taught a morning lecture covering basic concepts from data types to dictionaries. Maneesha led students through a fun Scrabble game, and Pam showed students how to play with the Twitter API. Sarah gave a lightning talk on thinking like a programmer, and Bennet gave a brief overview of IPython Notebook. Several terrific TAs — <a title="Tim Gross" href="https://twitter.com/0x74696d" target="_blank">Tim Gross</a>, <a title="Alyssa Batula" href="https://twitter.com/ambatula" target="_blank">Alyssa Batula</a>, <a title="John Campbell" href="https://twitter.com/johnfcampbell" target="_blank">John Campbell</a>, and Jeff Patti — helped the group of 25 students work through Coding Bat and Codeacademy exercises. <a title="Monetate" href="http://monetate.com/" target="_blank">Monetate</a>, a local Python shop and longtime supporter of PhillyPUG, hosted and sponsored the event.</span></p>
+<div id="attachment_1661" style="width: 430px" class="wp-caption alignleft"><a href="https://openhatch.org/blog/2013/celebrating-five-and-counting-python-workshops-for-women-in-philadelphia/python_workshop5/" rel="attachment wp-att-1661"><img class=" wp-image-1661     " src="https://openhatch.org/blog/wp-content/uploads/2013/04/python_workshop5.jpg" alt="" width="420" height="236" /></a><p class="wp-caption-text">Philadelphia Python Workshop students practice Codeacademy exercises during our April 5 and April 6 workshop.</p></div>
+<p><span style="font-size: 13px;line-height: 19px">We’re also big fans of cross-community collaboration. We use a curriculum developed by <a title="Jessica McKellar" href="https://twitter.com/jessicamckellar" target="_blank">Jessica McKellar</a> and <a title="Asheesh" href="https://twitter.com/asheeshlaroia" target="_blank">Asheesh Laroia</a> of the Boston Python Workshop. To reach a wider audience, we partner with local groups like <a title="Girl Develop It Philadelphia" href="http://www.meetup.com/Girl-Develop-It-Philadelphia/" target="_blank">Girl Develop It</a>, <a title="Code for Philly" href="http://codeforphilly.org/" target="_blank">Code for Philly</a>, <a title="The Hacktory" href="http://www.thehacktory.org/" target="_blank">The Hacktory</a>, and <a title="TechGirlz" href="http://www.techgirlz.org/" target="_blank">TechGirlz</a>. In addition to workshops, we offer project nights and <a title="Python and hardware" href="http://www.meetup.com/phillypug/events/59292332/" target="_blank">special events</a> to help new coders explore different ways to use Python, in areas including data visualization, webmaking, civic hacking, mapmaking, hardware hacking, and text analysis.</span></p>
+<p><span style="font-size: 13px;line-height: 19px">At the end of last weekend&#8217;s workshop, we gave students lots of practice material to take home, including <a title="New Coder" href="http://newcoder.io/" target="_blank">the New Coder project</a> developed by <a title="Lynn Root" href="https://twitter.com/roguelynn" target="_blank">Lynn Root</a> for <a title="PyCon 2013: New Coders talk" href="http://www.youtube.com/watch?v=5hBMlTFfOJg" target="_blank">Pycon 2013</a>. We also offered our students a chance to write a short essay to win a seat at a <a title="The Hacktory data viz workshop" href="http://www.thehacktory.org/?p=3663" target="_blank">data visualization workshop</a> offered by our friends at The Hacktory, an arts-based hacker community.</span></p>
+<p><span style="font-size: 13px;line-height: 19px">The ticket winner was <a title="Noor Bosch" href="http://www.meetup.com/phillypug/members/84342712/" target="_blank">Noor Bosch</a>, a bioengineering student at the University of Pennsylvania. She wrote a compelling essay about how the data visualization workshop could help her:</span></p>
+<blockquote><p><span style="font-size: 13px;line-height: 19px">“due to its intuitive nature, Python is eventually going to take the place of MATLAB in computation and graphical analysis of engineering signals and systems. As a bioengineer, I work extensively in MATLAB, which is awesome and powerful. But I really think that the ability to do the same analysis in Python would provide seamless integration with many other programs that bioengineers (and mechanical engineers, and computer scientists, and electrical engineers) use… the skills that I would learn over the course of this workshop are exactly applicable to what I hope to be able to use and build upon in my future career as a bioengineer.”</span></p></blockquote>
+<p><span style="font-size: 13px;line-height: 19px">Last weekend, Noor became the workshop’s 140th graduate. Congrats to Noor and all of our graduates! We’re looking forward to our sixth Python workshop later this year.</span></p>
+<p>&nbsp;</p>
+</div>
+
+<div class="module-foot">
+  <p class="postmetadata"> <!-- Posted in <a href="http://blog.openhatch.org/category/uncategorized/" rel="category tag">Uncategorized</a> | -->   <a href="http://blog.openhatch.org/2013/celebrating-five-and-counting-python-workshops-for-women-in-philadelphia/#comments">2 Comments &#187;</a></p>
+</div>
+</div>
+
+<div class="module" id="post-1640">
+<div class="module-head">
+  <h2>
+    <a style='color: #333;' href="http://blog.openhatch.org/2013/our-biggestlittlest-fan/" rel="bookmark"
+    title="Permanent Link to Our biggest/littlest fan">Our biggest/littlest fan</a>
+  </h2>
+
+  <div style='float: left; clear: left; font-weight: bold; width: 100%; font-size: 8pt; padding: 10px 0; '>
+    by freedeb    <span style='color: #777;'>&bull;</span>
+    April 3rd, 2013  </div>
+
+  <div class='clearer'></div>
+</div>
+
+<div class="module-body">
+  <p>As an OpenHatch board member, I do occasionally get nice feedback from people about what we&#8217;re doing or what&#8217;s on the website. Occasionally. I assume that our Executive Director Asheesh Laroia, who spends much more time in our IRC channel and is at nearly all of our events, gets feedback nearly every day. For me it is still a pleasant surprise to have people come up to me and say, &#8220;OpenHatch! I love you guys!&#8221; or more frequently and a bit less effusively, &#8220;You&#8217;re with OpenHatch? Cool.&#8221;</p>
+<p>In February, I was at the 11th <a href="https://www.socallinuxexpo.org" target="_blank">Southern California Linux Expo</a>, aka SCaLE, in Los Angeles. SCaLE happens to be one of my favorite free software conferences. On the opening night, I spoke for five minutes about <a href="http://mediagoblin.org/" target="_blank">GNU MediaGoblin</a>, a decentralized media-hosting project that I work on. I happened to be wearing my OpenHatch t-shirt. Afterwards, Tom King came up to me and asked if I was involved with OpenHatch. He was curious because his son would be mentioning us during his talk the next day. I decided to attend <a href="https://www.socallinuxexpo.org/scale11x/speakers/justin-king" target="_blank">this talk</a>.</p>
+<div id="attachment_1646" style="width: 190px" class="wp-caption alignright"><a href="https://openhatch.org/blog/2013/our-biggestlittlest-fan/justinking-2/" rel="attachment wp-att-1646"><img class="size-full wp-image-1646" src="https://openhatch.org/blog/wp-content/uploads/2013/04/JustinKing1.jpg" alt="" width="180" height="180" /></a><p class="wp-caption-text">Justin King</p></div>
+<p>Justin King is eleven years old. He stood on a box to address a room mostly full of kids and parents &#8212; the podium was a bit too tall for him. He gave a whirlwind talk describing how anyone can get involved in open source at any age. He personally likes shell scripting and making short animations in Blender. He recommends asking questions, but reminds the young audience to never give out their phone number when contacting people on the internet. He also recommends OpenHatch as a resource for folks who are new to free and open source software.
+</p>
+<p>
+I hadn&#8217;t really thought about it, but our training missions are clear and on-topic. There is nothing about the OpenHatch website that precludes it from being used by young programmers. This isn&#8217;t always the case. Take a minute and think about where you go when you&#8217;re looking for help. Stack Overflow? Slashdot? linuxquestions.org? I&#8217;m certainly not knocking any of these sites, but I would hesitate to suggest them to a young person.
+</p>
+<p>
+After the talk, I had a great conversation with Justin&#8217;s dad about other training missions that could make OpenHatch even more of a resource for young programmers. He had lots of ideas. If you have suggestions or want to write a training mission or two for young programmers, I&#8217;ll hope you&#8217;ll let us know!</p>
+</div>
+
+<div class="module-foot">
+  <p class="postmetadata"> <!-- Posted in <a href="http://blog.openhatch.org/category/uncategorized/" rel="category tag">Uncategorized</a> | -->   <a href="http://blog.openhatch.org/2013/our-biggestlittlest-fan/#respond">No comments yet &#187;</a></p>
+</div>
+</div>
+
+<div class="module" id="post-1634">
+<div class="module-head">
+  <h2>
+    <a style='color: #333;' href="http://blog.openhatch.org/2013/newsletter-march-2013/" rel="bookmark"
+    title="Permanent Link to OpenHatch newsletter, March 2013">OpenHatch newsletter, March 2013</a>
+  </h2>
+
+  <div style='float: left; clear: left; font-weight: bold; width: 100%; font-size: 8pt; padding: 10px 0; '>
+    by Mike Linksvayer    <span style='color: #777;'>&bull;</span>
+    March 27th, 2013  </div>
+
+  <div class='clearer'></div>
+</div>
+
+<div class="module-body">
+  <div style="z-index:0;position:relative;width:576px"  about="https://openhatch.org/blog/wp-content/uploads/2013/03/scaling-diversity-pycon2013.jpg">
+      <img src="https://openhatch.org/blog/wp-content/uploads/2013/03/scaling-diversity-pycon2013.jpg" width="576" height="363"/></p>
+<div style="position:absolute;z-index:1;right:0;bottom:0;">
+    <small style="color:#f0f0f0"><br />
+      <a rel="cc:attributionURL"  href="http://pyvideo.org/video/1687/scaling-community-diversity-outreach">Scaling community diversity outreach  @ PyCon US 2013</a><br />
+    </small>
+  </div>
+</div>
+<p>Welcome to OpenHatch  newsletter number 8.</p>
+<p>PyCon PyCon PyCon. We were <a href="https://openhatch.org/blog/2013/at-pycon/">very active</a>, and pending a big update, check out our <a href="https://openhatch.org/blog/2013/openhatch-limerick-for-sprints/">poetry</a> and all the <a href="http://pyvideo.org/category/33/pycon-us-2013">conference videos</a>. Especially check out  <a href="http://pyvideo.org/video/1687/scaling-community-diversity-outreach">Scaling community diversity outreach</a>.</p>
+<p>Sheila Miguez writes about <a href="https://openhatch.org/blog/2013/dealing-with-uncomfortable/">dealing with the uncomfortable, in a women-and-their-friends event</a>:</p>
+<blockquote><p>Hello everyone! I’ve helped run two Chicago Python Workshops in Chicago, and I wanted to explain how we handled a problem that started in the first workshop. Asheesh was a great mentor, and helped me handle a difficult situation, and it led to a <a href="https://openhatch.org/wiki/Women_and_their_friends#Kicking_someone_out_of_the_group">new section in the OpenHatch wiki</a>.</p></blockquote>
+<p>We&#8217;ve continued to add more to the Events section of the OpenHatch wiki. Thanks to discussion on the Events mailing list, we have some tips for <a href="https://openhatch.org/wiki/Events/Logistics/Wrap_up">how to run the closing (AKA wrap-up) portion of your next outreach event</a>. As always, if you are interested in outreach events for your free software project or programming user group, <a href="http://lists.openhatch.org/mailman/listinfo/events">hop on the list</a>!</p>
+<p>On Saturday, April 6, the Open Source Comes to Campus For Women in Computing visits Wellesley College. You can learn more at <a href="http://wellesley.openhatch.org/">wellesley.openhatch.org</a>. And if you live in the Boston area and want to volunteer to teach or TA or sponsor, please get in touch by emailing hello@openhatch.org!</p>
+<p>It is also the first of the revised signup pages for Open Source Comes to Campus events. Thanks to great tips from Michael Stone on how to make it more appealing, and to Asheesh Laroia and Shauna Gordon-McKeon for building the new design. So even if you can&#8217;t attend, <a href="http://wellesley.openhatch.org/">check out the event web page</a>!</p>
+<p>On Thursday, April 11, we&#8217;ll be presenting at a <a href="http://www.meetup.com/Wikipedia-Engineering-Meetup/events/109096132/">Wikimedia Tech Meetup</a> about <a href="http://campus.openhatch.org/">Open Source Comes to Campus</a>. The event&#8217;s theme is students, and the internships and special opportunities to get involved in open source that are available to them. RSVP and come visit!</p>
+<h3>OpenHatchy but not OpenHatch things around the web</h3>
+<p>Sumana Harihareswara shared a <a href="http://lists.openhatch.org/pipermail/events/2013-March/000436.html">moving story of above-and-beyond hospitality to newbies</a> on the events list:</p>
+<blockquote><p>I especially appreciate that Pradeepto Bhattacharya personally took it upon himself to stop newbie attrition at the event.  My Indian parents taught me a heritage of hospitality, as I remembered in &#8220;Be Bold: An Origin Story&#8221;. So this kind of heroism, the heroism of the host, speaks deeply to me.</p></blockquote>
+<p>Garrett LeSage writes <a href="http://linuxart.com/log/archives/2013/03/14/patches-accepted-is-harmful/">“Patches accepted” is harmful: How to improve your volunteer introductions</a>.</p>
+<p>Emily Gonyer asks <a href="https://todoentiempo.wordpress.com/2013/03/05/why-arent-we-promoting-foss-to-kids/">Why aren’t we promoting FOSS to kids?</a> (emphasis added):</p>
+<blockquote><p>We ought to begin advertising our desire to teach them to use <em>and contribute to</em> free software, along with its benefits.</p></blockquote>
+<p>Your editor&#8217;s <a href="http://gondwanaland.com/mlog/2013/03/09/firefox-playbackrate/">little bit of praise</a> for <a href="https://developer.mozilla.org/en-US/docs/Introduction#Find_a_bug_we%27ve_identified_as_being_good_for_newcomers">Mozilla&#8217;s good first bug/mentored bug practices</a>.</p>
+<p>Prior to his illegal arrest in Syria one year ago, Bassel Khartibil  introduced many in the Middle East to contributing to free software via  workshops and hackerspaces. While OpenHatch struggles to make free  software communities welcoming and accessible, Bassel&#8217;s imprisonment is a  reminder of our relatively privileged position. <a href="http://freebassel.org">Free Bassel now!</a></p>
+<h3>Get involved</h3>
+<p>Asheesh&#8217;s raw thoughts on how we can improve <a href="http://lists.openhatch.org/pipermail/events/2013-March/000437.html">Open Source Comes To Campus</a> and other events encouraging first contributions to open source projects. What&#8217;s your feedback and experience?</p>
+<p><a href="https://openhatch.org/blog/tag/newsletter">Read previous newsletters.</a></p>
+<p><a href="https://www.facebook.com/openhatch">Like</a>, follow @openhatch at <a href="http://identi.ca/openhatch">identi.ca</a> or <a href="http://twitter.com/openhatch">Twitter</a>.</p>
+</div>
+
+<div class="module-foot">
+  <p class="postmetadata"> <!-- Posted in <a href="http://blog.openhatch.org/category/uncategorized/" rel="category tag">Uncategorized</a> | -->   <a href="http://blog.openhatch.org/2013/newsletter-march-2013/#respond">No comments yet &#187;</a></p>
+</div>
+</div>
+
+<div class="module" id="post-626">
+<div class="module-head">
+  <h2>
+    <a style='color: #333;' href="http://blog.openhatch.org/2013/openhatch-limerick-for-sprints/" rel="bookmark"
+    title="Permanent Link to OpenHatch Limerick, for sprints">OpenHatch Limerick, for sprints</a>
+  </h2>
+
+  <div style='float: left; clear: left; font-weight: bold; width: 100%; font-size: 8pt; padding: 10px 0; '>
+    by Asheesh    <span style='color: #777;'>&bull;</span>
+    March 20th, 2013  </div>
+
+  <div class='clearer'></div>
+</div>
+
+<div class="module-body">
+  <p><img src="https://openhatch.org/blog/wp-content/uploads/2013/03/group-organizers-small.png" alt="" title="group-organizers-small" width="229" height="172" class="size-full wp-image-1624" /><img src="https://openhatch.org/blog/wp-content/uploads/2013/03/group-organizers3-small.png" alt="" title="group-organizers3-small" width="229" height="172" class="size-full wp-image-1625" /></p>
+<p>We&#8217;re still sprinting at PyCon! In lieu of a more contentful update here is a Limerick courtesy of <a href="http://bluesock.org/~willg/">Will Kahn-Greene</a>:</p>
+<p>There once was a man from OpenHatch.<br />
+For projects and people&#8211;he made the match;<br />
+Bugs that are bite-sized,<br />
+Bounties advertised&#8211;<br />
+Help out now! Send in your first patch.</p>
+</div>
+
+<div class="module-foot">
+  <p class="postmetadata"> <!-- Posted in <a href="http://blog.openhatch.org/category/uncategorized/" rel="category tag">Uncategorized</a> | -->   <a href="http://blog.openhatch.org/2013/openhatch-limerick-for-sprints/#respond">No comments yet &#187;</a></p>
+</div>
+</div>
+
+<div class="module" id="post-1615">
+<div class="module-head">
+  <h2>
+    <a style='color: #333;' href="http://blog.openhatch.org/2013/at-pycon/" rel="bookmark"
+    title="Permanent Link to OpenHatch at PyCon 2013">OpenHatch at PyCon 2013</a>
+  </h2>
+
+  <div style='float: left; clear: left; font-weight: bold; width: 100%; font-size: 8pt; padding: 10px 0; '>
+    by Asheesh    <span style='color: #777;'>&bull;</span>
+    March 12th, 2013  </div>
+
+  <div class='clearer'></div>
+</div>
+
+<div class="module-body">
+  <p><img src="https://openhatch.org/blog/wp-content/uploads/2013/03/sticker-image-rescaled-for-blog.png" width="576" height="712" /><br /><em>An OpenHatch sticker for every PyCon attendee!</em></p>
+<p>OpenHatch will be at this year&#8217;s PyCon US, the yearly conference of Python developers and enthusiasts!</p>
+<h3>Visit our booth</h3>
+<p>Thanks to the generosity of the PyCon committee, we have a booth in the sponsor hall. If you&#8217;re interested in what we do, want to get involved, or have new ideas, stop by!</p>
+<p>Additionally, we&#8217;re putting stickers in the conference bag of every attendee, so make sure you pick yours up.</p>
+<p>If you&#8217;re involved in an open source project, and you want advice attracting or retaining new contributors, schedule a time to chat by emailing us <hello@openhatch.org>!</p>
+<h3>See OpenHatchy talks</h3>
+<p>Jessica McKellar, an OpenHatch board member, is delivering a keynote on Saturday morning! She is also delivering two tutorials, <a href="https://us.pycon.org/2013/schedule/presentation/4/">Contribute with me! Getting started with open source development</a> and <a href="https://us.pycon.org/2013/schedule/presentation/1/">A hands-on introduction to Python for beginning programmers</a>. On Friday morning, she will explain <a href="https://us.pycon.org/2013/schedule/presentation/50/">How the Internet works</a> in a conference talk.</p>
+<p>Karen Rustad is teaching (with Asheesh Laroia as lead TA) a tutorial on <a href="https://us.pycon.org/2013/schedule/presentation/8/">Going from web pages to web apps</a>, an introduction to web programming for relatively new programmers.</p>
+<p>Asheesh is leading a panel on <a href="https://us.pycon.org/2013/schedule/presentation/104/">Scaling community diversity outreach</a>, a discussion with organizers of the Chicago Python Workshop (Naomi Ceder), the Boston Python Workshop (Jessica McKellar), PyStar Philly (Dana Bauer) and Daniel Choi (Boston Railsbridge).</p>
+<p>Additionally, his <a href="https://us.pycon.org/2013/schedule/presentation/135/">Scrapy: it GETs the web</a> talk is based on his experience working with the OpenHatch community to rewrite <a href="https://github.com/openhatch/oh-bugimporters">oh-bugimporters</a>, the code that powers the volunteer opportunity finder.</p>
+<h3>Donate to us</h3>
+<p>At the booth, we&#8217;ll be accepting donations from generous Python and outreach enthusiasts like you! We&#8217;ll have our signature T-shirts available as a thank-you.</p>
+<p>It will also be a great chance to talk to us about the possibility of sponsoring OpenHatch as a whole, or our Open Source Comes to Campus for Women in Computing event series.</p>
+<h3>Stay for sprints</h3>
+<p>Like in 2011 and <a href="https://openhatch.org/blog/2012/ten-contributors-hacked-oh-during-pycon-sprints/">2012</a>, we are hoping for a very productive few days of sprints! We will be sprinting on OpenHatch during Monday and Tuesday post-conference.</p>
+<p>If you want to see what sprints are like, check out this enthusiastic video of last year&#8217;s sprinters:</p>
+<p><iframe width="420" height="315" src="http://www.youtube.com/embed/hdS1GMERqVQ" frameborder="0" allowfullscreen></iframe></p>
+</div>
+
+<div class="module-foot">
+  <p class="postmetadata"> <!-- Posted in <a href="http://blog.openhatch.org/category/uncategorized/" rel="category tag">Uncategorized</a> | -->   <a href="http://blog.openhatch.org/2013/at-pycon/#respond">No comments yet &#187;</a></p>
+</div>
+</div>
+
+<div class="module" id="post-1601">
+<div class="module-head">
+  <h2>
+    <a style='color: #333;' href="http://blog.openhatch.org/2013/dealing-with-uncomfortable/" rel="bookmark"
+    title="Permanent Link to Dealing with the uncomfortable, in a women-and-their-friends event">Dealing with the uncomfortable, in a women-and-their-friends event</a>
+  </h2>
+
+  <div style='float: left; clear: left; font-weight: bold; width: 100%; font-size: 8pt; padding: 10px 0; '>
+    by skay    <span style='color: #777;'>&bull;</span>
+    March 5th, 2013  </div>
+
+  <div class='clearer'></div>
+</div>
+
+<div class="module-body">
+  <div style="z-index:0;position:relative;width:576px" about=""><img src="https://openhatch.org/blog/wp-content/uploads/2013/03/serene.jpg" width="576" height="438"></p>
+<div style="position:absolute;z-index:1;right:0;bottom:0;"><small style="color:#f0f0f0"><br /><a rel="cc:attributionURL" href="http://www.flickr.com/photos/mikecogh/5083370083/">Serene</a> <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/">by</a> Michael Coghlan</small></div>
+</div>
+<p>Hello everyone! I&#8217;ve helped run two Chicago Python Workshops in Chicago, and I wanted to explain how we handled a problem that started in the first workshop. Asheesh was a great mentor, and helped me handle a difficult situation, and it led to a <a href="https://openhatch.org/wiki/Women_and_their_friends#Kicking_someone_out_of_the_group">new section in the OpenHatch wiki</a>. This was the very first workshop I had given, and I was inspired to do so by the <a href="https://openhatch.org/blog/2012/the-boston-python-workshop-at-pycon-2012/">talk on the Boston Python Workshop</a>. I had a lot of enthusiastic friends who let me know that they wanted to run a workshop, so all I had to do was find a place for it and kick it off.
+</p>
+<p>At the first workshop, I had a negative impression of one of the attendees. It seemed to me that he attended the event to be able to network his consulting company rather than as someone who was there to learn programming in a beginner friendly environment, especially as he came with his fairly young daughter, and was supposedly her +1. Some of his mannerisms during and after the event seemed off to me. I had a bad first impression, and I figured that any future interactions with him could confirm or correct that and there was nothing that called for any action.</p>
+<p>That would have been fine had nothing happened beyond that, but it turned out that he had been behaving inappropriately towards volunteers. This only came to light at a followup project night and office hours I invited workshop attendees to. The problematic attendee showed up to the space where the office hours are hosted, and behaved in a disruptive manner towards our group and towards people in our room in general. The event was held at a local hackerspace, and after that night, I sent email to some of the hackerspace board to let them know about the situation so that they could be aware of anything that occurred as a result.</p>
+<p>I personally resolved to disengage from the person and decline with a minimum of explanation any investment offers, future events he wanted me to host, etc.  But after the heads-up I sent, and after comparing notes with other volunteers, I discovered he had approached one of the volunteers and emailed and spoken to her in ways that made her feel unsafe. Based on this, I decided he had to be asked not to attend any future events.</p>
+<p>There is where Asheesh&#8217;s mentorship really helped. It is a very tough decision to make, and I worked with him and the rest of the organizers to make sure I wasn&#8217;t making the wrong choices. It was important to me to make sure I handled things fairly and explained clearly to the attendee why he was being asked not to come back. You can see the results of that process on the women and their friends wiki page on <a href="https://openhatch.org/wiki/Women_and_their_friends#Kicking_someone_out_of_the_group">kicking someone out of the group</a>
+</p>
+<p>This event also helped me realize that we need to have a code of conduct and incident handling guidelines for events. The <a href="https://openhatch.org/wiki/Chicago_Python_Workshop/Code_of_Conduct">Chicago Python Workshop Code of Conduct</a> is the result. We based that on other codes we&#8217;ve seen.  One of my favorite inspirations is the <a href="http://codex.freegeekchicago.org/wiki/Policies/CodeOfConduct">FreeGeekChicago code</a>. I like how they explain that problematic behaviors go against the mission of their space. I think this is something you should highlight when working out a policy so that you understand that the goal of having a good policy is to enable people to participate in the mission of your space, whether it be learning or building things or helping recycle materials.</p>
+<p>We also borrowed heavily from the PyCon Code of Conduct&#8217;s recommended procedure for handling incidents. They have instructions for <a href="https://us.pycon.org/2013/about/code-of-conduct/harassment-incidents/">attendees reporting incidents</a> and how <a href="https://us.pycon.org/2013/about/code-of-conduct/harassment-incidents-staff/">staff can handle them</a> speedily and fairly.</p>
+<h3>Some lessons from all of this that I want to highlight</h3>
+<p>Asheesh and I worked together on a guide for running &#8220;<a href="https://openhatch.org/wiki/Women_and_their_friends">Women and their friends</a>&#8221; events, with tips to organizers. Since the goal is gender diversity, the guide emphasizes how to respectfully and effectively tell solo men they&#8217;re not welcome to attend, and what to do when people who seem male are not clear about whose guest they are. If I had asked this attendee for more details at the start, we might have avoided the situation entirely.</p>
+<p>It&#8217;s important to have an incident handling policy so that you can compare notes. If I had not compared notes with my friends, I would not have known about the extent of the problem. And following on that, it&#8217;s important to be approachable and to make sure that volunteers and participants feel comfortable about talking to you. Otherwise you won&#8217;t have the information you need for becoming aware of a situation.</p>
+<p>Since it is extremely difficult to approach a person who is causing a problem, particularly if you personally feel uncomfortable with the person, it is helpful to have a third party talk to the person about the situation if possible. Asheesh was extremely helpful in this regard. He offered to serve as a contact should the person have any questions about the situation. I was happy to discover that when we contacted the attendee to let him know about the problem, he immediately apologized profusely and accepted the request to come to no further events.</p>
+<p>You are in charge of a workshop, but you also bear a responsibility towards attendees for events outside of the workshop you invite them to. I host a <a href="http://wiki.pumpingstationone.org/Python_Office_Hours">Python Office Hours</a> night at Pumping Station One, and after I thought about this responsibility, I made sure that PSOne would be okay if I needed to kick anyone out of the office hours. And if I&#8217;m unable to host a Python Office Hours night, then I ask someone else to host them and let them know that they should be aware of the code of conduct so that they can be as responsible as I should be.</p>
+<h3>Conclusion</h3>
+<p>I wish I had the guidelines in place before the event so that I would have had some structure to help defuse drama. This was a big learning experience, and I worked through a lot of strong emotions. I&#8217;m grateful to my friends for being patient with me during this. I still feel pretty awkward. I&#8217;m also anxious about the future because it&#8217;s hard to act in a wise and just manner, and I&#8217;m afraid of mistakes. This fear is a recognition of the fact that difficult situations will come up, but it&#8217;s helpful to think about the good that embracing this fear and working on diversity outreach does. I found that being direct and informative with the person who was acting badly turned out fine, and will stick to that rather than trying to add humor or indirection.</p>
+</div>
+
+<div class="module-foot">
+  <p class="postmetadata"> <!-- Posted in <a href="http://blog.openhatch.org/category/uncategorized/" rel="category tag">Uncategorized</a> | -->   <a href="http://blog.openhatch.org/2013/dealing-with-uncomfortable/#respond">No comments yet &#187;</a></p>
+</div>
+</div>
+
+<div class="module" id="post-1591">
+<div class="module-head">
+  <h2>
+    <a style='color: #333;' href="http://blog.openhatch.org/2013/newsletter-february-2013/" rel="bookmark"
+    title="Permanent Link to OpenHatch newsletter, February 2013">OpenHatch newsletter, February 2013</a>
+  </h2>
+
+  <div style='float: left; clear: left; font-weight: bold; width: 100%; font-size: 8pt; padding: 10px 0; '>
+    by Mike Linksvayer    <span style='color: #777;'>&bull;</span>
+    February 27th, 2013  </div>
+
+  <div class='clearer'></div>
+</div>
+
+<div class="module-body">
+  <div style="z-index:0;position:relative;width:576px"  about="">
+      <img src="https://openhatch.org/blog/wp-content/uploads/2013/01/openhatch-naut.jpg" width="576" height="438"/></p>
+<div style="position:absolute;z-index:1;right:0;bottom:0;">
+    <small style="color:#f0f0f0"><br />
+      Image credit: <a rel="cc:attributionURL" href="https://commons.wikimedia.org/wiki/File:Artwork_by_North_American_Rockwell.jpg">Original by NASA</a>, with modification<br />
+    </small>
+  </div>
+</div>
+<p>OpenHatch newsletter number 7. We love you so much we&#8217;d offer you a gratis ride into space if it were safe to do so.</p>
+<p>It&#8217;s been a busy month, as Open Source Comes to Campus for Women in Computing ramps up.</p>
+<p>We&#8217;re  still  looking for more women&#8217;s colleges and women in CS groups excited  about  bringing open source teaching to their campuses. If that&#8217;s you, or  your  company wants to sponsor such events, let us know:  hello@openhatch.org. You can read more about our plans through the <a href="https://openhatch.org/donate/">sponsor prospectus</a>.</p>
+<h3>Events</h3>
+<p>We ran 2013&#8217;s first Open Source Comes to Campus for Women in Computing event, in collaboration with <a href="http://www.hcs.harvard.edu/~harvardwomenincs/">Harvard Women in Computer Science</a>, on Sat February 16! <a href="https://openhatch.org/blog/2013/open-sources-comes-to-harvard/">Read more about the event</a>.</p>
+<p>Catherine Devlin reports on <a href="http://catherinedevlin.blogspot.com/2013/01/hooray-for-columbus-python-workshop-1.html">first Columbus Python Workshop for women and their friends</a>: a success! Catherine also started a great thread on the OpenHatch events list about <a href="http://lists.openhatch.org/pipermail/events/2013-January/thread.html#400">increasing economic diversity</a> at OpenHatch-style events.</p>
+<p>We&#8217;re working on the <a href="https://openhatch.org/wiki/Events">Events section of the OpenHatch wiki</a> to make it an awesome resource for all running events and groups to share and learn from. As <a href="http://lists.openhatch.org/pipermail/events/2013-February/000430.html">Daniel Choi writes</a>:</p>
+<blockquote>
+<p>RailsBridge Boston would be very interested in a good list of local<br />
+organizations, events, and resources that our attendees can turn to.<br />
+We&#8217;re holding a workshop this weekend, for 53 women and 7 men, with 21<br />
+teaching assistants. It would be great to give them all really good info<br />
+for ways to follow up and follow through.</p>
+<p>I think if OpenHatch could make wiki pages of resources for each city<br />
+that would be like a <b>cave filled with gold</b>.</p>
+</blockquote>
+<p>How could we not add emphasis?</p>
+<p>We&#8217;re also now welcoming outreach events to <a href="https://openhatch.org/wiki/Events/Affiliated">affiliate</a> with OpenHatch. It&#8217;s a way to show solidarity with other events that aim to measure their impact, work with existing communities, and change open source projects and programming language user groups for the better. We&#8217;ll be blogging more about that in the future!</p>
+<p>For upcoming Open Source Comes to Campus events, we&#8217;ve been wanting to improve our process for identifying good first tasks for newcomers to open source projects. So we&#8217;ve worked out a more <a href="https://openhatch.org/wiki/Curated_First_Tasks">human-oriented workflow</a> for identifying bitesize bugs that we&#8217;ll use for these events. The tasks presented to students at the Harvard event were a combination of ones found via the existing <a href="https://openhatch.org/search/">volunteer opportunity finder</a>, and this new process. Stay tuned as we continue to experiment.</p>
+<h3>OpenHatchy but not OpenHatch things around the web</h3>
+<p>The Free Software Foundation and Students for Free Culture have started the <a href="http://freeculture.org/blog/2013/01/31/announcing-the-empowermentors-collective-a-group-for-women-of-color-and-queer-people-of-color/">Empowermentors Collective: a group for women of color and queer people of color</a>.</p>
+<p>An update on <a href="https://www.gnome.org/news/2013/01/25-women-in-10-free-software-organizations-for-gnomes-outreach-program-for-women/">GNOME&#8217;s Outreach Program for Women</a>: 25 in the current class.</p>
+<p><p>Responses to the <a href=http://gracehopper.org/2013/participate/call-for-participation/">2013 Grace Hopper Celebration of Women in Computing CFP</a> are due March 15.</p>
+<p>Dev Bootcamp Chicago has a short post on <a href="http://devbootcamp.com/2013/02/06/learning-how-to-attract-women-to-web-development/">learning how to attract women to web development</a>.</p>
+<p>The beginnings of a directory of <a href="http://www.wsis-community.org/pg/pages/view/582094/foss-groups-for-women">FOSS Groups for Women and Girls</a> at WSIS.</p>
+<p>You can now subscribe to improve the quality of bugs, one a day, in a wide variety of projects, hosted on Github, through <a href="http://www.codetriage.com/">CodeTriage</a>.</p>
+<h3>Get involved</h3>
+<p>The OpenHatch <a href="https://openhatch.org/wiki/">wiki</a>. &#8220;It&#8217;s a wiki!&#8221; That means you can <s>edit</s>help fill it with gold.</p>
+<p><a href="https://openhatch.org/blog/tag/newsletter">Read previous newsletters.</a></p>
+<p><a href="https://www.facebook.com/openhatch">Like</a>, follow @openhatch at <a href="http://identi.ca/openhatch">identi.ca</a> or <a href="http://twitter.com/openhatch">Twitter</a>.</p>
+</div>
+
+<div class="module-foot">
+  <p class="postmetadata"> <!-- Posted in <a href="http://blog.openhatch.org/category/uncategorized/" rel="category tag">Uncategorized</a> | -->   <a href="http://blog.openhatch.org/2013/newsletter-february-2013/#respond">No comments yet &#187;</a></p>
+</div>
+</div>
+
+<div class="module" id="post-1580">
+<div class="module-head">
+  <h2>
+    <a style='color: #333;' href="http://blog.openhatch.org/2013/open-sources-comes-to-harvard/" rel="bookmark"
+    title="Permanent Link to Open Source Comes to Harvard">Open Source Comes to Harvard</a>
+  </h2>
+
+  <div style='float: left; clear: left; font-weight: bold; width: 100%; font-size: 8pt; padding: 10px 0; '>
+    by Shauna    <span style='color: #777;'>&bull;</span>
+    February 26th, 2013  </div>
+
+  <div class='clearer'></div>
+</div>
+
+<div class="module-body">
+  <p><img src="https://openhatch.org/blog/wp-content/uploads/2013/02/harvard_osctc_2_16_2013.jpg" alt="students at the Harvard open source workshop" width="576" height="384" class="aligncenter size-full wp-image-1583" /></p>
+<p>On February 16th, a snowy Saturday, we held our seventh Open Source Comes to Campus event at Harvard University.  The event, organized with the help of the <a href="http://www.hcs.harvard.edu/~harvardwomenincs/">Harvard Women in Computer Science group</a>, was shortened to a single day from our usual two.  Accordingly, we tightened up the schedule, dropping the “Introduction to the Command Line” tutorial, and shortening the afternoon project time by about an hour.  This left us a densely-packed day of learning, contributing, and socializing.</p>
+<p>
+We started off with an intro to open source communication tools by yours truly.  Working off a presentation provided by <a href="http://jesstess.com/">Jessica McKellar</a>, I gave students a brief tour of the open source world, brought up concepts like diffs and version control that would be elaborated on later, and showed them how to interact with mailing lists, bug trackers, and IRC.  Then, Marina Zhurakhinskaya gave a basic but thorough introduction to Git.  This was one of the best received Git talks we’ve done &#8212; although some students really enjoy learning the deeper concepts behind Git, we’ve found that it’s best to make that optional.  We followed this up with some time for students to try out the <a href="https://openhatch.org/missions/git">Git OpenHatch training mission</a>. One scheduling difficulty we noticed was that students showed a great range in how much time they took to complete the mission.</p>
+<p>
+After that came the career panel, which featured <a href="http://ireneros.com/">Irene Ros</a> of <a href="http://loft.bocoup.com/">Bocoup</a>, Madeleine Price Ball, who works on the <a href="http://blog.personalgenomes.org/">Personal Genome Project</a>, <a href="http://blogs.gnome.org/marina">Marina Zhurakhinskaya</a> of <a href="http://www.redhat.com/">Red Hat</a>, and <a href="http://blog.pault.ag/">Paul Tagliamonte</a> of the <a href="http://sunlightfoundation.com/">Sunlight Foundation</a>. The career panel is a new addition to Open Source Comes to Campus; it began with our September event at Johns Hopkins. This time, at Harvard, we asked career panelists to explain how they got involved in open source, how their work relates to contributing to free software, and what advice they have for students.</p>
+<p>
+The career panel naturally flowed into lunch, where attendees were able to follow up with questions while chowing down on falafel.  We weren’t able to get a private room for lunch, but this turned out to be a blessing in disguise, as two different students passing by stopped to talk with us about open source.  One was a student who was beginning his CS career, didn’t know about programs like WordPress or MediaWiki, but saw a poster and found it intriguing.  Another was a graduate student in public health who was eager to hear about open source tools in her field.  Our lunchtime conversations, with them and with our attendees, were so engaging that we forgot to start the afternoon half of the event on time.</p>
+<p>
+Once we did resume, Paul Tagliamonte walked us through a live demonstration of submitting and merging pull requests on Github.  Attendees had a blast committing their first pull requests, which you can see <a href="https://github.com/Debian/dput-ng/pulls?page=1&amp;sort=created&amp;state=closed">here</a>.  Then, since we were running behind, we asked attendees if they wanted us to skip Asheesh’s talk on the history and ethics of open source.  But they enthusiastically asked him give it, and seemed to appreciate learning more about how and why the open source movement evolved.</p>
+<p>
+The project-focused part of the event, though shorter than usual, went very well.  Our efforts to reach out to open source projects and better <a href="https://openhatch.org/wiki/Curated_First_Tasks">curate bite-size bugs</a> for our events paid off &#8211;  a much greater percentage of attendees were able to successfully submit a patch to an open source project.  Special thanks must be given to the maintainers of <a href="https://github.com/psychopy/psychopy">PsychoPy</a>, who merged a <a href="https://github.com/psychopy/psychopy/pull/261#commits-pushed-58fb4a4">request</a> within twenty minutes of it being made.  It’s always a great experience for attendees to see their changes get incorporated right in front of their eyes.  There was also a great deal of chatting between attendees and volunteers throughout this period.  This allowed us to pass along more wisdom informally: attendees were encouraged to apply for internships even if they felt inexperienced; told about open source projects using their favored languages; pointed towards online tutorials and local user groups.  It also made for a very pleasant atmosphere.  Our last attendees finally bid us farewell a good half hour after we were scheduled to end, after extracting from us a promise to keep in touch about running more events with them in the future.</p>
+<p>
+Although turnout was lower than we might have liked &#8212; perhaps due to snow, or the three day weekend &#8212; it’s impossible to call this event anything but a success.  At the end of the day, students overwhelmingly asked us when we’d be hosting the next event so they could do more of the same!</p>
+<p>
+Thanks to all our attendees, the Harvard Women in Computer Science for hosting and sponsoring, and our staffers: Irene Ros, Madeleine Price Ball, Marina Zhurakhinskaya, Michael Stone, Owen Taylor, Paul Tagliamonte, Asheesh Laroia, and Shauna Gordon-McKeon. Special thanks to Marina for bringing flyers to show students how to apply to Summer of Code and the Women’s Outreach Program spearheaded by GNOME.</p>
+<p>
+You can see pictures of the event at <a href="http://www.flickr.com/photos/paulproteus/sets/72157632806397074/">our photo gallery</a>.  If you want us to come to your school, <a href="http://campus.openhatch.org/about/">get in touch</a>! The event is part of our Open Source Comes to Campus for Women in Computing series, run by OpenHatch, and as a non-profit, we rely on your support and <a href="https://openhatch.org/donate/">sponsorship</a>.</p>
+</div>
+
+<div class="module-foot">
+  <p class="postmetadata"> <!-- Posted in <a href="http://blog.openhatch.org/category/uncategorized/" rel="category tag">Uncategorized</a> | -->   <a href="http://blog.openhatch.org/2013/open-sources-comes-to-harvard/#respond">No comments yet &#187;</a></p>
+</div>
+</div>
+
+<div class="module" id="post-1569">
+<div class="module-head">
+  <h2>
+    <a style='color: #333;' href="http://blog.openhatch.org/2013/newsletter-january-2013/" rel="bookmark"
+    title="Permanent Link to OpenHatch newsletter, January 2013">OpenHatch newsletter, January 2013</a>
+  </h2>
+
+  <div style='float: left; clear: left; font-weight: bold; width: 100%; font-size: 8pt; padding: 10px 0; '>
+    by Mike Linksvayer    <span style='color: #777;'>&bull;</span>
+    January 24th, 2013  </div>
+
+  <div class='clearer'></div>
+</div>
+
+<div class="module-body">
+  <div style="padding:20px; border-style: solid; border-width: 3px; border-color:rgba(100, 200, 255, 0.3)">
+<p>As this newsletter was about to go to press, we heard that <a href="https://en.wikipedia.org/wiki/Aaron_Swartz">Aaron Swartz</a> had died. He was a friend to many in the OpenHatch community; we mourn his loss. You can see rememberences at <a href="http://www.rememberaaronsw.com/">rememberaaronsw.com</a>.</p>
+<p>One of the many ways people are acting in memory of Aaron is to organize hackathons to maintain software projects he contributed to, and others aligned with his passion for <a href="http://archive.org/details/GuerillaOpenAccessManifesto">sharing</a>. Hop on #aaronsw or <a href="https://www.noisebridge.net/wiki/Worldwide_Aaron_Swartz_Memorial_Hackathons">visit the coordination page</a> to participate.</p>
+<p>Finally, read <a href="http://evanprodromou.name/2013/01/14/on-hackers-and-suicide/">on hackers and suicide</a>. If you or someone you know is at risk, please reach out for help. There are many <a href="http://www.iasp.info/resources/Crisis_Centres/">resources available</a>. You are <a href="http://bluehackers.org/">not alone</a>. We don&#8217;t want to lose anyone else, but acknowledge that there <a href="http://blog.valerieaurora.org/2013/01/12/suicide-and-society-where-does-responsibility-for-preventing-suicide-lie/">are no easy answers</a>.</p>
+</div>
+<p>Happy new year and welcome to the 6th OpenHatch newsletter!</p>
+<p>Thanks to all who contributed to OpenHatch during 2012, in any and every way, including:</p>
+<ul>
+<li>Helping people find projects to dig into on the #openhatch IRC channel;</li>
+<li>Scouting out, organizing, and helping to run Open Source Comes to Campus events;</li>
+<li>Improving the OpenHatch website, bug importer, project finder, wiki, and contributing to the blog;</li>
+<li>Identifying companies to sponsor OpenHatch events and otherwise support our work;</li>
+<li>Working with OpenHatch to improve your community&#8217;s ability to welcome newcomers, increase diversity, and grow;</li>
+<li>Using our website to <a href="http://twitter.com/DreadKnight/status/293779194679287808">help you find contributors</a>;
+<li>Donating money to support our work.</li>
+</ul>
+<p>We&#8217;ll need your help, and that of many more people, to make 2013 as bright as it might be.</p>
+<p>As mentioned in our <a href="https://openhatch.org/blog/2012/last-chance-to-support-openhatch-in-2012/">call for year-end donations</a>, we have big, important plans:</p>
+<blockquote><p>In 2013, we&#8217;re focusing on gender diversity in our community. That means honing our Open Source Comes to Campus series and working with  women in CS groups to create workshop and project nights to change the  gender ratio with our practical, tested outreach. These in-person events bring bitesize bugs together with training missions and in-person  mentorship.</p></blockquote>
+<h3>Events</h3>
+<p>In December, we helped organize a sprint and workshop on the <a href="https://openhatch.org/blog/2012/pandas-pydata-workshop-in-nyc/">Python data processing package known as pandas</a>. Many of our attendees expressed an interest in continuing to contribute, and plenty kept working on pull requests well after the event. Thanks to NYC PyLadies, 37% of our attendees were women, and we&#8217;re hoping to organize a general Python diversity outreach event with them in the upcoming months.</p>
+<p>Two upcoming <a href="http://campus.openhatch.org/">Open Source Comes to Campus</a> events in the Boston area need volunteers, sponsors, and career panel members. We&#8217;re in the final stages of planning events with Harvard Women in CS and at Wellesley College on Feb 16 and 23 respectively. We&#8217;ve been discussing it on the Events list; you can read the <a href="http://lists.openhatch.org/pipermail/events/2012-December/000383.html">thread in the archives</a>, or (best) just <a href="http://lists.openhatch.org/mailman/listinfo/events">subscribe and join in</a>!</p>
+<p>We&#8217;re still looking for more women&#8217;s colleges and women in CS groups excited about bringing open source teaching to their campuses. If that&#8217;s you, or your company wants to sponsor such events, let us know: hello@openhatch.org.</p>
+<h3>OpenHatchy but not OpenHatch things around the web</h3>
+<p>OpenHatch friend Mako Hill <a href="http://mako.cc/copyrighteous/20121214-00">announced</a> he&#8217;s joining the communicaitons department of the University of Washington. His <a href="http://mako.cc/academic/bmh-research_statement.pdf">research agenda</a> is a must-read:</p>
+<blockquote>
+<p>I study collective action in online communities and seek to understand why some attempts at collaborative production – like Wikipedia and Linux – build large volunteer communities while the vast majority never attract even a second contributor. I am particularly interested in how the design of communication and information technologies shape fundemental social outcomes with broad theoretical and practical implications – like the decision to join a community or contribute to a public good.</p>
+<p>&#8230;</p>
+<p>In other work with Leah Buechley, I have analyzed sales records of hobbyist microcontrollers to argue that relatively simple design changes in the LilyPad Arduino – a electronics toolkit minimally re-designed for women and girls – led to large increases in the proportion of women contributors and drastic shifts in the type of projects created.</p>
+</blockquote>
+<p>We&#8217;re hoping to work with Mako on quantifying and improving OpenHatch.</p>
+<p>Derick Bailey writes <a href="http://lostechies.com/derickbailey/2012/12/14/dear-open-source-project-leader-quit-being-a-jerk/">Dear Open Source Project Leader: Quit Being A Jerk</a>:</p>
+<blockquote><p>I can’t think of a better way to get people to stop contributing to open  source projects. Seriously… there is nothing more demotivating and  demoralizing than this kind of high-school-bully response. It needs to  stop.</p></blockquote>
+<h3>Get involved</h3>
+<p>We  can always use more people on our IRC channel to discuss events and the like. If you&#8217;re a programmer, get in touch on the <a href="http://lists.openhatch.org/mailman/listinfo/devel">Devel</a> mailing list!</p>
+<p>And  it bears repeating: as a non-profit, we rely on the community for  support. We need your help to get more people involved in open source,  so please <a href="https://openhatch.org/donate/">donate now</a>.</p>
+<p><a href="https://openhatch.org/blog/tag/newsletter">Read previous newsletters.</a></p>
+<p><a href="https://www.facebook.com/openhatch">Like</a>, follow @openhatch at <a href="http://identi.ca/openhatch">identi.ca</a> or <a href="http://twitter.com/openhatch">Twitter</a>.</p>
+</div>
+
+<div class="module-foot">
+  <p class="postmetadata"> <!-- Posted in <a href="http://blog.openhatch.org/category/uncategorized/" rel="category tag">Uncategorized</a> | -->   <a href="http://blog.openhatch.org/2013/newsletter-january-2013/#respond">No comments yet &#187;</a></p>
+</div>
+</div>
+
+<div class="module" id="post-1562">
+<div class="module-head">
+  <h2>
+    <a style='color: #333;' href="http://blog.openhatch.org/2012/site-maintenance-complete/" rel="bookmark"
+    title="Permanent Link to Site maintenance complete">Site maintenance complete</a>
+  </h2>
+
+  <div style='float: left; clear: left; font-weight: bold; width: 100%; font-size: 8pt; padding: 10px 0; '>
+    by Asheesh    <span style='color: #777;'>&bull;</span>
+    December 28th, 2012  </div>
+
+  <div class='clearer'></div>
+</div>
+
+<div class="module-body">
+  <p>openhatch.org, including mailing lists and this very blog, are back online.</p>
+<p>Now we have more disk space, which will make the web app and MySQL happier. It took about eight minutes, so we&#8217;re done about twenty-two minutes early.</p>
+</div>
+
+<div class="module-foot">
+  <p class="postmetadata"> <!-- Posted in <a href="http://blog.openhatch.org/category/uncategorized/" rel="category tag">Uncategorized</a> | -->   <a href="http://blog.openhatch.org/2012/site-maintenance-complete/#respond">No comments yet &#187;</a></p>
+</div>
+</div>
+
+
+<div class="navigation">
+  <div class="alignleft"><a href="http://blog.openhatch.org/page/9/" >&laquo; Older Entries</a></div>
+  <div class="alignright"><a href="http://blog.openhatch.org/page/7/" >Newer Entries &raquo;</a></div>
+</div>
+
+ 
+</div>
+<!--- end second column -->
+<div class="more-content">
+    
+    
+</div>
+<!--- end more_content -->
+
+                </div><!-- /#content -->
+                
+        </div><!-- /#container -->
+        </div>
+
+        <div id='footer-wrapper'>
+          <div id='footer'>
+            
+	    <div class="threecol">
+              <div class="column">
+                <h3>OpenHatch organization</h3>
+
+                <ul>
+                  <li><a href="//openhatch.org/about/">about openhatch</a></li>
+                  <li><a href="//openhatch.org/sponsors/">sponsors</a></li>
+                  <li><a href="//openhatch.org/blog/">blog</a></li>
+                  <li><a href="//openhatch.org/contact/">contact</a></li>
+                  <li><a href="https://openhatch.org/wiki/Privacy_policy">privacy policy</a></li>
+                </ul>
+              </div>
+
+	      <div class="column">
+		<h3>OpenHatch web app code</h3>
+		<ul>
+		  <li><a href="http://openhatch.readthedocs.org/en/latest/README.html">Intro for developers</a></li>
+		  <li><a href="https://github.com/openhatch/oh-mainline">Github (source code)</a></li>
+		  <li><a href="http://lists.openhatch.org/mailman/listinfo/devel">Devel mailing list</a></li>
+		  <li><a href="http://openhatch.readthedocs.org/">Code docs</a></li>
+		  <li><a href="https://openhatch.org/bugs/">Bug tracker</a></li>
+		</ul>
+	      </div>
+
+	      <div class="column">
+		<h3>Other web tools</h3>
+		<ul>
+                  <li><a href="/wiki/">wiki</a></li>
+                  <li><a href="http://forum.openhatch.org/">forum</a></li>
+		</ul>
+	      </div>
+	    </div>
+            
+          </div>
+        </div>
+
+        
+        
+	<!--Includes for the javascript bundle are in base/assets.py-->
+	
+		<script type="text/javascript" src="//openhatch.org/static/packed/openhatch.js?1407021888"></script>
+	
+
+        
+        
+
+        
+        
+<!-- Goggle Analytics not included because you haven't set the settings.GOOGLE_ANALYTICS_CODE variable! -->
+        
+
+    </body>
+</html>
+
