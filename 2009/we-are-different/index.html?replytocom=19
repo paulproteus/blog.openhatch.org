@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" dir="ltr">
     <head>
-       <link rel="stylesheet" type="text/css" href="//openhatch.org/static/css/blog-style.css" />
+       <link rel="stylesheet" type="text/css" href="/downloaded-for-static-snapshot/blog-style.css" />
 
 <!-- blog metadata etc. -->
 
