@@ -5,9 +5,9 @@
 
 <!-- blog metadata etc. -->
 
-<link rel="alternate" type="application/rss+xml" title="The OpenHatch blog RSS Feed" href="http://blog-snapshot-beta.openhatch.org/feed/" />
-<link rel="alternate" type="application/atom+xml" title="The OpenHatch blog Atom Feed" href="http://blog-snapshot-beta.openhatch.org/feed/atom/" />
-<link rel="pingback" href="http://blog-snapshot-beta.openhatch.org/xmlrpc.php" />
+<link rel="alternate" type="application/rss+xml" title="The OpenHatch blog RSS Feed" href="http://blog.openhatch.org/feed/" />
+<link rel="alternate" type="application/atom+xml" title="The OpenHatch blog Atom Feed" href="http://blog.openhatch.org/feed/atom/" />
+<link rel="pingback" href="http://blog.openhatch.org/xmlrpc.php" />
 
 <!-- Facebook OpenGraph image, if applicable -->
 <meta property="og:image" content="" />
@@ -18,7 +18,7 @@
      More info: http://codex.wordpress.org/Function_Reference/wp_head
 -->
 <link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="The OpenHatch blog &raquo; Lessons learned from the Boston Python Workshop, an outreach event for women Comments Feed" href="http://blog-snapshot-beta.openhatch.org/2011/lessons-learned-from-the-boston-python-workshop-an-outreach-event-for-women/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The OpenHatch blog &raquo; Lessons learned from the Boston Python Workshop, an outreach event for women Comments Feed" href="http://blog.openhatch.org/2011/lessons-learned-from-the-boston-python-workshop-an-outreach-event-for-women/feed/" />
 		<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/blog.openhatch.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.5"}};
 			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -37,16 +37,16 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
-<link rel='https://api.w.org/' href='http://blog-snapshot-beta.openhatch.org/wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog-snapshot-beta.openhatch.org/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog-snapshot-beta.openhatch.org/wp-includes/wlwmanifest.xml" /> 
-<link rel='prev' title='Congratulating the Ada Initiative on its seed funding' href='http://blog-snapshot-beta.openhatch.org/2011/congratulating-the-ada-initiative-on-its-seed-funding/' />
-<link rel='next' title='OpenHatch gains full-time project lead, transitioning into a non-profit' href='http://blog-snapshot-beta.openhatch.org/2011/openhatch-gains-full-time-project-lead-transitioning-into-a-non-profit/' />
-<link rel="canonical" href="http://blog-snapshot-beta.openhatch.org/2011/lessons-learned-from-the-boston-python-workshop-an-outreach-event-for-women/" />
-<link rel='shortlink' href='http://blog-snapshot-beta.openhatch.org/?p=742' />
+<link rel='https://api.w.org/' href='http://blog.openhatch.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.openhatch.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.openhatch.org/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Congratulating the Ada Initiative on its seed funding' href='http://blog.openhatch.org/2011/congratulating-the-ada-initiative-on-its-seed-funding/' />
+<link rel='next' title='OpenHatch gains full-time project lead, transitioning into a non-profit' href='http://blog.openhatch.org/2011/openhatch-gains-full-time-project-lead-transitioning-into-a-non-profit/' />
+<link rel="canonical" href="http://blog.openhatch.org/2011/lessons-learned-from-the-boston-python-workshop-an-outreach-event-for-women/" />
+<link rel='shortlink' href='http://blog.openhatch.org/?p=742' />
 <meta name='robots' content='noindex,follow' />
-<link rel="alternate" type="application/json+oembed" href="http://blog-snapshot-beta.openhatch.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.openhatch.org%2F2011%2Flessons-learned-from-the-boston-python-workshop-an-outreach-event-for-women%2F" />
-<link rel="alternate" type="text/xml+oembed" href="http://blog-snapshot-beta.openhatch.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.openhatch.org%2F2011%2Flessons-learned-from-the-boston-python-workshop-an-outreach-event-for-women%2F&#038;format=xml" />
+<link rel="alternate" type="application/json+oembed" href="http://blog.openhatch.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.openhatch.org%2F2011%2Flessons-learned-from-the-boston-python-workshop-an-outreach-event-for-women%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://blog.openhatch.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.openhatch.org%2F2011%2Flessons-learned-from-the-boston-python-workshop-an-outreach-event-for-women%2F&#038;format=xml" />
 		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
 				<style type="text/css" id="wp-custom-css">
 			/*
@@ -769,7 +769,7 @@ body.wordpress #sidebar > .module-body li li {
         </title>
 
         <link rel="shortcut icon" href="/favicon.ico" />
-	<link rel="canonical" href="http://blog-snapshot-beta.openhatch.org/2011/lessons-learned-from-the-boston-python-workshop-an-outreach-event-for-women/" />
+	<link rel="canonical" href="http://blog.openhatch.org/2011/lessons-learned-from-the-boston-python-workshop-an-outreach-event-for-women/" />
 
         <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
         <meta http-equiv='Content-Language' content='en-us' />
@@ -909,26 +909,26 @@ body.wordpress #sidebar > .module-body li li {
 		<li id="recent-posts-2" class="widget widget_recent_entries">		<h2 class="widgettitle">Recent Posts</h2>
 		<ul>
 					<li>
-				<a href="http://blog-snapshot-beta.openhatch.org/2017/celebrating-our-successes-and-winding-down-as-an-organization/">Celebrating our successes and winding down as an organization</a>
+				<a href="http://blog.openhatch.org/2017/celebrating-our-successes-and-winding-down-as-an-organization/">Celebrating our successes and winding down as an organization</a>
 						</li>
 					<li>
-				<a href="http://blog-snapshot-beta.openhatch.org/2015/tips-facts-thoughts-after-3-successful-semesters-of-osctc/">Tips, facts, thoughts after 3 successful semesters of OSCTC</a>
+				<a href="http://blog.openhatch.org/2015/tips-facts-thoughts-after-3-successful-semesters-of-osctc/">Tips, facts, thoughts after 3 successful semesters of OSCTC</a>
 						</li>
 					<li>
-				<a href="http://blog-snapshot-beta.openhatch.org/2015/finding-the-next-openhatch-board-member/">Finding the next OpenHatch board member</a>
+				<a href="http://blog.openhatch.org/2015/finding-the-next-openhatch-board-member/">Finding the next OpenHatch board member</a>
 						</li>
 					<li>
-				<a href="http://blog-snapshot-beta.openhatch.org/2015/moving-on/">Moving On</a>
+				<a href="http://blog.openhatch.org/2015/moving-on/">Moving On</a>
 						</li>
 					<li>
-				<a href="http://blog-snapshot-beta.openhatch.org/2015/preparing-for-the-pycon-sprints/">Preparing for the PyCon Sprints</a>
+				<a href="http://blog.openhatch.org/2015/preparing-for-the-pycon-sprints/">Preparing for the PyCon Sprints</a>
 						</li>
 				</ul>
 		</li>
 		<li id="recent-comments-2" class="widget widget_recent_comments"><h2 class="widgettitle">Recent Comments</h2>
-<ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Carol Willing</span> on <a href="http://blog-snapshot-beta.openhatch.org/2015/moving-on/#comment-14652">Moving On</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://gondwanaland.com/mlog/2014/12/31/happy-utc-new-year/' rel='external nofollow' class='url'>Happy UTC+0 New Year &#8211; Mike Linksvayer</a></span> on <a href="http://blog-snapshot-beta.openhatch.org/2014/newsletter-november-december-2014/#comment-10523">Thanks for believing in OpenHatch &#8212; here&#8217;s our end of year newsletter</a></li></ul></li>
+<ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Carol Willing</span> on <a href="http://blog.openhatch.org/2015/moving-on/#comment-14652">Moving On</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://gondwanaland.com/mlog/2014/12/31/happy-utc-new-year/' rel='external nofollow' class='url'>Happy UTC+0 New Year &#8211; Mike Linksvayer</a></span> on <a href="http://blog.openhatch.org/2014/newsletter-november-december-2014/#comment-10523">Thanks for believing in OpenHatch &#8212; here&#8217;s our end of year newsletter</a></li></ul></li>
 <li id="search-2" class="widget widget_search"><h2 class="widgettitle">Search</h2>
-<form role="search" method="get" id="searchform" class="searchform" action="http://blog-snapshot-beta.openhatch.org/">
+<form role="search" method="get" id="searchform" class="searchform" action="http://blog.openhatch.org/">
 				<div>
 					<label class="screen-reader-text" for="s">Search for:</label>
 					<input type="text" value="" name="s" id="s" />
@@ -943,8 +943,8 @@ body.wordpress #sidebar > .module-body li li {
   <div class="module-body">
     The OpenHatch blog is graciously powered by
     <a href="http://wordpress.org/">WordPress</a>.
-    <br /><a href="http://blog-snapshot-beta.openhatch.org/feed/">Entries (RSS)</a>
-    and <a href="http://blog-snapshot-beta.openhatch.org/comments/feed/">Comments (RSS)</a>.
+    <br /><a href="http://blog.openhatch.org/feed/">Entries (RSS)</a>
+    and <a href="http://blog.openhatch.org/comments/feed/">Comments (RSS)</a>.
     <!-- 27 queries. 0.125 seconds. -->
   </div>
 </div>
@@ -955,7 +955,7 @@ body.wordpress #sidebar > .module-body li li {
      <div class="module" id="post-742">
 <div class="module-head">
   <h2>
-    <a style='color: #333;' href="http://blog-snapshot-beta.openhatch.org/2011/lessons-learned-from-the-boston-python-workshop-an-outreach-event-for-women/" rel="bookmark"
+    <a style='color: #333;' href="http://blog.openhatch.org/2011/lessons-learned-from-the-boston-python-workshop-an-outreach-event-for-women/" rel="bookmark"
     title="Permanent Link to Lessons learned from the Boston Python Workshop, an outreach event for women">Lessons learned from the Boston Python Workshop, an outreach event for women</a>
   </h2>
 
@@ -1085,7 +1085,7 @@ Margolis, J. and Fisher, A. (2002). Unlocking the Clubhouse: Women in Computing.
 </div>
 
 <div class="module-foot">
-  <p class="postmetadata"> <!-- Posted in <a href="http://blog-snapshot-beta.openhatch.org/category/uncategorized/" rel="category tag">Uncategorized</a> | -->   <a href="http://blog-snapshot-beta.openhatch.org/2011/lessons-learned-from-the-boston-python-workshop-an-outreach-event-for-women/#comments">4 Comments &#187;</a></p>
+  <p class="postmetadata"> <!-- Posted in <a href="http://blog.openhatch.org/category/uncategorized/" rel="category tag">Uncategorized</a> | -->   <a href="http://blog.openhatch.org/2011/lessons-learned-from-the-boston-python-workshop-an-outreach-event-for-women/#comments">4 Comments &#187;</a></p>
 </div>
 </div>
 
@@ -1106,14 +1106,14 @@ Margolis, J. and Fisher, A. (2002). Unlocking the Clubhouse: Women in Computing.
 				<div class="comment-author vcard">
 			<img alt='' src='http://0.gravatar.com/avatar/311e2e25841265550f884d3996a4e23b?s=32&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/311e2e25841265550f884d3996a4e23b?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn"><a href='http://asheesh.org' rel='external nofollow' class='url'>Asheesh</a></cite> <span class="says">says:</span>		</div>
 		
-		<div class="comment-meta commentmetadata"><a href="http://blog-snapshot-beta.openhatch.org/2011/lessons-learned-from-the-boston-python-workshop-an-outreach-event-for-women/#comment-82">
+		<div class="comment-meta commentmetadata"><a href="http://blog.openhatch.org/2011/lessons-learned-from-the-boston-python-workshop-an-outreach-event-for-women/#comment-82">
 			June 27, 2011 at 10:55 am</a>		</div>
 
 		<p>Jessica, this is one great write-up. (I also really love the citations at the end!)</p>
 <p>I think that one of the best things that the workshop has done for the world is prepare solid, cross-platform Python+editor install instructions. I&#8217;m referring to the new check-list that the round 2 crowd did while I was out of town. It&#8217;s superb.</p>
 <p>It&#8217;s been really fun to see something I helped start grow into something with so much enthusiasm behind it. I hope that as people see your post, they realize that they can run something similar!</p>
 
-		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog-snapshot-beta.openhatch.org/2011/lessons-learned-from-the-boston-python-workshop-an-outreach-event-for-women/?replytocom=82#respond' onclick='return addComment.moveForm( "div-comment-82", "82", "respond", "742" )' aria-label='Reply to Asheesh'>Reply</a></div>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.openhatch.org/2011/lessons-learned-from-the-boston-python-workshop-an-outreach-event-for-women/?replytocom=82#respond' onclick='return addComment.moveForm( "div-comment-82", "82", "respond", "742" )' aria-label='Reply to Asheesh'>Reply</a></div>
 				</div>
 		</li><!-- #comment-## -->
 		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-83">
@@ -1121,12 +1121,12 @@ Margolis, J. and Fisher, A. (2002). Unlocking the Clubhouse: Women in Computing.
 				<div class="comment-author vcard">
 			<img alt='' src='http://1.gravatar.com/avatar/79cb50191709dae232fe47f5ebf464f1?s=32&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/79cb50191709dae232fe47f5ebf464f1?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn"><a href='http://third-bit.com' rel='external nofollow' class='url'>Greg Wilson</a></cite> <span class="says">says:</span>		</div>
 		
-		<div class="comment-meta commentmetadata"><a href="http://blog-snapshot-beta.openhatch.org/2011/lessons-learned-from-the-boston-python-workshop-an-outreach-event-for-women/#comment-83">
+		<div class="comment-meta commentmetadata"><a href="http://blog.openhatch.org/2011/lessons-learned-from-the-boston-python-workshop-an-outreach-event-for-women/#comment-83">
 			June 28, 2011 at 9:26 am</a>		</div>
 
 		<p>Excellent summary, Jessica &#8212; thanks very much for putting it together.  What sort of age distribution do you see in attendees?  Mostly under-30s looking for a career change, do you get a significant number of women who are re-entering the workforce after time away, etc.?</p>
 
-		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog-snapshot-beta.openhatch.org/2011/lessons-learned-from-the-boston-python-workshop-an-outreach-event-for-women/?replytocom=83#respond' onclick='return addComment.moveForm( "div-comment-83", "83", "respond", "742" )' aria-label='Reply to Greg Wilson'>Reply</a></div>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.openhatch.org/2011/lessons-learned-from-the-boston-python-workshop-an-outreach-event-for-women/?replytocom=83#respond' onclick='return addComment.moveForm( "div-comment-83", "83", "respond", "742" )' aria-label='Reply to Greg Wilson'>Reply</a></div>
 				</div>
 		</li><!-- #comment-## -->
 		<li class="comment even thread-even depth-1" id="comment-84">
@@ -1134,12 +1134,12 @@ Margolis, J. and Fisher, A. (2002). Unlocking the Clubhouse: Women in Computing.
 				<div class="comment-author vcard">
 			<img alt='' src='http://0.gravatar.com/avatar/ff52915975db41ef8c7408a944903c19?s=32&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/ff52915975db41ef8c7408a944903c19?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn">Oren</cite> <span class="says">says:</span>		</div>
 		
-		<div class="comment-meta commentmetadata"><a href="http://blog-snapshot-beta.openhatch.org/2011/lessons-learned-from-the-boston-python-workshop-an-outreach-event-for-women/#comment-84">
+		<div class="comment-meta commentmetadata"><a href="http://blog.openhatch.org/2011/lessons-learned-from-the-boston-python-workshop-an-outreach-event-for-women/#comment-84">
 			June 28, 2011 at 4:03 pm</a>		</div>
 
 		<p>Awesome! Wish it was possible to make it every two weeks, not every two months.</p>
 
-		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog-snapshot-beta.openhatch.org/2011/lessons-learned-from-the-boston-python-workshop-an-outreach-event-for-women/?replytocom=84#respond' onclick='return addComment.moveForm( "div-comment-84", "84", "respond", "742" )' aria-label='Reply to Oren'>Reply</a></div>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.openhatch.org/2011/lessons-learned-from-the-boston-python-workshop-an-outreach-event-for-women/?replytocom=84#respond' onclick='return addComment.moveForm( "div-comment-84", "84", "respond", "742" )' aria-label='Reply to Oren'>Reply</a></div>
 				</div>
 		</li><!-- #comment-## -->
 		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-85">
@@ -1147,13 +1147,13 @@ Margolis, J. and Fisher, A. (2002). Unlocking the Clubhouse: Women in Computing.
 				<div class="comment-author vcard">
 			<img alt='' src='http://1.gravatar.com/avatar/a7267ede9d6ea0117c5438c398a1a212?s=32&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/a7267ede9d6ea0117c5438c398a1a212?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn"><a href='http://jesstess.com' rel='external nofollow' class='url'>Jessica</a></cite> <span class="says">says:</span>		</div>
 		
-		<div class="comment-meta commentmetadata"><a href="http://blog-snapshot-beta.openhatch.org/2011/lessons-learned-from-the-boston-python-workshop-an-outreach-event-for-women/#comment-85">
+		<div class="comment-meta commentmetadata"><a href="http://blog.openhatch.org/2011/lessons-learned-from-the-boston-python-workshop-an-outreach-event-for-women/#comment-85">
 			July 2, 2011 at 8:07 am</a>		</div>
 
 		<p>@Greg It is mostly women in their 20s and 30s. Many attendees work in non-technical roles at tech companies. We also get a lot of scientists who want to learn to program to help with their data analysis, and some entrepreneurs who are coming with an eye towards making websites and apps to support their brand.</p>
 <p>We also get students, DBAs, artists, web developers, librarians, sysadmins, people who have friends or family who program and want to see what all the hubbub is about&#8230; It&#8217;s a great mix of people.</p>
 
-		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog-snapshot-beta.openhatch.org/2011/lessons-learned-from-the-boston-python-workshop-an-outreach-event-for-women/?replytocom=85#respond' onclick='return addComment.moveForm( "div-comment-85", "85", "respond", "742" )' aria-label='Reply to Jessica'>Reply</a></div>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.openhatch.org/2011/lessons-learned-from-the-boston-python-workshop-an-outreach-event-for-women/?replytocom=85#respond' onclick='return addComment.moveForm( "div-comment-85", "85", "respond", "742" )' aria-label='Reply to Jessica'>Reply</a></div>
 				</div>
 		</li><!-- #comment-## -->
         </ol>
@@ -1178,7 +1178,7 @@ Margolis, J. and Fisher, A. (2002). Unlocking the Clubhouse: Women in Computing.
 
 <div class="module-body">
 
-<form action="http://blog-snapshot-beta.openhatch.org/wp-comments-post.php" method="post" id="commentform">
+<form action="http://blog.openhatch.org/wp-comments-post.php" method="post" id="commentform">
 
 
 <p><input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required='true' />

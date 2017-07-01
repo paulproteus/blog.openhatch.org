@@ -5,9 +5,9 @@
 
 <!-- blog metadata etc. -->
 
-<link rel="alternate" type="application/rss+xml" title="The OpenHatch blog RSS Feed" href="http://blog-snapshot-beta.openhatch.org/feed/" />
-<link rel="alternate" type="application/atom+xml" title="The OpenHatch blog Atom Feed" href="http://blog-snapshot-beta.openhatch.org/feed/atom/" />
-<link rel="pingback" href="http://blog-snapshot-beta.openhatch.org/xmlrpc.php" />
+<link rel="alternate" type="application/rss+xml" title="The OpenHatch blog RSS Feed" href="http://blog.openhatch.org/feed/" />
+<link rel="alternate" type="application/atom+xml" title="The OpenHatch blog Atom Feed" href="http://blog.openhatch.org/feed/atom/" />
+<link rel="pingback" href="http://blog.openhatch.org/xmlrpc.php" />
 
 <!-- Facebook OpenGraph image, if applicable -->
 <meta property="og:image" content="" />
@@ -18,7 +18,7 @@
      More info: http://codex.wordpress.org/Function_Reference/wp_head
 -->
 <link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="The OpenHatch blog &raquo; Celebrating our successes and winding down as an organization Comments Feed" href="http://blog-snapshot-beta.openhatch.org/2017/celebrating-our-successes-and-winding-down-as-an-organization/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The OpenHatch blog &raquo; Celebrating our successes and winding down as an organization Comments Feed" href="http://blog.openhatch.org/2017/celebrating-our-successes-and-winding-down-as-an-organization/feed/" />
 		<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/blog.openhatch.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.5"}};
 			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -37,14 +37,14 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
-<link rel='https://api.w.org/' href='http://blog-snapshot-beta.openhatch.org/wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog-snapshot-beta.openhatch.org/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog-snapshot-beta.openhatch.org/wp-includes/wlwmanifest.xml" /> 
-<link rel='prev' title='Tips, facts, thoughts after 3 successful semesters of OSCTC' href='http://blog-snapshot-beta.openhatch.org/2015/tips-facts-thoughts-after-3-successful-semesters-of-osctc/' />
-<link rel="canonical" href="http://blog-snapshot-beta.openhatch.org/2017/celebrating-our-successes-and-winding-down-as-an-organization/" />
-<link rel='shortlink' href='http://blog-snapshot-beta.openhatch.org/?p=2762' />
-<link rel="alternate" type="application/json+oembed" href="http://blog-snapshot-beta.openhatch.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.openhatch.org%2F2017%2Fcelebrating-our-successes-and-winding-down-as-an-organization%2F" />
-<link rel="alternate" type="text/xml+oembed" href="http://blog-snapshot-beta.openhatch.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.openhatch.org%2F2017%2Fcelebrating-our-successes-and-winding-down-as-an-organization%2F&#038;format=xml" />
+<link rel='https://api.w.org/' href='http://blog.openhatch.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.openhatch.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.openhatch.org/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Tips, facts, thoughts after 3 successful semesters of OSCTC' href='http://blog.openhatch.org/2015/tips-facts-thoughts-after-3-successful-semesters-of-osctc/' />
+<link rel="canonical" href="http://blog.openhatch.org/2017/celebrating-our-successes-and-winding-down-as-an-organization/" />
+<link rel='shortlink' href='http://blog.openhatch.org/?p=2762' />
+<link rel="alternate" type="application/json+oembed" href="http://blog.openhatch.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.openhatch.org%2F2017%2Fcelebrating-our-successes-and-winding-down-as-an-organization%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://blog.openhatch.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.openhatch.org%2F2017%2Fcelebrating-our-successes-and-winding-down-as-an-organization%2F&#038;format=xml" />
 		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
 				<style type="text/css" id="wp-custom-css">
 			/*
@@ -767,7 +767,7 @@ body.wordpress #sidebar > .module-body li li {
         </title>
 
         <link rel="shortcut icon" href="/favicon.ico" />
-	<link rel="canonical" href="http://blog-snapshot-beta.openhatch.org/2017/celebrating-our-successes-and-winding-down-as-an-organization/" />
+	<link rel="canonical" href="http://blog.openhatch.org/2017/celebrating-our-successes-and-winding-down-as-an-organization/" />
 
         <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
         <meta http-equiv='Content-Language' content='en-us' />
@@ -907,26 +907,26 @@ body.wordpress #sidebar > .module-body li li {
 		<li id="recent-posts-2" class="widget widget_recent_entries">		<h2 class="widgettitle">Recent Posts</h2>
 		<ul>
 					<li>
-				<a href="http://blog-snapshot-beta.openhatch.org/2017/celebrating-our-successes-and-winding-down-as-an-organization/">Celebrating our successes and winding down as an organization</a>
+				<a href="http://blog.openhatch.org/2017/celebrating-our-successes-and-winding-down-as-an-organization/">Celebrating our successes and winding down as an organization</a>
 						</li>
 					<li>
-				<a href="http://blog-snapshot-beta.openhatch.org/2015/tips-facts-thoughts-after-3-successful-semesters-of-osctc/">Tips, facts, thoughts after 3 successful semesters of OSCTC</a>
+				<a href="http://blog.openhatch.org/2015/tips-facts-thoughts-after-3-successful-semesters-of-osctc/">Tips, facts, thoughts after 3 successful semesters of OSCTC</a>
 						</li>
 					<li>
-				<a href="http://blog-snapshot-beta.openhatch.org/2015/finding-the-next-openhatch-board-member/">Finding the next OpenHatch board member</a>
+				<a href="http://blog.openhatch.org/2015/finding-the-next-openhatch-board-member/">Finding the next OpenHatch board member</a>
 						</li>
 					<li>
-				<a href="http://blog-snapshot-beta.openhatch.org/2015/moving-on/">Moving On</a>
+				<a href="http://blog.openhatch.org/2015/moving-on/">Moving On</a>
 						</li>
 					<li>
-				<a href="http://blog-snapshot-beta.openhatch.org/2015/preparing-for-the-pycon-sprints/">Preparing for the PyCon Sprints</a>
+				<a href="http://blog.openhatch.org/2015/preparing-for-the-pycon-sprints/">Preparing for the PyCon Sprints</a>
 						</li>
 				</ul>
 		</li>
 		<li id="recent-comments-2" class="widget widget_recent_comments"><h2 class="widgettitle">Recent Comments</h2>
-<ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Carol Willing</span> on <a href="http://blog-snapshot-beta.openhatch.org/2015/moving-on/#comment-14652">Moving On</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://gondwanaland.com/mlog/2014/12/31/happy-utc-new-year/' rel='external nofollow' class='url'>Happy UTC+0 New Year &#8211; Mike Linksvayer</a></span> on <a href="http://blog-snapshot-beta.openhatch.org/2014/newsletter-november-december-2014/#comment-10523">Thanks for believing in OpenHatch &#8212; here&#8217;s our end of year newsletter</a></li></ul></li>
+<ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Carol Willing</span> on <a href="http://blog.openhatch.org/2015/moving-on/#comment-14652">Moving On</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://gondwanaland.com/mlog/2014/12/31/happy-utc-new-year/' rel='external nofollow' class='url'>Happy UTC+0 New Year &#8211; Mike Linksvayer</a></span> on <a href="http://blog.openhatch.org/2014/newsletter-november-december-2014/#comment-10523">Thanks for believing in OpenHatch &#8212; here&#8217;s our end of year newsletter</a></li></ul></li>
 <li id="search-2" class="widget widget_search"><h2 class="widgettitle">Search</h2>
-<form role="search" method="get" id="searchform" class="searchform" action="http://blog-snapshot-beta.openhatch.org/">
+<form role="search" method="get" id="searchform" class="searchform" action="http://blog.openhatch.org/">
 				<div>
 					<label class="screen-reader-text" for="s">Search for:</label>
 					<input type="text" value="" name="s" id="s" />
@@ -941,8 +941,8 @@ body.wordpress #sidebar > .module-body li li {
   <div class="module-body">
     The OpenHatch blog is graciously powered by
     <a href="http://wordpress.org/">WordPress</a>.
-    <br /><a href="http://blog-snapshot-beta.openhatch.org/feed/">Entries (RSS)</a>
-    and <a href="http://blog-snapshot-beta.openhatch.org/comments/feed/">Comments (RSS)</a>.
+    <br /><a href="http://blog.openhatch.org/feed/">Entries (RSS)</a>
+    and <a href="http://blog.openhatch.org/comments/feed/">Comments (RSS)</a>.
     <!-- 26 queries. 0.118 seconds. -->
   </div>
 </div>
@@ -953,7 +953,7 @@ body.wordpress #sidebar > .module-body li li {
      <div class="module" id="post-2762">
 <div class="module-head">
   <h2>
-    <a style='color: #333;' href="http://blog-snapshot-beta.openhatch.org/2017/celebrating-our-successes-and-winding-down-as-an-organization/" rel="bookmark"
+    <a style='color: #333;' href="http://blog.openhatch.org/2017/celebrating-our-successes-and-winding-down-as-an-organization/" rel="bookmark"
     title="Permanent Link to Celebrating our successes and winding down as an organization">Celebrating our successes and winding down as an organization</a>
   </h2>
 
@@ -976,7 +976,7 @@ body.wordpress #sidebar > .module-body li li {
 <p>OpenHatch was one part of a broader movement around improving diversity and inclusion in free software and software generally. As Mike, Deb, and I wind down this one organization, we’re heartened by those who push the movement forward. Three stories stand out in my memory.</p>
 <p>In 2010 and 2011, Deb Nicholson and I agreed to organize the first Boston Python Workshop for women and their friends. The event came out of my desire to understand Railsbridge’s <a href="https://www.slideshare.net/sarahmei/moving-the-needle-how-sf-ruby-got-to-18">successes over 2009-2010</a> and translate it to Open Source Comes to Campus. Jessica McKellar, whom I met through the Twisted community, co-organized the event, and she quickly demonstrated that she deserved to run the event. In 2013, she became the PyCon Diversity Outreach Chair, where she still serves and delivers <a href="https://twitter.com/jessicamckellar/status/737299461563502595?lang=en">results that speak for themselves.</a> Meanwhile, my talk about BPW at PyCon 2011 <a href="http://lists.openhatch.org/pipermail/events/2011-April/000142.html">inspired Audrey Roy</a> to found <a href="http://www.pyladies.com/">PyLadies.</a> Today, PyLadies is an international mentorship organization with 64 locations all over the world.</p>
 <p>In November 2014, Sean Lip volunteered at an Open Source Comes to Campus <a href="http://berkeley.openhatch.org/">event at UC Berkeley.</a> Toward the end of the event, students heard presentations from six open source projects. Sean presented Oppia, his open source project to host interactive online lessons for any topic, and I watched as nearly half the room volunteered to work with him. He told the room that he would make sure that every attendee could contribute usefully to his project, and I think this promise sealed the deal for many of his new volunteers. When he onboarded new contributors, he asked three key questions: What do you like about the Oppia project? What’s one skill you have? What’s one thing you want to get better at? I was impressed by how quickly Sean got to know his new contributors, and equally by his report that most of his new contributors were active volunteers many months later. I was impressed, so I did my best to <a href="https://debconf16.debconf.org/talks/83/">incorporate these questions into a newcomer event at Debian’s yearly conference last year.</a></p>
-<p>In 2015, Shauna Gordon-McKeon brought OpenHatch lessons back to PyCon by organizing an <a href="http://blog-snapshot-beta.openhatch.org/2015/preparing-for-the-pycon-sprints/">Introduction to Open Source &amp; the PyCon Sprints</a>. PyCon has <a href="https://wiki.python.org/moin/PyConDC2003/SprintPlan">always</a> invited new people to join open source projects at the sprints. Historically, each participating project was responsible for onboarding its own newcomers. Shauna&#8217;s introductory event united newcomers with helpful volunteers independent of project, and it attracted nearly 100 attendees. The event has become a fixture at PyCon, and Shauna was able to deliver it again in 2016. At this year&#8217;s PyCon, Chalmer Lowe is delivering the introduction to the sprints; he attended Shauna’s event, and over the past year, he evolved it into a hands-on workshop.</p>
+<p>In 2015, Shauna Gordon-McKeon brought OpenHatch lessons back to PyCon by organizing an <a href="http://blog.openhatch.org/2015/preparing-for-the-pycon-sprints/">Introduction to Open Source &amp; the PyCon Sprints</a>. PyCon has <a href="https://wiki.python.org/moin/PyConDC2003/SprintPlan">always</a> invited new people to join open source projects at the sprints. Historically, each participating project was responsible for onboarding its own newcomers. Shauna&#8217;s introductory event united newcomers with helpful volunteers independent of project, and it attracted nearly 100 attendees. The event has become a fixture at PyCon, and Shauna was able to deliver it again in 2016. At this year&#8217;s PyCon, Chalmer Lowe is delivering the introduction to the sprints; he attended Shauna’s event, and over the past year, he evolved it into a hands-on workshop.</p>
 <p>I feel humbled to know that the organization’s vision and lessons live on in new ways, with new people.</p>
 <h3 id="whats-next-for-the-organization">What’s next for the organization</h3>
 <p>Given OpenHatch’s relative inactivity over the past two years, I believe that winding OpenHatch down is more efficient than performing a search for new board members. For me personally, I feel a need to focus less on free software and tech generally so I have more time for music, my own family connections, and non-software forms of political involvement. In the words of the <a href="https://mako.cc/copyrighteous/updating-the-ubuntu-code-of-conduct">Ubuntu Code of Conduct,</a> my aim is to have the organization <a href="https://launchpad.net/codeofconduct/1.0">step down considerately.</a></p>
@@ -1001,7 +1001,7 @@ body.wordpress #sidebar > .module-body li li {
 </div>
 
 <div class="module-foot">
-  <p class="postmetadata"> <!-- Posted in <a href="http://blog-snapshot-beta.openhatch.org/category/uncategorized/" rel="category tag">Uncategorized</a> | -->   <a href="http://blog-snapshot-beta.openhatch.org/2017/celebrating-our-successes-and-winding-down-as-an-organization/#respond"></a></p>
+  <p class="postmetadata"> <!-- Posted in <a href="http://blog.openhatch.org/category/uncategorized/" rel="category tag">Uncategorized</a> | -->   <a href="http://blog.openhatch.org/2017/celebrating-our-successes-and-winding-down-as-an-organization/#respond"></a></p>
 </div>
 </div>
 
@@ -1028,7 +1028,7 @@ body.wordpress #sidebar > .module-body li li {
 
 <div class="module-body">
 
-<form action="http://blog-snapshot-beta.openhatch.org/wp-comments-post.php" method="post" id="commentform">
+<form action="http://blog.openhatch.org/wp-comments-post.php" method="post" id="commentform">
 
 
 <p><input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required='true' />
