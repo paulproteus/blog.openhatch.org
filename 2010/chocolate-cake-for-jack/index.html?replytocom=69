@@ -5,9 +5,9 @@
 
 <!-- blog metadata etc. -->
 
-<link rel="alternate" type="application/rss+xml" title="The OpenHatch blog RSS Feed" href="http://blog.openhatch.org/feed/" />
-<link rel="alternate" type="application/atom+xml" title="The OpenHatch blog Atom Feed" href="http://blog.openhatch.org/feed/atom/" />
-<link rel="pingback" href="http://blog.openhatch.org/xmlrpc.php" />
+<link rel="alternate" type="application/rss+xml" title="The OpenHatch blog RSS Feed" href="https://blog.openhatch.org/feed/" />
+<link rel="alternate" type="application/atom+xml" title="The OpenHatch blog Atom Feed" href="https://blog.openhatch.org/feed/atom/" />
+<link rel="pingback" href="https://blog.openhatch.org/xmlrpc.php" />
 
 <!-- Facebook OpenGraph image, if applicable -->
 <meta property="og:image" content="" />
@@ -18,7 +18,7 @@
      More info: http://codex.wordpress.org/Function_Reference/wp_head
 -->
 <link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="The OpenHatch blog &raquo; Chocolate cake for our latest contributor Comments Feed" href="http://blog.openhatch.org/2010/chocolate-cake-for-jack/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The OpenHatch blog &raquo; Chocolate cake for our latest contributor Comments Feed" href="https://blog.openhatch.org/2010/chocolate-cake-for-jack/feed/" />
 		<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/blog.openhatch.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.5"}};
 			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -37,16 +37,16 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
-<link rel='https://api.w.org/' href='http://blog.openhatch.org/wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.openhatch.org/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.openhatch.org/wp-includes/wlwmanifest.xml" /> 
-<link rel='prev' title='The thinking behind the Training Missions' href='http://blog.openhatch.org/2010/the-thinking-behind-the-training-missions/' />
-<link rel='next' title='Autumn updates from OpenHatch' href='http://blog.openhatch.org/2010/autumn-updates-from-openhatch/' />
-<link rel="canonical" href="http://blog.openhatch.org/2010/chocolate-cake-for-jack/" />
-<link rel='shortlink' href='http://blog.openhatch.org/?p=565' />
+<link rel='https://api.w.org/' href='https://blog.openhatch.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.openhatch.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.openhatch.org/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='The thinking behind the Training Missions' href='https://blog.openhatch.org/2010/the-thinking-behind-the-training-missions/' />
+<link rel='next' title='Autumn updates from OpenHatch' href='https://blog.openhatch.org/2010/autumn-updates-from-openhatch/' />
+<link rel="canonical" href="https://blog.openhatch.org/2010/chocolate-cake-for-jack/" />
+<link rel='shortlink' href='https://blog.openhatch.org/?p=565' />
 <meta name='robots' content='noindex,follow' />
-<link rel="alternate" type="application/json+oembed" href="http://blog.openhatch.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.openhatch.org%2F2010%2Fchocolate-cake-for-jack%2F" />
-<link rel="alternate" type="text/xml+oembed" href="http://blog.openhatch.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.openhatch.org%2F2010%2Fchocolate-cake-for-jack%2F&#038;format=xml" />
+<link rel="alternate" type="application/json+oembed" href="https://blog.openhatch.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.openhatch.org%2F2010%2Fchocolate-cake-for-jack%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.openhatch.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.openhatch.org%2F2010%2Fchocolate-cake-for-jack%2F&#038;format=xml" />
 		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
 				<style type="text/css" id="wp-custom-css">
 			/*
@@ -769,7 +769,7 @@ body.wordpress #sidebar > .module-body li li {
         </title>
 
         <link rel="shortcut icon" href="/favicon.ico" />
-	<link rel="canonical" href="http://blog.openhatch.org/2010/chocolate-cake-for-jack/" />
+	<link rel="canonical" href="https://blog.openhatch.org/2010/chocolate-cake-for-jack/" />
 
         <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
         <meta http-equiv='Content-Language' content='en-us' />
@@ -909,26 +909,26 @@ body.wordpress #sidebar > .module-body li li {
 		<li id="recent-posts-2" class="widget widget_recent_entries">		<h2 class="widgettitle">Recent Posts</h2>
 		<ul>
 					<li>
-				<a href="http://blog.openhatch.org/2017/celebrating-our-successes-and-winding-down-as-an-organization/">Celebrating our successes and winding down as an organization</a>
+				<a href="https://blog.openhatch.org/2017/celebrating-our-successes-and-winding-down-as-an-organization/">Celebrating our successes and winding down as an organization</a>
 						</li>
 					<li>
-				<a href="http://blog.openhatch.org/2015/tips-facts-thoughts-after-3-successful-semesters-of-osctc/">Tips, facts, thoughts after 3 successful semesters of OSCTC</a>
+				<a href="https://blog.openhatch.org/2015/tips-facts-thoughts-after-3-successful-semesters-of-osctc/">Tips, facts, thoughts after 3 successful semesters of OSCTC</a>
 						</li>
 					<li>
-				<a href="http://blog.openhatch.org/2015/finding-the-next-openhatch-board-member/">Finding the next OpenHatch board member</a>
+				<a href="https://blog.openhatch.org/2015/finding-the-next-openhatch-board-member/">Finding the next OpenHatch board member</a>
 						</li>
 					<li>
-				<a href="http://blog.openhatch.org/2015/moving-on/">Moving On</a>
+				<a href="https://blog.openhatch.org/2015/moving-on/">Moving On</a>
 						</li>
 					<li>
-				<a href="http://blog.openhatch.org/2015/preparing-for-the-pycon-sprints/">Preparing for the PyCon Sprints</a>
+				<a href="https://blog.openhatch.org/2015/preparing-for-the-pycon-sprints/">Preparing for the PyCon Sprints</a>
 						</li>
 				</ul>
 		</li>
 		<li id="recent-comments-2" class="widget widget_recent_comments"><h2 class="widgettitle">Recent Comments</h2>
-<ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Carol Willing</span> on <a href="http://blog.openhatch.org/2015/moving-on/#comment-14652">Moving On</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://gondwanaland.com/mlog/2014/12/31/happy-utc-new-year/' rel='external nofollow' class='url'>Happy UTC+0 New Year &#8211; Mike Linksvayer</a></span> on <a href="http://blog.openhatch.org/2014/newsletter-november-december-2014/#comment-10523">Thanks for believing in OpenHatch &#8212; here&#8217;s our end of year newsletter</a></li></ul></li>
+<ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Carol Willing</span> on <a href="https://blog.openhatch.org/2015/moving-on/#comment-14652">Moving On</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://gondwanaland.com/mlog/2014/12/31/happy-utc-new-year/' rel='external nofollow' class='url'>Happy UTC+0 New Year &#8211; Mike Linksvayer</a></span> on <a href="https://blog.openhatch.org/2014/newsletter-november-december-2014/#comment-10523">Thanks for believing in OpenHatch &#8212; here&#8217;s our end of year newsletter</a></li></ul></li>
 <li id="search-2" class="widget widget_search"><h2 class="widgettitle">Search</h2>
-<form role="search" method="get" id="searchform" class="searchform" action="http://blog.openhatch.org/">
+<form role="search" method="get" id="searchform" class="searchform" action="https://blog.openhatch.org/">
 				<div>
 					<label class="screen-reader-text" for="s">Search for:</label>
 					<input type="text" value="" name="s" id="s" />
@@ -943,8 +943,8 @@ body.wordpress #sidebar > .module-body li li {
   <div class="module-body">
     The OpenHatch blog is graciously powered by
     <a href="http://wordpress.org/">WordPress</a>.
-    <br /><a href="http://blog.openhatch.org/feed/">Entries (RSS)</a>
-    and <a href="http://blog.openhatch.org/comments/feed/">Comments (RSS)</a>.
+    <br /><a href="https://blog.openhatch.org/feed/">Entries (RSS)</a>
+    and <a href="https://blog.openhatch.org/comments/feed/">Comments (RSS)</a>.
     <!-- 25 queries. 0.124 seconds. -->
   </div>
 </div>
@@ -955,7 +955,7 @@ body.wordpress #sidebar > .module-body li li {
      <div class="module" id="post-565">
 <div class="module-head">
   <h2>
-    <a style='color: #333;' href="http://blog.openhatch.org/2010/chocolate-cake-for-jack/" rel="bookmark"
+    <a style='color: #333;' href="https://blog.openhatch.org/2010/chocolate-cake-for-jack/" rel="bookmark"
     title="Permanent Link to Chocolate cake for our latest contributor">Chocolate cake for our latest contributor</a>
   </h2>
 
@@ -982,7 +982,7 @@ body.wordpress #sidebar > .module-body li li {
 </div>
 
 <div class="module-foot">
-  <p class="postmetadata"> <!-- Posted in <a href="http://blog.openhatch.org/category/uncategorized/" rel="category tag">Uncategorized</a> | -->   <a href="http://blog.openhatch.org/2010/chocolate-cake-for-jack/#comments">2 Comments &#187;</a></p>
+  <p class="postmetadata"> <!-- Posted in <a href="https://blog.openhatch.org/category/uncategorized/" rel="category tag">Uncategorized</a> | -->   <a href="https://blog.openhatch.org/2010/chocolate-cake-for-jack/#comments">2 Comments &#187;</a></p>
 </div>
 </div>
 
@@ -1003,13 +1003,13 @@ body.wordpress #sidebar > .module-body li li {
 				<div class="comment-author vcard">
 			<img alt='' src='http://0.gravatar.com/avatar/9db64cdc3b57d5c8a65cec76074de9c5?s=32&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/9db64cdc3b57d5c8a65cec76074de9c5?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn">Raphael Krut-Landau</cite> <span class="says">says:</span>		</div>
 		
-		<div class="comment-meta commentmetadata"><a href="http://blog.openhatch.org/2010/chocolate-cake-for-jack/#comment-68">
+		<div class="comment-meta commentmetadata"><a href="https://blog.openhatch.org/2010/chocolate-cake-for-jack/#comment-68">
 			August 18, 2010 at 5:23 pm</a>		</div>
 
 		<p>More code, or perhaps less code, then cake, then less cake. This makes me very happy!<br />
 –Raffi.</p>
 
-		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.openhatch.org/2010/chocolate-cake-for-jack/?replytocom=68#respond' onclick='return addComment.moveForm( "div-comment-68", "68", "respond", "565" )' aria-label='Reply to Raphael Krut-Landau'>Reply</a></div>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://blog.openhatch.org/2010/chocolate-cake-for-jack/?replytocom=68#respond' onclick='return addComment.moveForm( "div-comment-68", "68", "respond", "565" )' aria-label='Reply to Raphael Krut-Landau'>Reply</a></div>
 				</div>
 		</li><!-- #comment-## -->
 		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-69">
@@ -1017,12 +1017,12 @@ body.wordpress #sidebar > .module-body li li {
 				<div class="comment-author vcard">
 			<img alt='' src='http://1.gravatar.com/avatar/4b2d04e1c8c2f1590e4369be64cdcc1c?s=32&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/4b2d04e1c8c2f1590e4369be64cdcc1c?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn"><a href='http://chronicgadgetosis.wordpress.com/' rel='external nofollow' class='url'>David Malcolm Shein</a></cite> <span class="says">says:</span>		</div>
 		
-		<div class="comment-meta commentmetadata"><a href="http://blog.openhatch.org/2010/chocolate-cake-for-jack/#comment-69">
+		<div class="comment-meta commentmetadata"><a href="https://blog.openhatch.org/2010/chocolate-cake-for-jack/#comment-69">
 			October 10, 2010 at 7:10 pm</a>		</div>
 
 		<p>Brilliant.  No, seriously.  Brilliant.</p>
 
-		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.openhatch.org/2010/chocolate-cake-for-jack/?replytocom=69#respond' onclick='return addComment.moveForm( "div-comment-69", "69", "respond", "565" )' aria-label='Reply to David Malcolm Shein'>Reply</a></div>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://blog.openhatch.org/2010/chocolate-cake-for-jack/?replytocom=69#respond' onclick='return addComment.moveForm( "div-comment-69", "69", "respond", "565" )' aria-label='Reply to David Malcolm Shein'>Reply</a></div>
 				</div>
 		</li><!-- #comment-## -->
         </ol>
@@ -1047,7 +1047,7 @@ body.wordpress #sidebar > .module-body li li {
 
 <div class="module-body">
 
-<form action="http://blog.openhatch.org/wp-comments-post.php" method="post" id="commentform">
+<form action="https://blog.openhatch.org/wp-comments-post.php" method="post" id="commentform">
 
 
 <p><input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required='true' />

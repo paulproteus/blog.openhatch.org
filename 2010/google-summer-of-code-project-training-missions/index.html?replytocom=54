@@ -5,9 +5,9 @@
 
 <!-- blog metadata etc. -->
 
-<link rel="alternate" type="application/rss+xml" title="The OpenHatch blog RSS Feed" href="http://blog.openhatch.org/feed/" />
-<link rel="alternate" type="application/atom+xml" title="The OpenHatch blog Atom Feed" href="http://blog.openhatch.org/feed/atom/" />
-<link rel="pingback" href="http://blog.openhatch.org/xmlrpc.php" />
+<link rel="alternate" type="application/rss+xml" title="The OpenHatch blog RSS Feed" href="https://blog.openhatch.org/feed/" />
+<link rel="alternate" type="application/atom+xml" title="The OpenHatch blog Atom Feed" href="https://blog.openhatch.org/feed/atom/" />
+<link rel="pingback" href="https://blog.openhatch.org/xmlrpc.php" />
 
 <!-- Facebook OpenGraph image, if applicable -->
 <meta property="og:image" content="" />
@@ -18,7 +18,7 @@
      More info: http://codex.wordpress.org/Function_Reference/wp_head
 -->
 <link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="The OpenHatch blog &raquo; Google Summer of Code project: Training Missions Comments Feed" href="http://blog.openhatch.org/2010/google-summer-of-code-project-training-missions/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The OpenHatch blog &raquo; Google Summer of Code project: Training Missions Comments Feed" href="https://blog.openhatch.org/2010/google-summer-of-code-project-training-missions/feed/" />
 		<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/blog.openhatch.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.5"}};
 			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -37,16 +37,16 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
-<link rel='https://api.w.org/' href='http://blog.openhatch.org/wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.openhatch.org/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.openhatch.org/wp-includes/wlwmanifest.xml" /> 
-<link rel='prev' title='Our bug importing is healthy, and you can check up on it' href='http://blog.openhatch.org/2010/our-bug-importing-is-healthy-and-you-can-check-up-on-it/' />
-<link rel='next' title='The thinking behind the Training Missions' href='http://blog.openhatch.org/2010/the-thinking-behind-the-training-missions/' />
-<link rel="canonical" href="http://blog.openhatch.org/2010/google-summer-of-code-project-training-missions/" />
-<link rel='shortlink' href='http://blog.openhatch.org/?p=539' />
+<link rel='https://api.w.org/' href='https://blog.openhatch.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.openhatch.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.openhatch.org/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Our bug importing is healthy, and you can check up on it' href='https://blog.openhatch.org/2010/our-bug-importing-is-healthy-and-you-can-check-up-on-it/' />
+<link rel='next' title='The thinking behind the Training Missions' href='https://blog.openhatch.org/2010/the-thinking-behind-the-training-missions/' />
+<link rel="canonical" href="https://blog.openhatch.org/2010/google-summer-of-code-project-training-missions/" />
+<link rel='shortlink' href='https://blog.openhatch.org/?p=539' />
 <meta name='robots' content='noindex,follow' />
-<link rel="alternate" type="application/json+oembed" href="http://blog.openhatch.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.openhatch.org%2F2010%2Fgoogle-summer-of-code-project-training-missions%2F" />
-<link rel="alternate" type="text/xml+oembed" href="http://blog.openhatch.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.openhatch.org%2F2010%2Fgoogle-summer-of-code-project-training-missions%2F&#038;format=xml" />
+<link rel="alternate" type="application/json+oembed" href="https://blog.openhatch.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.openhatch.org%2F2010%2Fgoogle-summer-of-code-project-training-missions%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.openhatch.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.openhatch.org%2F2010%2Fgoogle-summer-of-code-project-training-missions%2F&#038;format=xml" />
 		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
 				<style type="text/css" id="wp-custom-css">
 			/*
@@ -769,7 +769,7 @@ body.wordpress #sidebar > .module-body li li {
         </title>
 
         <link rel="shortcut icon" href="/favicon.ico" />
-	<link rel="canonical" href="http://blog.openhatch.org/2010/google-summer-of-code-project-training-missions/" />
+	<link rel="canonical" href="https://blog.openhatch.org/2010/google-summer-of-code-project-training-missions/" />
 
         <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
         <meta http-equiv='Content-Language' content='en-us' />
@@ -909,26 +909,26 @@ body.wordpress #sidebar > .module-body li li {
 		<li id="recent-posts-2" class="widget widget_recent_entries">		<h2 class="widgettitle">Recent Posts</h2>
 		<ul>
 					<li>
-				<a href="http://blog.openhatch.org/2017/celebrating-our-successes-and-winding-down-as-an-organization/">Celebrating our successes and winding down as an organization</a>
+				<a href="https://blog.openhatch.org/2017/celebrating-our-successes-and-winding-down-as-an-organization/">Celebrating our successes and winding down as an organization</a>
 						</li>
 					<li>
-				<a href="http://blog.openhatch.org/2015/tips-facts-thoughts-after-3-successful-semesters-of-osctc/">Tips, facts, thoughts after 3 successful semesters of OSCTC</a>
+				<a href="https://blog.openhatch.org/2015/tips-facts-thoughts-after-3-successful-semesters-of-osctc/">Tips, facts, thoughts after 3 successful semesters of OSCTC</a>
 						</li>
 					<li>
-				<a href="http://blog.openhatch.org/2015/finding-the-next-openhatch-board-member/">Finding the next OpenHatch board member</a>
+				<a href="https://blog.openhatch.org/2015/finding-the-next-openhatch-board-member/">Finding the next OpenHatch board member</a>
 						</li>
 					<li>
-				<a href="http://blog.openhatch.org/2015/moving-on/">Moving On</a>
+				<a href="https://blog.openhatch.org/2015/moving-on/">Moving On</a>
 						</li>
 					<li>
-				<a href="http://blog.openhatch.org/2015/preparing-for-the-pycon-sprints/">Preparing for the PyCon Sprints</a>
+				<a href="https://blog.openhatch.org/2015/preparing-for-the-pycon-sprints/">Preparing for the PyCon Sprints</a>
 						</li>
 				</ul>
 		</li>
 		<li id="recent-comments-2" class="widget widget_recent_comments"><h2 class="widgettitle">Recent Comments</h2>
-<ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Carol Willing</span> on <a href="http://blog.openhatch.org/2015/moving-on/#comment-14652">Moving On</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://gondwanaland.com/mlog/2014/12/31/happy-utc-new-year/' rel='external nofollow' class='url'>Happy UTC+0 New Year &#8211; Mike Linksvayer</a></span> on <a href="http://blog.openhatch.org/2014/newsletter-november-december-2014/#comment-10523">Thanks for believing in OpenHatch &#8212; here&#8217;s our end of year newsletter</a></li></ul></li>
+<ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Carol Willing</span> on <a href="https://blog.openhatch.org/2015/moving-on/#comment-14652">Moving On</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://gondwanaland.com/mlog/2014/12/31/happy-utc-new-year/' rel='external nofollow' class='url'>Happy UTC+0 New Year &#8211; Mike Linksvayer</a></span> on <a href="https://blog.openhatch.org/2014/newsletter-november-december-2014/#comment-10523">Thanks for believing in OpenHatch &#8212; here&#8217;s our end of year newsletter</a></li></ul></li>
 <li id="search-2" class="widget widget_search"><h2 class="widgettitle">Search</h2>
-<form role="search" method="get" id="searchform" class="searchform" action="http://blog.openhatch.org/">
+<form role="search" method="get" id="searchform" class="searchform" action="https://blog.openhatch.org/">
 				<div>
 					<label class="screen-reader-text" for="s">Search for:</label>
 					<input type="text" value="" name="s" id="s" />
@@ -943,8 +943,8 @@ body.wordpress #sidebar > .module-body li li {
   <div class="module-body">
     The OpenHatch blog is graciously powered by
     <a href="http://wordpress.org/">WordPress</a>.
-    <br /><a href="http://blog.openhatch.org/feed/">Entries (RSS)</a>
-    and <a href="http://blog.openhatch.org/comments/feed/">Comments (RSS)</a>.
+    <br /><a href="https://blog.openhatch.org/feed/">Entries (RSS)</a>
+    and <a href="https://blog.openhatch.org/comments/feed/">Comments (RSS)</a>.
     <!-- 27 queries. 0.125 seconds. -->
   </div>
 </div>
@@ -955,7 +955,7 @@ body.wordpress #sidebar > .module-body li li {
      <div class="module" id="post-539">
 <div class="module-head">
   <h2>
-    <a style='color: #333;' href="http://blog.openhatch.org/2010/google-summer-of-code-project-training-missions/" rel="bookmark"
+    <a style='color: #333;' href="https://blog.openhatch.org/2010/google-summer-of-code-project-training-missions/" rel="bookmark"
     title="Permanent Link to Google Summer of Code project: Training Missions">Google Summer of Code project: Training Missions</a>
   </h2>
 
@@ -980,7 +980,7 @@ body.wordpress #sidebar > .module-body li li {
 </div>
 
 <div class="module-foot">
-  <p class="postmetadata"> <!-- Posted in <a href="http://blog.openhatch.org/category/uncategorized/" rel="category tag">Uncategorized</a> | -->   <a href="http://blog.openhatch.org/2010/google-summer-of-code-project-training-missions/#comments">6 Comments &#187;</a></p>
+  <p class="postmetadata"> <!-- Posted in <a href="https://blog.openhatch.org/category/uncategorized/" rel="category tag">Uncategorized</a> | -->   <a href="https://blog.openhatch.org/2010/google-summer-of-code-project-training-missions/#comments">6 Comments &#187;</a></p>
 </div>
 </div>
 
@@ -1001,12 +1001,12 @@ body.wordpress #sidebar > .module-body li li {
 				<div class="comment-author vcard">
 			<img alt='' src='http://1.gravatar.com/avatar/a0a8e45f5b304c39ab9ed269fac40ecb?s=32&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/a0a8e45f5b304c39ab9ed269fac40ecb?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn">Sarah Strong</cite> <span class="says">says:</span>		</div>
 		
-		<div class="comment-meta commentmetadata"><a href="http://blog.openhatch.org/2010/google-summer-of-code-project-training-missions/#comment-53">
+		<div class="comment-meta commentmetadata"><a href="https://blog.openhatch.org/2010/google-summer-of-code-project-training-missions/#comment-53">
 			June 17, 2010 at 4:36 pm</a>		</div>
 
 		<p>This is a fantastic idea. Do you plan to someday make a platform to allow people to contribute new, potentially project-specific missions? That would be awesome.</p>
 
-		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.openhatch.org/2010/google-summer-of-code-project-training-missions/?replytocom=53#respond' onclick='return addComment.moveForm( "div-comment-53", "53", "respond", "539" )' aria-label='Reply to Sarah Strong'>Reply</a></div>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://blog.openhatch.org/2010/google-summer-of-code-project-training-missions/?replytocom=53#respond' onclick='return addComment.moveForm( "div-comment-53", "53", "respond", "539" )' aria-label='Reply to Sarah Strong'>Reply</a></div>
 				</div>
 		</li><!-- #comment-## -->
 		<li class="comment byuser comment-author-asheesh odd alt thread-odd thread-alt depth-1" id="comment-54">
@@ -1014,7 +1014,7 @@ body.wordpress #sidebar > .module-body li li {
 				<div class="comment-author vcard">
 			<img alt='' src='http://0.gravatar.com/avatar/311e2e25841265550f884d3996a4e23b?s=32&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/311e2e25841265550f884d3996a4e23b?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn"><a href='http://asheesh.org' rel='external nofollow' class='url'>Asheesh</a></cite> <span class="says">says:</span>		</div>
 		
-		<div class="comment-meta commentmetadata"><a href="http://blog.openhatch.org/2010/google-summer-of-code-project-training-missions/#comment-54">
+		<div class="comment-meta commentmetadata"><a href="https://blog.openhatch.org/2010/google-summer-of-code-project-training-missions/#comment-54">
 			June 18, 2010 at 11:39 am</a>		</div>
 
 		<p>Hi Sarah! I&#8217;m Asheesh, working with John on the missions.</p>
@@ -1022,7 +1022,7 @@ body.wordpress #sidebar > .module-body li li {
 <p>You can already contribute missions along the lines of what we&#8217;re doing by cloning our source code and playing around.</p>
 <p>If you want to keep chatting, the best way is to join our chat room as described at our &#8220;Contact us&#8221; page, #openhatch on FreeNode.</p>
 
-		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.openhatch.org/2010/google-summer-of-code-project-training-missions/?replytocom=54#respond' onclick='return addComment.moveForm( "div-comment-54", "54", "respond", "539" )' aria-label='Reply to Asheesh'>Reply</a></div>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://blog.openhatch.org/2010/google-summer-of-code-project-training-missions/?replytocom=54#respond' onclick='return addComment.moveForm( "div-comment-54", "54", "respond", "539" )' aria-label='Reply to Asheesh'>Reply</a></div>
 				</div>
 		</li><!-- #comment-## -->
 		<li class="comment even thread-even depth-1" id="comment-55">
@@ -1030,12 +1030,12 @@ body.wordpress #sidebar > .module-body li li {
 				<div class="comment-author vcard">
 			<img alt='' src='http://0.gravatar.com/avatar/621809172cdad96c10937f5bd3414f9a?s=32&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/621809172cdad96c10937f5bd3414f9a?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn"><a href='http://jasonwcox.com' rel='external nofollow' class='url'>Jason Cox</a></cite> <span class="says">says:</span>		</div>
 		
-		<div class="comment-meta commentmetadata"><a href="http://blog.openhatch.org/2010/google-summer-of-code-project-training-missions/#comment-55">
+		<div class="comment-meta commentmetadata"><a href="https://blog.openhatch.org/2010/google-summer-of-code-project-training-missions/#comment-55">
 			June 18, 2010 at 12:23 pm</a>		</div>
 
 		<p>I really like the goal of this project! The process of joining Open Source can be difficult for anyone, including someone with development experience.</p>
 
-		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.openhatch.org/2010/google-summer-of-code-project-training-missions/?replytocom=55#respond' onclick='return addComment.moveForm( "div-comment-55", "55", "respond", "539" )' aria-label='Reply to Jason Cox'>Reply</a></div>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://blog.openhatch.org/2010/google-summer-of-code-project-training-missions/?replytocom=55#respond' onclick='return addComment.moveForm( "div-comment-55", "55", "respond", "539" )' aria-label='Reply to Jason Cox'>Reply</a></div>
 				</div>
 		</li><!-- #comment-## -->
 		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-56">
@@ -1043,12 +1043,12 @@ body.wordpress #sidebar > .module-body li li {
 				<div class="comment-author vcard">
 			<img alt='' src='http://2.gravatar.com/avatar/22214d8ecaa0f8782edcc047719b60c9?s=32&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/22214d8ecaa0f8782edcc047719b60c9?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn">Kevin S.</cite> <span class="says">says:</span>		</div>
 		
-		<div class="comment-meta commentmetadata"><a href="http://blog.openhatch.org/2010/google-summer-of-code-project-training-missions/#comment-56">
+		<div class="comment-meta commentmetadata"><a href="https://blog.openhatch.org/2010/google-summer-of-code-project-training-missions/#comment-56">
 			July 13, 2010 at 4:47 pm</a>		</div>
 
 		<p>This is a great idea. I&#8217;m intending a CS major at Rutgers, and want to contribute to open source projects. Even though I know how to code, I still get confused about how OSS projects are organized.</p>
 
-		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.openhatch.org/2010/google-summer-of-code-project-training-missions/?replytocom=56#respond' onclick='return addComment.moveForm( "div-comment-56", "56", "respond", "539" )' aria-label='Reply to Kevin S.'>Reply</a></div>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://blog.openhatch.org/2010/google-summer-of-code-project-training-missions/?replytocom=56#respond' onclick='return addComment.moveForm( "div-comment-56", "56", "respond", "539" )' aria-label='Reply to Kevin S.'>Reply</a></div>
 				</div>
 		</li><!-- #comment-## -->
 		<li class="comment even thread-even depth-1" id="comment-57">
@@ -1056,7 +1056,7 @@ body.wordpress #sidebar > .module-body li li {
 				<div class="comment-author vcard">
 			<img alt='' src='http://2.gravatar.com/avatar/505e2b0874f9d20c9482e65d9ad5b646?s=32&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/505e2b0874f9d20c9482e65d9ad5b646?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn">Margarita Manterola</cite> <span class="says">says:</span>		</div>
 		
-		<div class="comment-meta commentmetadata"><a href="http://blog.openhatch.org/2010/google-summer-of-code-project-training-missions/#comment-57">
+		<div class="comment-meta commentmetadata"><a href="https://blog.openhatch.org/2010/google-summer-of-code-project-training-missions/#comment-57">
 			August 17, 2011 at 8:46 am</a>		</div>
 
 		<p>** I love the missions!  **</p>
@@ -1064,7 +1064,7 @@ body.wordpress #sidebar > .module-body li li {
 <p>*** More missions would be extra awesome! ***</p>
 <p>Now, one minor pick: would it be possible to replace he/him by they/them in the above post.  You might not notice, but women like me do feel alienated when the masculine pronoun is used.</p>
 
-		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.openhatch.org/2010/google-summer-of-code-project-training-missions/?replytocom=57#respond' onclick='return addComment.moveForm( "div-comment-57", "57", "respond", "539" )' aria-label='Reply to Margarita Manterola'>Reply</a></div>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://blog.openhatch.org/2010/google-summer-of-code-project-training-missions/?replytocom=57#respond' onclick='return addComment.moveForm( "div-comment-57", "57", "respond", "539" )' aria-label='Reply to Margarita Manterola'>Reply</a></div>
 				</div>
 		</li><!-- #comment-## -->
 		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-58">
@@ -1072,14 +1072,14 @@ body.wordpress #sidebar > .module-body li li {
 				<div class="comment-author vcard">
 			<img alt='' src='http://1.gravatar.com/avatar/7ecd3c4a611b2646d949e9ac21835ad0?s=32&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/7ecd3c4a611b2646d949e9ac21835ad0?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn">Amit</cite> <span class="says">says:</span>		</div>
 		
-		<div class="comment-meta commentmetadata"><a href="http://blog.openhatch.org/2010/google-summer-of-code-project-training-missions/#comment-58">
+		<div class="comment-meta commentmetadata"><a href="https://blog.openhatch.org/2010/google-summer-of-code-project-training-missions/#comment-58">
 			April 28, 2013 at 4:51 pm</a>		</div>
 
 		<p>Great work!!! Completely blown off by the concept.</p>
 <p>I have used FOSS for quite some time, I were really hoping to contribute to it. But, i was not getting the path about how to do it. But, a big thanks to you guys for the awesome training module that you have provided, it indeed was the thing that i was hoping would start my career as open source developer.</p>
 <p>Thank You, very much.</p>
 
-		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.openhatch.org/2010/google-summer-of-code-project-training-missions/?replytocom=58#respond' onclick='return addComment.moveForm( "div-comment-58", "58", "respond", "539" )' aria-label='Reply to Amit'>Reply</a></div>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://blog.openhatch.org/2010/google-summer-of-code-project-training-missions/?replytocom=58#respond' onclick='return addComment.moveForm( "div-comment-58", "58", "respond", "539" )' aria-label='Reply to Amit'>Reply</a></div>
 				</div>
 		</li><!-- #comment-## -->
         </ol>
@@ -1104,7 +1104,7 @@ body.wordpress #sidebar > .module-body li li {
 
 <div class="module-body">
 
-<form action="http://blog.openhatch.org/wp-comments-post.php" method="post" id="commentform">
+<form action="https://blog.openhatch.org/wp-comments-post.php" method="post" id="commentform">
 
 
 <p><input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required='true' />

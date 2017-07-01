@@ -5,9 +5,9 @@
 
 <!-- blog metadata etc. -->
 
-<link rel="alternate" type="application/rss+xml" title="The OpenHatch blog RSS Feed" href="http://blog.openhatch.org/feed/" />
-<link rel="alternate" type="application/atom+xml" title="The OpenHatch blog Atom Feed" href="http://blog.openhatch.org/feed/atom/" />
-<link rel="pingback" href="http://blog.openhatch.org/xmlrpc.php" />
+<link rel="alternate" type="application/rss+xml" title="The OpenHatch blog RSS Feed" href="https://blog.openhatch.org/feed/" />
+<link rel="alternate" type="application/atom+xml" title="The OpenHatch blog Atom Feed" href="https://blog.openhatch.org/feed/atom/" />
+<link rel="pingback" href="https://blog.openhatch.org/xmlrpc.php" />
 
 <!-- Facebook OpenGraph image, if applicable -->
 <meta property="og:image" content="" />
@@ -18,7 +18,7 @@
      More info: http://codex.wordpress.org/Function_Reference/wp_head
 -->
 <link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="The OpenHatch blog &raquo; What are you avoiding working on? Comments Feed" href="http://blog.openhatch.org/2010/what-are-you-avoiding-working-on/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The OpenHatch blog &raquo; What are you avoiding working on? Comments Feed" href="https://blog.openhatch.org/2010/what-are-you-avoiding-working-on/feed/" />
 		<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/blog.openhatch.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.5"}};
 			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -37,16 +37,16 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
-<link rel='https://api.w.org/' href='http://blog.openhatch.org/wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.openhatch.org/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.openhatch.org/wp-includes/wlwmanifest.xml" /> 
-<link rel='prev' title='Working at OpenHatch: Extreme Programming, Simple Lifestyle' href='http://blog.openhatch.org/2010/working-at-openhatch-extreme-programming-simple-lifestyle/' />
-<link rel='next' title='Hammered by Slashdot. Recovering through daal.' href='http://blog.openhatch.org/2010/hammered-by-slashdot-recovering-through/' />
-<link rel="canonical" href="http://blog.openhatch.org/2010/what-are-you-avoiding-working-on/" />
-<link rel='shortlink' href='http://blog.openhatch.org/?p=448' />
+<link rel='https://api.w.org/' href='https://blog.openhatch.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.openhatch.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.openhatch.org/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Working at OpenHatch: Extreme Programming, Simple Lifestyle' href='https://blog.openhatch.org/2010/working-at-openhatch-extreme-programming-simple-lifestyle/' />
+<link rel='next' title='Hammered by Slashdot. Recovering through daal.' href='https://blog.openhatch.org/2010/hammered-by-slashdot-recovering-through/' />
+<link rel="canonical" href="https://blog.openhatch.org/2010/what-are-you-avoiding-working-on/" />
+<link rel='shortlink' href='https://blog.openhatch.org/?p=448' />
 <meta name='robots' content='noindex,follow' />
-<link rel="alternate" type="application/json+oembed" href="http://blog.openhatch.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.openhatch.org%2F2010%2Fwhat-are-you-avoiding-working-on%2F" />
-<link rel="alternate" type="text/xml+oembed" href="http://blog.openhatch.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.openhatch.org%2F2010%2Fwhat-are-you-avoiding-working-on%2F&#038;format=xml" />
+<link rel="alternate" type="application/json+oembed" href="https://blog.openhatch.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.openhatch.org%2F2010%2Fwhat-are-you-avoiding-working-on%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.openhatch.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.openhatch.org%2F2010%2Fwhat-are-you-avoiding-working-on%2F&#038;format=xml" />
 		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
 				<style type="text/css" id="wp-custom-css">
 			/*
@@ -769,7 +769,7 @@ body.wordpress #sidebar > .module-body li li {
         </title>
 
         <link rel="shortcut icon" href="/favicon.ico" />
-	<link rel="canonical" href="http://blog.openhatch.org/2010/what-are-you-avoiding-working-on/" />
+	<link rel="canonical" href="https://blog.openhatch.org/2010/what-are-you-avoiding-working-on/" />
 
         <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
         <meta http-equiv='Content-Language' content='en-us' />
@@ -909,26 +909,26 @@ body.wordpress #sidebar > .module-body li li {
 		<li id="recent-posts-2" class="widget widget_recent_entries">		<h2 class="widgettitle">Recent Posts</h2>
 		<ul>
 					<li>
-				<a href="http://blog.openhatch.org/2017/celebrating-our-successes-and-winding-down-as-an-organization/">Celebrating our successes and winding down as an organization</a>
+				<a href="https://blog.openhatch.org/2017/celebrating-our-successes-and-winding-down-as-an-organization/">Celebrating our successes and winding down as an organization</a>
 						</li>
 					<li>
-				<a href="http://blog.openhatch.org/2015/tips-facts-thoughts-after-3-successful-semesters-of-osctc/">Tips, facts, thoughts after 3 successful semesters of OSCTC</a>
+				<a href="https://blog.openhatch.org/2015/tips-facts-thoughts-after-3-successful-semesters-of-osctc/">Tips, facts, thoughts after 3 successful semesters of OSCTC</a>
 						</li>
 					<li>
-				<a href="http://blog.openhatch.org/2015/finding-the-next-openhatch-board-member/">Finding the next OpenHatch board member</a>
+				<a href="https://blog.openhatch.org/2015/finding-the-next-openhatch-board-member/">Finding the next OpenHatch board member</a>
 						</li>
 					<li>
-				<a href="http://blog.openhatch.org/2015/moving-on/">Moving On</a>
+				<a href="https://blog.openhatch.org/2015/moving-on/">Moving On</a>
 						</li>
 					<li>
-				<a href="http://blog.openhatch.org/2015/preparing-for-the-pycon-sprints/">Preparing for the PyCon Sprints</a>
+				<a href="https://blog.openhatch.org/2015/preparing-for-the-pycon-sprints/">Preparing for the PyCon Sprints</a>
 						</li>
 				</ul>
 		</li>
 		<li id="recent-comments-2" class="widget widget_recent_comments"><h2 class="widgettitle">Recent Comments</h2>
-<ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Carol Willing</span> on <a href="http://blog.openhatch.org/2015/moving-on/#comment-14652">Moving On</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://gondwanaland.com/mlog/2014/12/31/happy-utc-new-year/' rel='external nofollow' class='url'>Happy UTC+0 New Year &#8211; Mike Linksvayer</a></span> on <a href="http://blog.openhatch.org/2014/newsletter-november-december-2014/#comment-10523">Thanks for believing in OpenHatch &#8212; here&#8217;s our end of year newsletter</a></li></ul></li>
+<ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Carol Willing</span> on <a href="https://blog.openhatch.org/2015/moving-on/#comment-14652">Moving On</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://gondwanaland.com/mlog/2014/12/31/happy-utc-new-year/' rel='external nofollow' class='url'>Happy UTC+0 New Year &#8211; Mike Linksvayer</a></span> on <a href="https://blog.openhatch.org/2014/newsletter-november-december-2014/#comment-10523">Thanks for believing in OpenHatch &#8212; here&#8217;s our end of year newsletter</a></li></ul></li>
 <li id="search-2" class="widget widget_search"><h2 class="widgettitle">Search</h2>
-<form role="search" method="get" id="searchform" class="searchform" action="http://blog.openhatch.org/">
+<form role="search" method="get" id="searchform" class="searchform" action="https://blog.openhatch.org/">
 				<div>
 					<label class="screen-reader-text" for="s">Search for:</label>
 					<input type="text" value="" name="s" id="s" />
@@ -943,8 +943,8 @@ body.wordpress #sidebar > .module-body li li {
   <div class="module-body">
     The OpenHatch blog is graciously powered by
     <a href="http://wordpress.org/">WordPress</a>.
-    <br /><a href="http://blog.openhatch.org/feed/">Entries (RSS)</a>
-    and <a href="http://blog.openhatch.org/comments/feed/">Comments (RSS)</a>.
+    <br /><a href="https://blog.openhatch.org/feed/">Entries (RSS)</a>
+    and <a href="https://blog.openhatch.org/comments/feed/">Comments (RSS)</a>.
     <!-- 25 queries. 0.136 seconds. -->
   </div>
 </div>
@@ -955,7 +955,7 @@ body.wordpress #sidebar > .module-body li li {
      <div class="module" id="post-448">
 <div class="module-head">
   <h2>
-    <a style='color: #333;' href="http://blog.openhatch.org/2010/what-are-you-avoiding-working-on/" rel="bookmark"
+    <a style='color: #333;' href="https://blog.openhatch.org/2010/what-are-you-avoiding-working-on/" rel="bookmark"
     title="Permanent Link to What are you avoiding working on?">What are you avoiding working on?</a>
   </h2>
 
@@ -987,7 +987,7 @@ body.wordpress #sidebar > .module-body li li {
 </div>
 
 <div class="module-foot">
-  <p class="postmetadata"> <!-- Posted in <a href="http://blog.openhatch.org/category/uncategorized/" rel="category tag">Uncategorized</a> | -->   <a href="http://blog.openhatch.org/2010/what-are-you-avoiding-working-on/#comments">4 Comments &#187;</a></p>
+  <p class="postmetadata"> <!-- Posted in <a href="https://blog.openhatch.org/category/uncategorized/" rel="category tag">Uncategorized</a> | -->   <a href="https://blog.openhatch.org/2010/what-are-you-avoiding-working-on/#comments">4 Comments &#187;</a></p>
 </div>
 </div>
 
@@ -1008,14 +1008,14 @@ body.wordpress #sidebar > .module-body li li {
 				<div class="comment-author vcard">
 			<img alt='' src='http://2.gravatar.com/avatar/22dbf9d42e043d7ef19f3f2bfdb3ede6?s=32&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/22dbf9d42e043d7ef19f3f2bfdb3ede6?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn"><a href='http://voltagex.org' rel='external nofollow' class='url'>Adam</a></cite> <span class="says">says:</span>		</div>
 		
-		<div class="comment-meta commentmetadata"><a href="http://blog.openhatch.org/2010/what-are-you-avoiding-working-on/#comment-38">
+		<div class="comment-meta commentmetadata"><a href="https://blog.openhatch.org/2010/what-are-you-avoiding-working-on/#comment-38">
 			March 14, 2010 at 8:11 pm</a>		</div>
 
 		<p>Please come across to Reddit. Your openhatch project was mentioned there, but any requests for help/ideas are met with mumble-mumble-apathy.</p>
 <p><a href="http://www.reddit.com/r/linux/comments/bcgfd/idea_organize_rlinux_monthly_meetings_to/" rel="nofollow">http://www.reddit.com/r/linux/comments/bcgfd/idea_organize_rlinux_monthly_meetings_to/</a></p>
 <p>By the way, I dread packaging (even for Debian). I just can&#8217;t seem to get my head around it!</p>
 
-		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.openhatch.org/2010/what-are-you-avoiding-working-on/?replytocom=38#respond' onclick='return addComment.moveForm( "div-comment-38", "38", "respond", "448" )' aria-label='Reply to Adam'>Reply</a></div>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://blog.openhatch.org/2010/what-are-you-avoiding-working-on/?replytocom=38#respond' onclick='return addComment.moveForm( "div-comment-38", "38", "respond", "448" )' aria-label='Reply to Adam'>Reply</a></div>
 				</div>
 		</li><!-- #comment-## -->
 		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-39">
@@ -1023,12 +1023,12 @@ body.wordpress #sidebar > .module-body li li {
 				<div class="comment-author vcard">
 			<img alt='' src='http://1.gravatar.com/avatar/40a7d6c61b6255598649e38b2cf5860b?s=32&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/40a7d6c61b6255598649e38b2cf5860b?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn">M</cite> <span class="says">says:</span>		</div>
 		
-		<div class="comment-meta commentmetadata"><a href="http://blog.openhatch.org/2010/what-are-you-avoiding-working-on/#comment-39">
+		<div class="comment-meta commentmetadata"><a href="https://blog.openhatch.org/2010/what-are-you-avoiding-working-on/#comment-39">
 			March 14, 2010 at 10:08 pm</a>		</div>
 
 		<p>I think the problem for us is that we so fear intellectual embarrassment; we personally identify with the code we write and the kind of problems we can solve. It&#8217;s too bad that programmers aren&#8217;t more nurturing to each other.</p>
 
-		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.openhatch.org/2010/what-are-you-avoiding-working-on/?replytocom=39#respond' onclick='return addComment.moveForm( "div-comment-39", "39", "respond", "448" )' aria-label='Reply to M'>Reply</a></div>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://blog.openhatch.org/2010/what-are-you-avoiding-working-on/?replytocom=39#respond' onclick='return addComment.moveForm( "div-comment-39", "39", "respond", "448" )' aria-label='Reply to M'>Reply</a></div>
 				</div>
 		</li><!-- #comment-## -->
 		<li class="comment even thread-even depth-1" id="comment-40">
@@ -1036,7 +1036,7 @@ body.wordpress #sidebar > .module-body li li {
 				<div class="comment-author vcard">
 			<img alt='' src='http://1.gravatar.com/avatar/d9015c14008f0f31144bf3f169e53943?s=32&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/d9015c14008f0f31144bf3f169e53943?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn"><a href='http://echoreply.us/' rel='external nofollow' class='url'>Tim Post</a></cite> <span class="says">says:</span>		</div>
 		
-		<div class="comment-meta commentmetadata"><a href="http://blog.openhatch.org/2010/what-are-you-avoiding-working-on/#comment-40">
+		<div class="comment-meta commentmetadata"><a href="https://blog.openhatch.org/2010/what-are-you-avoiding-working-on/#comment-40">
 			March 15, 2010 at 1:59 am</a>		</div>
 
 		<p>I was really amused to see &#8220;Bugs Matching Unicode (30)&#8221; on the top of the list when checking out Openhatch, considering that anything to do with Unicode is on my &#8216;oh dear god no, not me &#8230; please don&#8217;t assign that to me &#8230;. &#8216; list.</p>
@@ -1044,7 +1044,7 @@ body.wordpress #sidebar > .module-body li li {
 <p>I will say this, every developer&#8217;s worst nightmare is seeing a patch they wrote featured on Slashdot as the cause of thousands of systems being compromised. As a maintainer, you have to be able to say &#8220;I have no #*&amp;#(*&amp; clue what that code actually does, I&#8217;m not touching it until I do.&#8221; That sometimes applies to code that you wrote yourself 🙂</p>
 <p>For the most part, however, peer review is often helpful and constructive.</p>
 
-		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.openhatch.org/2010/what-are-you-avoiding-working-on/?replytocom=40#respond' onclick='return addComment.moveForm( "div-comment-40", "40", "respond", "448" )' aria-label='Reply to Tim Post'>Reply</a></div>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://blog.openhatch.org/2010/what-are-you-avoiding-working-on/?replytocom=40#respond' onclick='return addComment.moveForm( "div-comment-40", "40", "respond", "448" )' aria-label='Reply to Tim Post'>Reply</a></div>
 				</div>
 		</li><!-- #comment-## -->
 		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-41">
@@ -1052,12 +1052,12 @@ body.wordpress #sidebar > .module-body li li {
 				<div class="comment-author vcard">
 			<img alt='' src='http://2.gravatar.com/avatar/27a03dee52adfccbf826c7f23d50a565?s=32&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/27a03dee52adfccbf826c7f23d50a565?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn"><a href='http://www.sofoxcentral.com' rel='external nofollow' class='url'>Sofox</a></cite> <span class="says">says:</span>		</div>
 		
-		<div class="comment-meta commentmetadata"><a href="http://blog.openhatch.org/2010/what-are-you-avoiding-working-on/#comment-41">
+		<div class="comment-meta commentmetadata"><a href="https://blog.openhatch.org/2010/what-are-you-avoiding-working-on/#comment-41">
 			March 15, 2010 at 4:28 am</a>		</div>
 
 		<p>Wow, I thought I was unusual in this regard, having fear approaching something by all rights I should be fine at. Nice to know that other programmers have these sort of block too, and it&#8217;s not just something about experience or such.</p>
 
-		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.openhatch.org/2010/what-are-you-avoiding-working-on/?replytocom=41#respond' onclick='return addComment.moveForm( "div-comment-41", "41", "respond", "448" )' aria-label='Reply to Sofox'>Reply</a></div>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://blog.openhatch.org/2010/what-are-you-avoiding-working-on/?replytocom=41#respond' onclick='return addComment.moveForm( "div-comment-41", "41", "respond", "448" )' aria-label='Reply to Sofox'>Reply</a></div>
 				</div>
 		</li><!-- #comment-## -->
         </ol>
@@ -1082,7 +1082,7 @@ body.wordpress #sidebar > .module-body li li {
 
 <div class="module-body">
 
-<form action="http://blog.openhatch.org/wp-comments-post.php" method="post" id="commentform">
+<form action="https://blog.openhatch.org/wp-comments-post.php" method="post" id="commentform">
 
 
 <p><input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required='true' />
